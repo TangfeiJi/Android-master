@@ -1,0 +1,204 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipChildren="true"
+    android:clipToPadding="true">
+
+    <com.dev.sacot41.scviewpager.SCViewPager
+        android:id="@+id/viewpager_main_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.dev.sacot41.scviewpager.SCViewPager>
+
+    <ImageView
+        android:id="@+id/img_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/one_bg" />
+
+    <com.dev.sacot41.scviewpager.DotsView
+        android:id="@+id/dotsview_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100px"
+        android:orientation="horizontal" />
+
+    <ImageView
+        android:id="@+id/imageview_main_activity_name_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@mipmap/pagerright"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageview_main_activity_currently_work"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/pagerleft"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/ll_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="220px"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We know that what you like"
+            android:textColor="@color/white"
+            android:textSize="42px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15px"
+            android:text="你喜欢的我们都懂"
+            android:textColor="@color/white"
+            android:textSize="42px" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imageview_main_activity_commonly"
+        android:layout_width="1010px"
+        android:layout_height="440px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="410px"
+        android:src="@mipmap/two_logo"
+        android:visibility="visible" />
+
+
+    <LinearLayout
+        android:id="@+id/imageview_main_activity_django_python"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="220px"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="124px"
+            android:layout_height="115px"
+            android:src="@mipmap/fliilogo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25px"
+            android:text="We have everything you "
+            android:textColor="@color/white"
+            android:textSize="42px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15px"
+            android:text="你想看的这里都有"
+            android:textColor="@color/white"
+            android:textSize="42px" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_right2"
+        android:layout_width="550px"
+        android:layout_height="478px"
+        android:layout_marginLeft="430px"
+        android:layout_marginTop="820px"
+        android:src="@mipmap/right_two"
+        android:visibility="visible"
+
+        />
+
+    <ImageView
+        android:id="@+id/imageview_main_activity_why"
+        android:layout_width="550px"
+        android:layout_height="478px"
+        android:layout_marginLeft="150px"
+        android:layout_marginTop="620px"
+        android:src="@mipmap/left_two"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageview_main_activity_diploma"
+        android:layout_width="550px"
+        android:layout_height="478px"
+        android:layout_marginLeft="425px"
+        android:layout_marginTop="425px"
+        android:src="@mipmap/right_one"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageview_main_activity_but"
+        android:layout_width="550px"
+        android:layout_height="478px"
+        android:layout_marginLeft="80px"
+        android:layout_marginTop="270px"
+        android:src="@mipmap/left_one"
+        android:visibility="visible" />
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/ll_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="220px"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All the stars are gather here"
+            android:textColor="@color/white"
+            android:textSize="42px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15px"
+            android:text="明星大咖全网搜罗"
+            android:textColor="@color/white"
+            android:textSize="42px" />
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:layout_centerInParent="true"
+        android:id="@+id/imageview_main_raspberry_pi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/four_bg_logo"
+        android:visibility="visible" />
+
+    <ImageView
+        android:layout_marginBottom="180px"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/imageview_main_connected_device"
+        android:layout_width="440px"
+        android:layout_height="130px"
+        android:src="@mipmap/startbg"
+        android:visibility="visible" />
+
+</RelativeLayout>

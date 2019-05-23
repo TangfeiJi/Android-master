@@ -1,0 +1,80 @@
+<!--
+  ~     (C) Copyright 2019, ForgetSky.
+  ~
+  ~     Licensed under the Apache License, Version 2.0 (the "License");
+  ~     you may not use this file except in compliance with the License.
+  ~     You may obtain a copy of the License at
+  ~
+  ~         http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~     Unless required by applicable law or agreed to in writing, software
+  ~     distributed under the License is distributed on an "AS IS" BASIS,
+  ~     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~     See the License for the specific language governing permissions and
+  ~     limitations under the License.
+  -->
+
+<resources>
+    <string name="app_name">框架</string>
+    <!-- navigation -->
+    <string name="my_collect">Collect</string>
+    <string name="nav_todo">TODO</string>
+    <string name="nav_night_mode">Night mode</string>
+    <string name="setting">Setting</string>
+    <string name="about_us">About Us</string>
+    <string name="logout">Logout</string>
+    <string name="login_in">Login</string>
+
+    <!-- Search -->
+    <string name="action_search">Search</string>
+    <string name="useful_sites">Useful Sites</string>
+
+    <!-- Login -->
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="username">UserName</string>
+    <string name="password">Password</string>
+    <string name="no_account">No account, Register</string>
+    <string name="login_success">login success</string>
+    <string name="login_fail">login fail</string>
+    <string name="logout_fail">logout fail</string>
+    <string name="enter_password_again">enter password again</string>
+    <string name="have_account">Have account, Login</string>
+    <string name="username_not_empty">User name cannot be empty</string>
+    <string name="password_not_empty">Password cannot be empty</string>
+    <string name="re_password_not_empty">Confirmation password cannot be empty</string>
+    <string name="twice_password_not_same">The passwords entered twice are different</string>
+    <string name="register_success">register success</string>
+    <string name="register_fail">register fail</string>
+    <string name="logging_in">Logging…</string>
+    <string name="logging_out">Logout…</string>
+    <string name="registering">Registering…</string>
+    <string name="login_first">Please login first</string>
+
+    <!-- home pager -->
+    <string name="home_pager">Home pager</string>
+    <string name="navigation">Navigation</string>
+    <string name="project">Project</string>
+
+    <!-- collect -->
+    <string name="collect">Collect</string>
+
+    <!-- Common -->
+    <string name="http_error">network anomaly</string>
+    <string name="double_click_exit_toast">Press the back button again to exit</string>
+    <string name="loading">Loading</string>
+    <string name="failed_to_get_project_data">Failed to get project data</string>
+    <string name="in_the_process">In the process of development, please look forward to it.</string>
+
+    <!-- Setting detail -->
+
+    <!-- Article detail -->
+    <string name="share">Share</string>
+    <string name="open_it_with_browser">Open it with the system browser</string>
+
+    <!-- behavior -->
+    <string name="scale_down_show_behavior" translatable="false">com.project.movice.widget.behavior.ScaleDownShowBehavior</string>
+
+    <!-- about -->
+
+</resources>

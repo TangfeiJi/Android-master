@@ -1,0 +1,75 @@
+<!--
+  ~     (C) Copyright 2019, ForgetSky.
+  ~
+  ~     Licensed under the Apache License, Version 2.0 (the "License");
+  ~     you may not use this file except in compliance with the License.
+  ~     You may obtain a copy of the License at
+  ~
+  ~         http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~     Unless required by applicable law or agreed to in writing, software
+  ~     distributed under the License is distributed on an "AS IS" BASIS,
+  ~     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~     See the License for the specific language governing permissions and
+  ~     limitations under the License.
+  -->
+
+<resources>
+    <string name="app_name">框架</string>
+    <!-- navigation -->
+    <string name="my_collect">我的收藏</string>
+    <string name="nav_todo">TODO</string>
+    <string name="nav_night_mode">夜间模式</string>
+    <string name="setting">设置</string>
+    <string name="about_us">关于</string>
+    <string name="logout">退出登录</string>
+    <string name="login_in">登录</string>
+
+    <!-- Search -->
+    <string name="action_search">搜索</string>
+    <string name="useful_sites">常用网站</string>
+
+    <!-- Login -->
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+    <string name="no_account">没有账号？前去注册</string>
+    <string name="login_success">登录成功</string>
+    <string name="login_fail">登录失败</string>
+    <string name="logout_fail">退出登录失败</string>
+    <string name="enter_password_again">确认密码</string>
+    <string name="have_account">已有账号，前去登录</string>
+    <string name="username_not_empty">用户名不能为空</string>
+    <string name="password_not_empty">密码不能为空</string>
+    <string name="re_password_not_empty">确认密码不能为空</string>
+    <string name="twice_password_not_same">两次输入的密码不同，请重新设置</string>
+    <string name="register_success">注册成功</string>
+    <string name="register_fail">注册失败</string>
+    <string name="logging_in">正在登录…</string>
+    <string name="logging_out">正在退出…</string>
+    <string name="registering">正在注册…</string>
+    <string name="login_first">请先登录</string>
+
+    <!-- home pager -->
+    <string name="home_pager">主页</string>
+    <string name="navigation">导航</string>
+    <string name="project">项目</string>
+
+    <!-- collect -->
+    <string name="collect">收藏</string>
+
+    <!-- Common -->
+    <string name="http_error">网络异常</string>
+    <string name="double_click_exit_toast">再按一次退出Android</string>
+    <string name="loading">加载中…</string>
+    <string name="failed_to_get_project_data">获取项目数据失败</string>
+    <string name="in_the_process">正在开发中，敬请期待</string>
+
+    <!-- Article detail -->
+    <string name="share">分享</string>
+    <string name="open_it_with_browser">用浏览器打开</string>
+
+    <!-- about -->
+
+</resources>

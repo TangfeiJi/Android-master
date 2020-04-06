@@ -20,12 +20,17 @@ import android.support.annotation.CallSuper;
 import android.text.TextUtils;
 import android.util.Log;
 
+import com.google.gson.Gson;
 import com.project.movice.R;
 import com.project.movice.application.MoviceApp;
 import com.project.movice.base.view.IView;
 import com.project.movice.core.http.BaseResponse;
 import com.project.movice.core.http.exception.ServerException;
+import com.project.movice.modules.loan.presenter.ContractPresenter;
 import com.project.movice.utils.CommonUtils;
+import com.project.movice.utils.DataUtils;
+import com.project.movice.utils.LoginUtil;
+import com.project.movice.utils.des.Des3;
 
 import io.reactivex.observers.ResourceObserver;
 import retrofit2.HttpException;
@@ -58,7 +63,7 @@ public abstract class BaseObserver<T> extends ResourceObserver<BaseResponse<T>> 
         this.isShowStatusView = isShowStatusView;
     }
 
-    public abstract void onSuccess(T t);
+    public abstract void onSuccess(String t);
 
     @CallSuper
     public void onFailure(int code, String message) {
@@ -75,20 +80,51 @@ public abstract class BaseObserver<T> extends ResourceObserver<BaseResponse<T>> 
 
     @Override
     public final void onNext(BaseResponse<T> baseResponse) {
-        if (baseResponse.getCode() == BaseResponse.SUCCESS) {
+        if (baseResponse.getResultCode() == BaseResponse.SUCCESS) {
             Log.d(TAG, "onSuccess");
             if (isShowStatusView) {
                 mView.hideLoading();
                 mView.showContent();
             }
-            onSuccess(baseResponse.getResult());
-        } else {
+            try {
+                Log.e("http",Des3.decode((String) baseResponse.getData(), Des3.key));
+                onSuccess(Des3.decode((String)baseResponse.getData(), Des3.key)+"");
+            } catch (Exception e) {
+                e.printStackTrace();
+                onSuccess("");
+            }
+        } else if(baseResponse.getResultCode()==-9001){
+            DataUtils.logout(MoviceApp.getContext());
+            if (isShowStatusView) {
+                mView.hideLoading();
+                mView.showContent();
+            }
+//            LoginUtil.login(MoviceApp.getContext());
+
+        }else  if(baseResponse.getResultCode()==-40010){
+            onSuccess("40010");
+            if (isShowStatusView) {
+                mView.hideLoading();
+                mView.showContent();
+            }
+        }else if(baseResponse.getResultCode()==-40011){
+            onSuccess("40011");
+            if (isShowStatusView) {
+                mView.hideLoading();
+                mView.showContent();
+            }
+        }else {
             Log.d(TAG, "onFailure");
             if (isShowStatusView) {
                 mView.hideLoading();
                 mView.showContent();
             }
-            onFailure(baseResponse.getCode(), baseResponse.getErrorMsg());
+            String msg=baseResponse.getResultMsg();
+            if(TextUtils.isEmpty(msg)){
+                msg="Pemuatan data gagal klik untuk pemuatan ulang"+baseResponse.getResultCode();
+            }
+            onFailure(baseResponse.getResultCode(),msg);
+            Log.e("http","response:"+baseResponse.getResultCode()+"----"+baseResponse.getResultMsg());
         }
     }
 
@@ -114,10 +150,12 @@ public abstract class BaseObserver<T> extends ResourceObserver<BaseResponse<T>> 
             mView.hideLoading();
         }
         if (e instanceof HttpException) {
+            Log.e(TAG, e.toString());
             mView.showErrorMsg(MoviceApp.getContext().getString(R.string.http_error));
             if (isShowStatusView) {
                 mView.showNoNetwork();
             }
+
         } else if (e instanceof ServerException) {
             mView.showErrorMsg(e.toString());
             if (isShowStatusView) {

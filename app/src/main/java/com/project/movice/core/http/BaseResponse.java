@@ -16,41 +16,44 @@
 
 package com.project.movice.core.http;
 
+import com.google.gson.JsonObject;
+
 public class BaseResponse<T> {
 
-    public static final int SUCCESS = 200;
+    public static final int SUCCESS = 10000;
     public static final int FAIL = 1;
 
     /**
      * 0：成功，1：失败
      */
-    private int code;
+    private int resultCode;
 
-    private String errorMsg;
+    private String resultMsg ;
 
-    private T result;
+    private T data;
 
-    public int getCode() {
-        return code;
+    public T getData() {
+        return data;
     }
 
-    public void setCode(int code) {
-        this.code = code;
+    public void setData(T data) {
+        this.data = data;
     }
 
-    public String getErrorMsg() {
-        return errorMsg;
+    public int getResultCode() {
+        return resultCode;
     }
 
-    public void setErrorMsg(String errorMsg) {
-        this.errorMsg = errorMsg;
+    public void setResultCode(int resultCode) {
+        this.resultCode = resultCode;
     }
 
-    public T getResult() {
-        return result;
+    public String getResultMsg() {
+        return resultMsg;
     }
 
-    public void setResult(T result) {
-        this.result = result;
+    public void setResultMsg(String resultMsg) {
+        this.resultMsg = resultMsg;
     }
+
 }

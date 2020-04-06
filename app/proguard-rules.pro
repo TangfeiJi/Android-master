@@ -21,7 +21,7 @@
 #-renamesourcefileattribute SourceFile
 
 # 代码混淆压缩比，在0~7之间，默认为5，一般不做修改
--optimizationpasses 5
+-optimizationpasses 4
 
 # 混合时不使用大小写混合，混合后的类名为小写
 -dontusemixedcaseclassnames
@@ -237,10 +237,6 @@
     *;
 }
 
-################ Bugly ###############
--dontwarn com.tencent.bugly.**
--keep public class com.tencent.bugly.**{*;}
--keep class android.support.**{*;}
 
 ################ autolayout ###############
 -keep class com.zhy.autolayout.** { *; }
@@ -355,3 +351,36 @@
 # ImmersionBar
 -keep class com.gyf.barlibrary.* {*;}
  -dontwarn com.gyf.barlibrary.**
+
+# 权限aop的混淆
+ -keepclasseswithmembers class * {
+     @com.ninetripods.aopermission.permissionlib.annotation.NeedPermission <methods>;
+ }
+
+ -keepclasseswithmembers class * {
+     @com.ninetripods.aopermission.permissionlib.annotation.PermissionCanceled <methods>;
+ }
+
+ -keepclasseswithmembers class * {
+     @com.ninetripods.aopermission.permissionlib.annotation.PermissionDenied <methods>;
+ }
+
+ #system相关
+ -keepclassmembers class fqcn.of.javascript.interface.for.webview {
+    public *;
+ }
+# 权限aop
+ -keepclasseswithmembers class * {
+     @com.ninetripods.aopermission.permissionlib.annotation.NeedPermission <methods>;
+ }
+
+ -keepclasseswithmembers class * {
+     @com.ninetripods.aopermission.permissionlib.annotation.PermissionCanceled <methods>;
+ }
+
+ -keepclasseswithmembers class * {
+     @com.ninetripods.aopermission.permissionlib.annotation.PermissionDenied <methods>;
+ }
+
+-dontwarn com.alibaba.fastjson.**
+-keep class com.alibaba.fastjson.**{*;}

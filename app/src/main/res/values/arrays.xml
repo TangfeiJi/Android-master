@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="tab_name">
+        <item>@string/jiemoney</item>
+        <!--<item>@string/touzi</item>-->
+        <item>@string/serti</item>
+        <item>@string/wode</item>
+        <!--<item>@string/zhushou</item>-->
+    </string-array>
+
+    <string-array name="investment_tab">
+        <item>@string/touzi</item>
+        <item>@string/wode</item>
+    </string-array>
+
+    <string-array name="borrowing_purposes">
+        <item>@string/borrowing_purposes1</item>
+        <item>@string/borrowing_purposes2</item>
+        <item>@string/borrowing_purposes3</item>
+        <item>@string/borrowing_purposes4</item>
+        <item>@string/borrowing_purposes5</item>
+        <item>@string/borrowing_purposes6</item>
+        <item>@string/borrowing_purposes7</item>
+        <item>@string/borrowing_purposes8</item>
+        <item>@string/borrowing_purposes9</item>
+        <item>@string/borrowing_purposes10</item>
+        <item>@string/borrowing_purposes11</item>
+        <item>@string/borrowing_purposes12</item>
+        <item>@string/borrowing_purposes13</item>
+        <item>@string/borrowing_purposes14</item>
+        <item>@string/borrowing_purposes15</item>
+    </string-array>
+    <string-array name="sex">
+        <item>@string/sex_man</item>
+        <item>@string/sex_female</item>
+    </string-array>
+    <string-array name="marital_status">
+        <item>@string/unmarried</item>
+        <item>@string/married</item>
+        <item>@string/cerai</item>
+        <item>@string/duda</item>
+    </string-array>
+    <string-array name="loan_days">
+        <item>7 Hari</item>
+        <item>14 Hari</item>
+        <item>21 Hari</item>
+    </string-array>
+    <string-array name="contact_relationship">
+        <item>@string/contact_relationship11</item>
+        <item>@string/contact_relationship12</item>
+        <item>@string/contact_relationship21</item>
+        <item>@string/contact_relationship22</item>
+        <item>@string/contact_relationship51</item>
+        <item>@string/contact_relationship52</item>
+        <item>@string/contact_relationship53</item>
+        <item>@string/contact_relationship54</item>
+        <item>@string/contact_relationship3</item>
+
+
+
+    </string-array>
+    <string-array name="colleague_and_schoolmate">
+        <item>@string/contact_relationship11</item>
+        <item>@string/contact_relationship12</item>
+        <item>@string/contact_relationship21</item>
+        <item>@string/contact_relationship22</item>
+        <item>@string/contact_relationship3</item>
+        <!--<item>@string/contact_relationship5</item>11111111111-->
+        <item>@string/contact_relationship51</item>
+        <item>@string/contact_relationship52</item>
+        <item>@string/contact_relationship53</item>
+        <item>@string/contact_relationship54</item>
+        <item>@string/contact_relationship41</item>
+        <item>@string/contact_relationship42</item>
+
+    </string-array>
+    <string-array name="job">
+        <item>@string/occupation1</item>
+        <item>@string/occupation2</item>
+        <item>@string/occupation3</item>
+        <item>@string/occupation4</item>
+        <item>@string/occupation5</item>
+        <item>@string/occupation6</item>
+        <item>@string/occupation7</item>
+        <item>@string/occupation8</item>
+        <item>@string/occupation9</item>
+        <item>@string/occupation10</item>
+        <item>@string/occupation11</item>
+        <item>@string/occupation12</item>
+        <item>@string/occupation13</item>
+        <item>@string/occupation14</item>
+        <item>@string/occupation15</item>
+        <item>@string/occupation16</item>
+        <item>@string/occupation17</item>
+        <item>@string/occupation18</item>
+        <item>@string/occupation19</item>
+        <item>@string/occupation20</item>
+        <item>@string/occupation21</item>
+        <item>@string/occupation22</item>
+        <item>@string/occupation23</item>
+        <item>@string/occupation24</item>
+        <item>@string/occupation25</item>
+        <item>@string/occupation26</item>
+        <item>@string/occupation27</item>
+        <item>@string/occupation28</item>
+        <item>@string/occupation29</item>
+        <item>@string/occupation30</item>
+        <item>@string/occupation31</item>
+        <item>@string/occupation32</item>
+        <item>@string/occupation33</item>
+        <item>@string/occupation34</item>
+        <item>@string/occupation35</item>
+        <item>@string/occupation36</item>
+        <item>@string/occupation37</item>
+        <item>@string/occupation38</item>
+        <item>@string/occupation39</item>
+        <item>@string/occupation40</item>
+    </string-array>
+    <string-array name="income_level">
+        <item>@string/income_level1</item>
+        <item>@string/income_level5</item>
+        <item>@string/income_level6</item>
+        <item>@string/income_level7</item>
+        <item>@string/income_level8</item>
+        <item>@string/income_level9</item>
+        <item>@string/income_level10</item>
+        <item>@string/income_level11</item>
+        <item>@string/income_level12</item>
+        <item>@string/income_level13</item>
+        <item>@string/income_level14</item>
+        <item>@string/income_level15</item>
+        <item>@string/income_level16</item>
+        <item>@string/income_level4</item>
+    </string-array>
+    <string-array name="working_seniority">
+        <item>@string/working_seniority1</item>
+        <item>@string/working_seniority2</item>
+        <item>@string/working_seniority3</item>
+        <item>@string/working_seniority4</item>
+        <item>@string/working_seniority5</item>
+    </string-array>
+
+    <string-array name="select_image">
+        <item>@string/shooting</item>
+        <item>@string/album</item>
+    </string-array>
+
+
+    <string-array name="select_educt">
+        <item>@string/education1</item>
+        <item>@string/education2</item>
+        <item>@string/education3</item>
+        <item>@string/education4</item>
+        <item>@string/education5</item>
+        <item>@string/education6</item>
+        <item>@string/education7</item>
+        <item>@string/education8</item>
+        <item>@string/education9</item>
+    </string-array>
+
+    <string-array name="select_phone_time">
+        <item>@string/time1</item>
+        <item>@string/time2</item>
+        <item>@string/time3</item>
+        <item>@string/time4</item>
+        <item>@string/time5</item>
+
+    </string-array>
+</resources>

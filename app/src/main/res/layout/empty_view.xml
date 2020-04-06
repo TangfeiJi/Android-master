@@ -32,5 +32,5 @@
         android:id="@+id/empty_view_tv"
         style="@style/MultipleStatusView.Content"
         android:layout_below="@id/empty_retry_view"
-        android:text="@string/empty_view_hint" />
+        android:text="@string/error_view_no_data" />
 </RelativeLayout>

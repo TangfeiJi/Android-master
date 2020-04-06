@@ -34,9 +34,9 @@ public interface IPresenter<T extends IView> {
 
     void reload();
 
-    void registerEventBus();
-
-    void unregisterEventBus();
+//    void registerEventBus();
+//
+//    void unregisterEventBus();
 
     /**
      * Set login status

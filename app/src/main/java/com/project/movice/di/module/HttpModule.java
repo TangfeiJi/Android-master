@@ -87,6 +87,7 @@ public class HttpModule {
         builder.writeTimeout(50, TimeUnit.SECONDS);
         //错误重连
         builder.retryOnConnectionFailure(true);
+
         //cookie认证
         builder.cookieJar(new PersistentCookieJar(new SetCookieCache(),
                 new SharedPrefsCookiePersistor(MoviceApp.getContext())));

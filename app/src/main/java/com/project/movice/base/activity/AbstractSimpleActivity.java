@@ -22,6 +22,8 @@ import android.support.annotation.Nullable;
 import com.project.movice.R;
 import com.gyf.barlibrary.ImmersionBar;
 
+import org.greenrobot.eventbus.EventBus;
+
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 import me.yokeyword.fragmentation.SupportActivity;
@@ -34,6 +36,7 @@ public abstract class AbstractSimpleActivity extends SupportActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(getLayoutId());
+        EventBus.getDefault().register(this);
         ImmersionBar.with(this)
                 .statusBarView(findViewById(R.id.status_bar_view))
                 .keyboardEnable(true)
@@ -43,6 +46,7 @@ public abstract class AbstractSimpleActivity extends SupportActivity {
         initToolbar();
         initView();
         initEventAndData();
+
     }
 
     @Override

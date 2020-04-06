@@ -19,13 +19,19 @@ package com.project.movice.modules.mine.contract;
 import com.project.movice.base.presenter.IPresenter;
 import com.project.movice.base.view.IView;
 import com.project.movice.modules.mine.bean.ProjectTreeData;
+import com.tbruyelle.rxpermissions2.RxPermissions;
 
 import java.util.List;
 
 public interface MineContract {
     interface View extends IView {
+        void permissionsSuccess();
+
+        void permissionsCancle();
     }
 
     interface Presenter extends IPresenter<View> {
+
+        void requestPermissions(RxPermissions rxPermissions);
     }
 }

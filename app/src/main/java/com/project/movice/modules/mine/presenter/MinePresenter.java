@@ -16,6 +16,8 @@
 
 package com.project.movice.modules.mine.presenter;
 
+import android.Manifest;
+
 import com.project.movice.R;
 import com.project.movice.application.MoviceApp;
 import com.project.movice.base.presenter.BasePresenter;
@@ -23,6 +25,7 @@ import com.project.movice.core.rx.BaseObserver;
 import com.project.movice.modules.mine.bean.ProjectTreeData;
 import com.project.movice.modules.mine.contract.MineContract;
 import com.project.movice.utils.RxUtils;
+import com.tbruyelle.rxpermissions2.RxPermissions;
 
 import java.util.List;
 
@@ -40,5 +43,18 @@ public class MinePresenter extends BasePresenter<MineContract.View>
     @Override
     public void reload() {
 
+    }
+
+    @Override
+    public void requestPermissions(RxPermissions rxPermissions) {
+        addSubscribe(rxPermissions
+                .request(Manifest.permission.CALL_PHONE )
+                .subscribe(granted -> {
+                    if (granted) {
+                        mView.permissionsSuccess();
+                    } else {
+                        mView.permissionsCancle();
+                    }
+                }));
     }
 }

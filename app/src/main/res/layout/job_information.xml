@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar" />
+    <com.classic.common.MultipleStatusView
+        android:layout_width="match_parent"
+        android:id="@+id/custom_multiple_status_view"
+        android:layout_height="match_parent"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:id="@+id/scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingBottom="20dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/view_padding">
+
+                        <RelativeLayout
+                            android:id="@+id/job_card_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/personal_information_height"
+                            android:paddingRight="@dimen/view_padding">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/job_card"
+                                    android:textColor="@color/emphasize"
+                                    android:textSize="@dimen/text_size_14" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/job_card"
+                                        style="@style/textView"
+                                        android:layout_marginTop="5dp"
+                                        android:hint="@string/please_select" />
+
+                                    <ImageView
+                                        android:id="@+id/job_card_image"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:layout_centerVertical="true"
+                                        android:visibility="gone" />
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/job_card_status"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="12dp"
+                                android:layout_toLeftOf="@+id/icon5"
+                                android:text="@string/please_shoot"
+                                android:textColor="@color/content_prompt_text"
+                                android:textSize="@dimen/text_size_14" />
+
+                            <ImageView
+                                android:id="@+id/icon5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:src="@mipmap/lingyi7" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/split_line" />
+
+                        <RelativeLayout
+                            android:id="@+id/salary_sheet_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/personal_information_height"
+                            android:paddingRight="@dimen/view_padding">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/salary_sheet"
+                                    android:textColor="@color/emphasize"
+                                    android:textSize="@dimen/text_size_14" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/salary_sheet_text"
+                                        style="@style/textView"
+                                        android:layout_marginTop="5dp"
+                                        android:hint="@string/please_select" />
+
+                                    <ImageView
+                                        android:id="@+id/salary_sheet_image"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:layout_centerVertical="true"
+                                        android:visibility="gone" />
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/salary_sheet_status"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="12dp"
+                                android:layout_toLeftOf="@+id/icon6"
+                                android:text="@string/please_shoot"
+                                android:textColor="@color/content_prompt_text"
+                                android:textSize="@dimen/text_size_14" />
+
+                            <ImageView
+                                android:id="@+id/icon6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:src="@mipmap/lingyi7" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/split_line"
+                            android:visibility="gone" />
+
+                        <RelativeLayout
+                            android:id="@+id/tax_card_photo_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/personal_information_height"
+                            android:paddingRight="@dimen/view_padding"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/upload_tax_credit"
+                                        android:textColor="@color/emphasize"
+                                        android:textSize="@dimen/text_size_14" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/xuantian"
+                                        android:textColor="@color/content_blue"
+                                        android:textSize="@dimen/text_size_14" />
+                                </LinearLayout>
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/tax_card_photo_text"
+                                        style="@style/textView"
+                                        android:layout_marginTop="5dp"
+                                        android:hint="@string/please_select" />
+
+                                    <ImageView
+                                        android:id="@+id/tax_card_photo_image"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:layout_centerVertical="true"
+                                        android:visibility="gone" />
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tax_card_photo_status"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="12dp"
+                                android:layout_toLeftOf="@+id/icon8"
+                                android:text="@string/please_shoot"
+                                android:textColor="@color/content_prompt_text"
+                                android:textSize="@dimen/text_size_14" />
+
+                            <ImageView
+                                android:id="@+id/icon8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:src="@mipmap/lingyi7" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/split_line"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/personal_information_height"
+                            android:layout_marginRight="@dimen/view_padding"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/steuerkarte_card_number"
+                                    android:textColor="@color/emphasize"
+                                    android:textSize="@dimen/text_size_14" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/xuantian"
+                                    android:textColor="@color/content_blue"
+                                    android:textSize="@dimen/text_size_14" />
+
+                                <TextView
+                                    android:id="@+id/card_number_error"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:text="@string/please_fill_out"
+                                    android:textColor="@color/content_prompt_text"
+                                    android:textSize="@dimen/text_size_14"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+
+                            <EditText
+                                android:id="@+id/steuerkarte_card_number"
+                                style="@style/editText"
+                                android:layout_marginTop="5dp"
+                                android:hint="@string/please_enter"
+                                android:inputType="number"
+                                android:maxLength="20" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/split_line" />
+
+                        <RelativeLayout
+                            android:id="@+id/level_range_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/personal_information_height"
+                            android:paddingRight="@dimen/view_padding">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/income_level"
+                                    android:textColor="@color/emphasize"
+                                    android:textSize="@dimen/text_size_14" />
+
+                                <TextView
+                                    android:id="@+id/level_range"
+                                    style="@style/textView"
+                                    android:layout_marginTop="5dp"
+                                    android:hint="@string/please_select" />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/icon2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:src="@mipmap/lingyi7" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/split_line" />
+
+                        <RelativeLayout
+                            android:id="@+id/pay_day_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/personal_information_height"
+                            android:paddingRight="@dimen/view_padding">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/pay_day"
+                                    android:textColor="@color/emphasize"
+                                    android:textSize="@dimen/text_size_14" />
+
+                                <TextView
+                                    android:id="@+id/pay_day"
+                                    style="@style/textView"
+                                    android:layout_marginTop="5dp"
+                                    android:hint="@string/please_select" />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/icon3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:src="@mipmap/lingyi7" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/split_line" />
+
+                        <RelativeLayout
+                            android:id="@+id/job_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/personal_information_height"
+                            android:paddingRight="@dimen/view_padding">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/job"
+                                    android:textColor="@color/emphasize"
+                                    android:textSize="@dimen/text_size_14" />
+
+                                <TextView
+                                    android:id="@+id/job"
+                                    style="@style/textView"
+                                    android:layout_marginTop="5dp"
+                                    android:hint="@string/please_select" />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/icon1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:src="@mipmap/lingyi7" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/split_line" />
+
+                        <RelativeLayout
+                            android:id="@+id/working_seniority_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/personal_information_height"
+                            android:paddingRight="@dimen/view_padding">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/working_seniority"
+                                    android:textColor="@color/emphasize"
+                                    android:textSize="@dimen/text_size_14" />
+
+                                <TextView
+                                    android:id="@+id/working_seniority"
+                                    style="@style/textView"
+                                    android:layout_marginTop="5dp"
+                                    android:hint="@string/please_select" />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:src="@mipmap/lingyi7" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/split_line" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/personal_information_height"
+                            android:layout_marginRight="@dimen/view_padding"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/company_tel"
+                                    android:textColor="@color/emphasize"
+                                    android:textSize="@dimen/text_size_14" />
+
+                                <TextView
+                                    android:id="@+id/company_tel_error"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:text="@string/please_fill_out"
+                                    android:textColor="@color/content_prompt_text"
+                                    android:textSize="@dimen/text_size_14"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+
+
+                            <EditText
+                                android:id="@+id/company_tel"
+                                style="@style/editText"
+                                android:layout_marginTop="5dp"
+                                android:hint="@string/please_enter"
+                                android:inputType="number" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/split_line" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/personal_information_height"
+                            android:layout_marginRight="@dimen/view_padding"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/company_name"
+                                    android:textColor="@color/emphasize"
+                                    android:textSize="@dimen/text_size_14" />
+
+                                <TextView
+                                    android:id="@+id/company_name_error"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:text="@string/please_fill_out"
+                                    android:textColor="@color/content_prompt_text"
+                                    android:textSize="@dimen/text_size_14"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+
+
+                            <EditText
+                                android:id="@+id/company_name"
+                                style="@style/editText"
+                                android:layout_marginTop="5dp"
+                                android:hint="@string/please_enter"
+                                android:maxLength="@integer/company_name_number" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/split_line" />
+
+                        <RelativeLayout
+                            android:id="@+id/company_address_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:paddingRight="@dimen/view_padding">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/company_address"
+                                    android:textColor="@color/emphasize"
+                                    android:textSize="@dimen/text_size_14" />
+
+                                <TextView
+                                    android:id="@+id/company_address"
+                                    style="@style/textView"
+                                    android:layout_marginTop="5dp"
+                                    android:hint="@string/please_select"
+                                    android:maxLines="3"
+                                    android:singleLine="false" />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/icon4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:src="@mipmap/lingyi7" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/split_line" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/personal_information_height"
+                            android:layout_marginRight="@dimen/view_padding"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/full_address_of_company"
+                                    android:textColor="@color/emphasize"
+                                    android:textSize="@dimen/text_size_14" />
+
+                                <TextView
+                                    android:id="@+id/address_error"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:text="@string/please_fill_out"
+                                    android:textColor="@color/content_prompt_text"
+                                    android:textSize="@dimen/text_size_14"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+
+                            <EditText
+                                android:id="@+id/detailed_address"
+                                style="@style/editText"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:hint="@string/please_enter"
+                                android:maxLength="@integer/address_number"
+                                android:maxLines="3"
+                                android:singleLine="false" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/split_line" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/next_step"
+                        style="@style/button"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="@string/next_step" />
+                </LinearLayout>
+
+            </ScrollView>
+
+
+        </FrameLayout>
+    </com.classic.common.MultipleStatusView>
+</LinearLayout>

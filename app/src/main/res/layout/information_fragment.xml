@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.classic.common.MultipleStatusView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/custom_multiple_status_view"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@mipmap/lingyi53"
+                        android:gravity="center_horizontal|bottom"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgOne"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:src="@mipmap/lingyi4" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="1"
+                        android:background="@mipmap/lingyi56"
+                        android:gravity="center_horizontal|bottom"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgTwo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:src="@mipmap/lingyi4" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@mipmap/lingyi54"
+                        android:gravity="center_horizontal|bottom"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgThree"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:src="@mipmap/lingyi4" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="1"
+                        android:background="@mipmap/lingyi55"
+                        android:gravity="center_horizontal|bottom"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgFour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:src="@mipmap/lingyi4" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/next_step"
+                    style="@style/button"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="@string/next_step" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+    </LinearLayout>
+</com.classic.common.MultipleStatusView>

@@ -16,19 +16,35 @@
 
 package com.project.movice.modules.login.contract;
 
+import android.content.Context;
+
 import com.project.movice.base.presenter.IPresenter;
 import com.project.movice.base.view.IView;
+import com.project.movice.modules.login.bean.BeanSms;
+import com.project.movice.modules.main.bean.BeanUser;
+import com.tbruyelle.rxpermissions2.RxPermissions;
+
+import java.util.Map;
 
 /**
  * @author: ForgetSky
  * @date: 2019/3/4
  */
 public interface LoginContract {
+
+
     interface View extends IView {
+        void get002(BeanUser Bean);
+        void get001(BeanSms Bean);
 
     }
 
-    interface Presenter extends IPresenter<View> {
-
+    interface Presenter extends IPresenter<LoginContract.View> {
+        void request002(Map<String,String> hm);
+        void request001(Map<String,String> hm);
+        void requestPermissions(RxPermissions rxPermissions, Context context);
     }
+
+
+
 }

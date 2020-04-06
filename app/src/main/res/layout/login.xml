@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginTop="70dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/view_padding"
+                android:paddingRight="@dimen/view_padding">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/lingyi9" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="+62"
+                    android:textColor="@color/character_and_title"
+                    android:textSize="@dimen/text_size_18"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/split_line" />
+
+
+                <EditText
+                    android:id="@+id/mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@null"
+                    android:digits="@string/digits_mobile"
+                    android:hint="@string/input_phone"
+                    android:inputType="number"
+                    android:maxLength="@integer/mobile_length"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/character_and_title"
+                    android:textSize="@dimen/text_size_18"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/view_padding"
+                android:layout_marginRight="@dimen/view_padding"
+                android:background="@color/split_line" />
+
+            <Button
+                android:id="@+id/bt_verification_code"
+                android:layout_width="@dimen/verification_code_width"
+                android:layout_height="@dimen/verification_code_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bt_verification_code_state"
+                android:text="@string/get_verification_code"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16" />
+
+
+            <com.project.movice.widget.behavior.VerificationCodeView
+                android:id="@+id/icv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bt_height"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/view_padding"
+                android:layout_marginRight="@dimen/view_padding"
+                android:layout_marginTop="30dp"
+                app:icv_et_bg_focus="@drawable/shape_icv_et_bg_focus"
+                app:icv_et_bg_normal="@drawable/shape_icv_et_bg_normal"
+                app:icv_et_divider_drawable="@drawable/shape_divider_identifying"
+                app:icv_et_number="6"
+                app:icv_et_text_color="@color/character_and_title"
+                app:icv_et_text_size="@dimen/text_size_10" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/view_padding"
+                android:layout_marginRight="@dimen/view_padding"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="@string/please_input_verification_code"
+                android:textColor="@color/auxiliary"
+                android:textSize="@dimen/text_size_14" />
+
+            <Button
+                android:id="@+id/login"
+                style="@style/button"
+                android:layout_marginTop="35dp"
+                android:text="@string/login" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/facebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/facebook" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/facebook_login"
+                android:textColor="@color/character_and_title"
+                android:textSize="@dimen/text_size_14" />
+
+        </LinearLayout>
+
+</LinearLayout>

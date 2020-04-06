@@ -19,26 +19,36 @@ package com.project.movice.modules;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
+import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
+import android.widget.RelativeLayout;
 
 import com.project.movice.R;
+import com.project.movice.application.MoviceApp;
+import com.project.movice.base.activity.BaseActivity;
+import com.project.movice.modules.main.bean.VersionBean;
+import com.project.movice.modules.main.contract.SwichContract;
+import com.project.movice.modules.main.presenter.SwichPresenter;
 import com.project.movice.modules.main.ui.activity.MainActivity;
+import com.project.movice.modules.main.ui.activity.SwichActivity;
+import com.project.movice.modules.main.ui.activity.WebViewActivity;
+import com.project.movice.utils.DataUtils;
+
+import butterknife.BindView;
+import butterknife.OnClick;
 
 /**
  * @author ForgetSky
  * @date 19-2-25
  */
-public class SplashActivity extends Activity {
+public class SplashActivity extends BaseActivity<SwichPresenter> implements SwichContract.View {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash);
-
-        AlphaAnimation alphaAnimation = new AlphaAnimation(0.3F, 1.0F);
-        alphaAnimation.setDuration(1500);
+    protected void initView() {
+        AlphaAnimation alphaAnimation = new AlphaAnimation(0F, 0F);
+        alphaAnimation.setDuration(1000);
 
         alphaAnimation.setAnimationListener(new Animation.AnimationListener() {
             @Override
@@ -48,9 +58,8 @@ public class SplashActivity extends Activity {
 
             @Override
             public void onAnimationEnd(Animation animation) {
-                startActivity(new Intent(SplashActivity.this, MainActivity.class));
-                finish();
-                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+                mPresenter.requestVersion();
+//                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             }
 
             @Override
@@ -60,5 +69,56 @@ public class SplashActivity extends Activity {
         });
         findViewById(R.id.layout_splash).startAnimation(alphaAnimation);
     }
+
+    @Override
+    protected int getLayoutId() {
+        return R.layout.activity_splash;
+    }
+
+    @Override
+    protected void initToolbar() {
+
+    }
+
+    @Override
+    protected void initEventAndData() {
+
+    }
+
+    @Override
+    public void getVersion(VersionBean response) {
+        MoviceApp.crawlApp = (response.isCrawlApp());
+        DataUtils.put(SplashActivity.this, "logintype", response.getLoginMethod());
+        MoviceApp.callPhone = response.getTelephone();
+       jumpActivity(response);
+    }
+
+    @Override
+    public void showErrorData() {
+        startActivity(new Intent(SplashActivity.this, MainActivity.class));
+        finish();
+    }
+
+    private void jumpActivity(VersionBean response) {
+        if (response.getIs_loanmarket() == 1) {
+            Intent intent = new Intent(SplashActivity.this, WebViewActivity.class);
+            intent.putExtra("type", response.getIs_back());
+            startActivity(intent);
+            finish();
+        } else {
+            startActivity(new Intent(SplashActivity.this, MainActivity.class));
+            finish();
+        }
+    }
+
+    @OnClick({R.id.layout_splash})
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.layout_splash://
+                mPresenter.requestVersion();
+                break;
+        }
+    }
+
 
 }

@@ -21,14 +21,16 @@ import com.project.movice.core.greendao.HistoryData;
 import com.project.movice.core.http.BaseResponse;
 import com.project.movice.core.http.HttpHelper;
 import com.project.movice.core.preference.PreferenceHelper;
-import com.project.movice.modules.loan.bean.JokeBean;
-import com.project.movice.modules.login.bean.LoginData;
-import com.project.movice.modules.mine.bean.ProjectTreeData;
 
 
 import java.util.List;
+import java.util.Map;
 
 import io.reactivex.Observable;
+import okhttp3.MultipartBody;
+import okhttp3.RequestBody;
+import retrofit2.http.Body;
+import retrofit2.http.Part;
 
 public class DataManager implements HttpHelper, DbHelper,PreferenceHelper {
     private HttpHelper mHttpHelper;
@@ -41,29 +43,139 @@ public class DataManager implements HttpHelper, DbHelper,PreferenceHelper {
         mPreferenceHelper = preferenceHelper;
     }
 
+
     @Override
-    public Observable<BaseResponse<List<JokeBean>>> getData(String pager, String num) {
-        return mHttpHelper.getData(pager,num);
+    public Observable<BaseResponse> getVersion(Map<String, String> options) {
+        return mHttpHelper.getVersion(options);
     }
 
     @Override
-    public Observable<BaseResponse<List<JokeBean>>> requestTicketsData(Object data) {
+    public Observable<BaseResponse> getHome(Map<String, String> options) {
+        return mHttpHelper.getHome(options);
+    }
 
-        return mHttpHelper.requestTicketsData(data);
+    @Override
+    public Observable<BaseResponse> get026(Map<String, String> options) {
+        return mHttpHelper.get026(options);
+    }
+
+    @Override
+    public Observable<BaseResponse> get012(Map<String, String> options) {
+        return mHttpHelper.get012(options);
+    }
+
+    @Override
+    public Observable<BaseResponse> get018(Map<String, String> options) {
+        return mHttpHelper.get018(options);
+    }
+    @Override
+    public Observable<BaseResponse> get020(Map<String, String> options) {
+        return mHttpHelper.get020(options);
+    }
+    @Override
+    public Observable<BaseResponse> get019(Map<String, String> options) {
+        return mHttpHelper.get019(options);
+    }
+
+    @Override
+    public Observable<BaseResponse> get006(Map<String, String> options) {
+        return mHttpHelper.get006(options);
+    }
+
+    @Override
+    public Observable<BaseResponse> get054(Map<String, String> options) {
+        return mHttpHelper.get054(options);
+    }
+    @Override
+    public Observable<BaseResponse> get055(Map<String, String> options) {
+        return mHttpHelper.get055(options);
     }
 
 
 
+    @Override
+    public Observable<BaseResponse> get002(Map<String, String> options) {
+        return mHttpHelper.get002(options);
+    }
+    @Override
+    public Observable<BaseResponse> get008(Map<String, String> options) {
+        return mHttpHelper.get008(options);
+    }
+    @Override
+    public Observable<BaseResponse> get014(Map<String, String> options) {
+        return mHttpHelper.get014(options);
+    }
+
+    @Override
+    public Observable<BaseResponse> get007(Map<String, String> options) {
+        return mHttpHelper.get007(options);
+    }
+
+    @Override
+    public Observable<BaseResponse> get013(Map<String, String> options) {
+        return mHttpHelper.get013(options);
+    }
+
+    @Override
+    public Observable<BaseResponse> get030(Map<String, String> options) {
+        return mHttpHelper.get030(options);
+    }
+
+    @Override
+    public Observable<BaseResponse> get024(Map<String, String> options) {
+        return mHttpHelper.get024(options);
+    }
+    @Override
+    public Observable<BaseResponse> get025(Map<String, String> options) {
+        return mHttpHelper.get025(options);
+    }
+
+    @Override
+    public Observable<BaseResponse> get021(Map<String, String> options) {
+        return mHttpHelper.get021(options);
+    }
+    @Override
+    public Observable<BaseResponse> get010(Map<String, String> options) {
+        return mHttpHelper.get010(options);
+    }
+
+    @Override
+    public Observable<BaseResponse> get016(Map<String, String> options) {
+        return mHttpHelper.get016(options);
+    }
+    @Override
+    public Observable<BaseResponse> get049(Map<String, String> options) {
+        return mHttpHelper.get049(options);
+    }
+
+    @Override
+    public Observable<BaseResponse> get034(Map<String, String> options) {
+        return mHttpHelper.get034(options);
+    }
+    @Override
+    public Observable<BaseResponse> get0122(Map<String, String> options) {
+        return mHttpHelper.get0122(options);
+    }
 
 
+    @Override
+    public Observable<BaseResponse> get0277(@Body RequestBody body) {
+        return mHttpHelper.get0277(body);
+    }
+    @Override
+    public Observable<BaseResponse> get031(Map<String, String> options) {
+        return mHttpHelper.get031(options);
+    }
+    @Override
+    public Observable<BaseResponse> get001(Map<String, String> options) {
+        return mHttpHelper.get001(options);
+    }
+    @Override
+    public Observable<BaseResponse> get053(Map<String, String> options) {
+        return mHttpHelper.get053(options);
+    }
 
-
-
-
-
-
-
-
+    //    ===============================================================
     @Override
     public List<HistoryData> addHistoryData(String data) {
         return mDbHelper.addHistoryData(data);

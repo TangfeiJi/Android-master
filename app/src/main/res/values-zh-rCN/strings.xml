@@ -15,7 +15,8 @@
   -->
 
 <resources>
-    <string name="app_name">框架</string>
+    <string name="app_name">RupiahSuper KSP</string>
+    <string name="platform">RupiahSuper</string>
     <!-- navigation -->
     <string name="my_collect">我的收藏</string>
     <string name="nav_todo">TODO</string>
@@ -30,13 +31,11 @@
     <string name="useful_sites">常用网站</string>
 
     <!-- Login -->
-    <string name="login">登录</string>
-    <string name="register">注册</string>
     <string name="username">用户名</string>
     <string name="password">密码</string>
     <string name="no_account">没有账号？前去注册</string>
     <string name="login_success">登录成功</string>
-    <string name="login_fail">登录失败</string>
+    <string name="login_fail">内容加载失败，点击重新加载</string>
     <string name="logout_fail">退出登录失败</string>
     <string name="enter_password_again">确认密码</string>
     <string name="have_account">已有账号，前去登录</string>
@@ -52,16 +51,16 @@
     <string name="login_first">请先登录</string>
 
     <!-- home pager -->
-    <string name="home_pager">主页</string>
-    <string name="navigation">导航</string>
-    <string name="project">项目</string>
+    <string name="load_pager">借款</string>
+    <string name="home_pager">首页</string>
+    <string name="my_pager">我的</string>
 
     <!-- collect -->
     <string name="collect">收藏</string>
 
     <!-- Common -->
-    <string name="http_error">网络异常</string>
-    <string name="double_click_exit_toast">再按一次退出Android</string>
+    <string name="http_error">network anomaly</string>
+    <string name="double_click_exit_toast"></string>
     <string name="loading">加载中…</string>
     <string name="failed_to_get_project_data">获取项目数据失败</string>
     <string name="in_the_process">正在开发中，敬请期待</string>
@@ -71,5 +70,888 @@
     <string name="open_it_with_browser">用浏览器打开</string>
 
     <!-- about -->
+<!--1111111111111111111111111111111111-->
+    <!--UangBanyak-->
+    <string name="user_name_rules">qwertyuiopasdfghjklzxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM&#160;</string>
+    <string name="digits_mobile">1234567890+</string>
+    <string name="digits_ktp">1234567890</string>
+    <string name="digits_bank_card_number">1234567890</string>
 
+
+    <string name="jiemoney">借款</string>
+    <string name="touzi">投资</string>
+    <string name="wode">我的</string>
+    <string name="serti">认证</string>
+
+    <string name="shushou">RupiahSuper 助手</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="back">返回</string>
+    <string name="save">完成</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="facebook_login">Facebook账号登录</string>
+    <string name="facebook_login_erroor">Facebook登录失败</string>
+    <string name="input_phone">请输入手机号</string>
+    <string name="input_verification_code">请输入验证码</string>
+    <string name="get_verification_code">获取验证码</string>
+    <string name="please_input_verification_code">请输入您接收到的6位数字验证码</string>
+    <string name="once_again_to_get">%1$ds重新发送</string>
+    <string name="register_agreement">RupiahSuper</string>
+    <string name="select_borrowing_money">选择您的借款金额</string>
+    <string name="select_borrowing_purpose">选择您的借款用途</string>
+    <string name="please_select_borrowing_purpose">请选择借款用途!</string>
+    <string name="select_borrowing_term">选择您的借款期限</string>
+    <string name="borrowing_money">Rp&#160;%1$s</string>
+    <string name="app_name_title">RupiahSuper</string>
+    <string name="amount_due">到期还款金额</string>
+    <string name="borrowing_immediately">立即借款</string>
+    <string name="we_will_provide_it_for_you_debt_service">请按时还款，我们将为您提供更高额度和快速可靠的服务。</string>
+    <string name="warm_prompt">温馨提示：</string>
+    <string name="brrow_apply">借款申请</string>
+    <string name="progress_of_information_improvement">资料完善进度</string>
+    <string name="improve_data_tips">资料完成度越高，申请成功率越大</string>
+    <string name="personal_basic_information">个人基本信息</string>
+    <string name="loan_contract">借款合同</string>
+    <string name="loan_details">借款详情</string>
+    <string name="confirmation_of_loan_contract">借款合同确认</string>
+    <string name="job_information">工作信息</string>
+    <string name="contact_information">联系人信息</string>
+    <string name="upload_other_documents">上传其他证件照片（可选）</string>
+    <string name="bank_card_information">银行卡信息</string>
+    <string name="please_have_a_live_certification">请进行活体认证</string>
+    <string name="confirm_information_real_and_effective">我确认填写资料真实有效</string>
+    <string name="next_step">下一步</string>
+    <string name="name">姓名</string>
+    <string name="select_name">请输入您的姓名</string>
+    <string name="select_mothername">请输入您的母亲姓名</string>
+    <string name="ktp_number">KTP号码</string>
+    <string name="select_ktp_number">请输入您的KTP证件号码</string>
+    <string name="ktp_inconformity">KTP号码填的不符合规则</string>
+    <string name="ktp_photo">KTP照片</string>
+    <string name="select_ktp_photo">请拍摄一张您的本人的KTP照片</string>
+    <string name="are_recognized_title">为准确快速的进行识别:</string>
+    <string name="ktp_photos_condition">1.请确认您的KTP证件已从证件夹拿出\n2.证件摆放平整\n3.拍摄环境光线明亮</string>
+    <string name="start_taking_photos">开始拍照</string>
+    <string name="face_recording">开始录制</string>
+    <string name="please_photograph_your_work_card">请拍摄您和工位的合照，请拍摄您和工作场所的合照:</string>
+    <string name="shooting_the_worker_hint_content">请佩戴工牌，在办公区域内进行拍照。\n清晰的照片会极大提高审核成功机会，加快放款速度.</string>
+    <string name="shooting_the_lohnsteuerkarte_hint_content">1.请确认您的税卡已从证件夹拿出\n2.证件摆放平整\n3.拍摄环境光线明亮</string>
+    <string name="shooting_the_social_security_card_hint_content">1.请确认您的社保卡已从证件夹拿出\n2.证件摆放平整\n3.拍摄环境光线明亮</string>
+    <string name="shooting_the_payroll_card_hint_content">1.请您提供%1$s月或者%2$s月的工资条\n2.放在平坦明亮的桌面拍摄\n3.确保拍摄清晰</string>
+    <string name="face_authentication_title">接下来我们将完成您的活体认证：</string>
+    <string name="face_authentication_content">认证过程中需要您读出\n我们提示的文字内容</string>
+    <string name="solemn_promise">关于RupiahSuper信用分</string>
+    <string name="guarantee_payment_on_time">请知悉：守约行为将提高您的信用评级，以享受更高的额度和更低的利率；而拒绝还款的行为会被提交至信用联盟，可能会导致您无法正常使用其他线上金融产品。</string>
+    <string name="you_also_have_outstanding_loans">您还有未还款的借款，暂时无法再次借款。按时还款可以让您借更多的钱！</string>
+    <string name="sex">性别</string>
+    <string name="select_sex">请选择您的性别</string>
+    <string name="date_of_birth">出生年月</string>
+    <string name="select_date_of_birth">请选择您的出生年月</string>
+    <string name="marital_status">婚姻状况</string>
+    <string name="select_marital_status">请选择您的婚姻状况</string>
+    <string name="select_educt_status">请选择您的学历状况</string>
+    <string name="select_phone_status">请选择您的可接审核电话时间</string>
+    <string name="home_address">家庭住址</string>
+    <string name="home_detailed_address">家庭详细住址</string>
+    <string name="select_home_address">请选择您的家庭所属地区</string>
+    <string name="please_enter_your_company_detailed_home_address">请输入您的家庭详细地址</string>
+    <string name="please_select">请选择</string>
+    <string name="reselect">重新拍摄</string>
+    <string name="contact_and_your_relationship">该联系人与您的关系</string>
+    <string name="please_select_a_direct_relative">请选择一名直系亲属</string>
+    <string name="please_enter_the_name_of_the_contact">请输入该联系人的姓名</string>
+    <string name="please_enter_the_contact_phone_number">请输入该联系人的手机号</string>
+    <string name="phone_number">手机号</string>
+    <string name="email">Email</string>
+    <string name="please_enter_email">请输入Email</string>
+    <string name="whatsapp">WhatsApp账号</string>
+    <string name="please_enter_whatsapp_account">请输入WhatsApp账号</string>
+    <string name="please_select_a_colleague">请选择一名同事/同学</string>
+    <string name="job">职业</string>
+    <string name="please_choose_your_career">请选择您的职业</string>
+    <string name="working_seniority">工作年限</string>
+    <string name="please_select_working_seniority">请选择您的工作年限</string>
+    <string name="income_level">收入水平</string>
+    <string name="please_select_your_income_level_range">请选择您的收入水平范围</string>
+    <string name="pay_day">发薪日</string>
+    <string name="please_select_your_discovery_cycle">请选择您的发薪周期</string>
+    <string name="company_name">公司名称/其他</string>
+    <string name="please_fill_in_the_full_name_of_your_company">请准确填写您的公司名称全称</string>
+    <string name="company_tel">公司电话</string>
+    <string name="please_fill_in_your_office_telephone_number">请填写您的公司办公电话</string>
+    <string name="company_address">公司地址</string>
+    <string name="please_select_the_area_of_your_company">请选择您的公司的所属地区</string>
+    <string name="full_address_of_company">公司详细地址</string>
+    <string name="please_enter_your_company_detailed_office_address">请输入您的公司的详细办公地址</string>
+    <string name="job_card">工作卡/工作照</string>
+    <string name="please_take_a_picture_of_your_work_card">请拍摄一张您的工卡/工作照</string>
+    <string name="please_shoot">请拍摄</string>
+
+
+    <string name="electronic_account_name">收款人姓名</string>
+    <string name="name_of_payee">电子账户名</string>
+    <string name="ensure_the_same_name_as_ktp">请务必保证与KTP姓名一致</string>
+    <string name="bank_card_phone">银行预留手机号</string>
+    <string name="due_bank">收款银行</string>
+    <string name="please_select_your_collection_bank">请选择您的收款银行</string>
+    <string name="your_collection_bank_card_number">您的收款银行账号</string>
+    <string name="please_enter_your_credit_card_number">请输入您的收款银行账号</string>
+
+    <string name="steuerkarte_card_number">税卡卡号</string>
+    <string name="fill_in_your_tax_card_number">请准确填写您的税卡卡号</string>
+    <string name="upload_tax_credit">上传税卡照片</string>
+    <string name="please_take_a_picture_of_your_tax_card">请拍摄一张您的税卡照片</string>
+    <string name="salary_sheet">工资条</string>
+    <string name="please_take_a_picture_of_your_salary">请拍照一张您的工资条照片</string>
+    <string name="credit_card">信用卡</string>
+    <string name="Please_take_a_picture_of_your_credit_card">请拍摄一张您的信用卡照片</string>
+    <string name="social_security_cards">社保卡</string>
+    <string name="please_take_a_picture_of_your_social_security_card">请拍摄一张您的社保卡照片</string>
+    <string name="normal_repayment_of_other_loans">其他贷款的正常还款银行流水</string>
+    <string name="please_take_a_picture_of_your_repayment_bank">请拍摄一张您的还款银行流水照片</string>
+    <string name="permissions_contac">请在“设置-应用-DompetTomat-权限管理”中开启通讯录权限才可申请借款。</string>
+    <string name="total_loan_amount">借款总金额</string>
+    <string name="life_of_loan">借款期限</string>
+    <string name="actual_earned_amount">实际金额</string>
+    <string name="total_amount_to_be_repaid">需还款总金额</string>
+    <string name="collection_bank_card_number">收款银行卡号</string>
+    <string name="consent_minirupiah_loan_agreement">点击我同意代表RupiahSuper借款协议</string>
+    <string name="i_agree">我同意</string>
+    <string name="confirm_and_modify_the_countdown">确认后，您仍有2分钟等待时间来修改借款申请信息</string>
+    <string name="repayment_successful">还款成功</string>
+    <string name="like_the_repayment_was_successful">赞，还款成功了~\n您现在可以再次迅速借款了哦</string>
+    <string name="maintaining_repayment_habits">请继续维持您良好的还款习惯，提高信用分，以享受更多的借款额度和更低的利率。</string>
+
+    <string name="borrowing_number">借款编号</string>
+    <string name="application_date">申请时间</string>
+    <string name="borrowing_cycle">借款周期</string>
+    <string name="borrowing_balance">借款金额</string>
+    <string name="repayment_amount">还款金额</string>
+    <string name="pending_application">申请等待中</string>
+    <string name="count_down">倒计时</string>
+    <string name="waiting">等待中</string>
+    <string name="submit_audit">提交审核</string>
+    <string name="apply_for_cancellation">取消申请</string>
+    <string name="cant_cancel">订单已提交\n无法取消</string>
+    <string name="loan_audit">审核中</string>
+    <string name="loan_audit1">借款审核中</string>
+    <string name="review_success">审核通过</string>
+    <string name="borrowing_to_account">借款到账</string>
+    <string name="wait_for_a_loan">等待放款中</string>
+    <string name="arrival_time">1~2工作日内</string>
+    <string name="account_expected_date">1工作日内</string>
+    <string name="auditing_feedback">审核反馈</string>
+    <string name="please_select_the_repayment_bank">请选择还款银行</string>
+    <string name="the_information_is_not_approved">抱歉，您的申请资料\n未通过审核</string>
+    <string name="i_see">好的，我知道了</string>
+    <string name="see">我知道了</string>
+    <string name="lending_failure_believes_content">放款失败，请核对您的银行卡信息是否有误，重新提交申请</string>
+    <string name="video_recording_title">请根据提示，在认证过程中读出以下文字(长按录制视频)</string>
+    <string name="video_recording_content">我的名字是xxx，我自愿从RupiahSuper借钱。如果我不付钱，我愿意合法地审判并加入OJK黑名单</string>
+    <string name="live_authentication_submission_failed">活体认证提交失败</string>
+    <string name="improve_basic_personal_information">请先完善个人基本信息</string>
+    <string name="cooperation_account_binding_title">官方认证</string>
+    <string name="authentication_of_multiple_official_accounts_prompt">认证多个官方账号，会便于我们全方面的评估您的信用，直接提升您的信用分及申请通过率。</string>
+    <string name="authentication_failed_please_try_again">认证失败，请重试！</string>
+    <string name="retry">重试</string>
+    <string name="gojek">Gojek</string>
+    <string name="suika">NPWP</string>
+    <string name="bpjs">BPJS</string>
+    <string name="lazada">Lazada</string>
+    <string name="tokopedia">Tokopedia</string>
+    <string name="facebook">Facebook</string>
+    <string name="instagram">Instagram</string>
+    <string name="basic_information_certification">基本信息</string>
+    <string name="travel_certification">出行</string>
+    <string name="e_commerce_certification">电商</string>
+    <string name="social_certification">社交</string>
+    <string name="operator_certification">运营商</string>
+    <string name="unauthenticated_confirm_exit">您还没有完全认证成功，确认退出吗？</string>
+
+    <string name="waiting_for_payment">等待还款中</string>
+    <string name="repayment_to_the_following_designated_account">请还款至以下指定账户</string>
+    <string name="dynamic_virtual_card_number">虚拟卡号：</string>
+    <string name="repayment_amount1">还款金额：</string>
+    <string name="the_amount_is_in_doubt">对金额有疑问？</string>
+    <string name="reimbursement_deadline">请在%1$s完成还款，否则会产生额外费用。</string>
+    <string name="refund_guidelines">还款指引</string>
+    <string name="i_borrow">我的借款</string>
+    <string name="friends_share">分享给好友</string>
+    <string name="google_play_evaluate">去Google Play 评价我们</string>
+    <string name="security_center">安全中心</string>
+    <string name="out_login">退出登录</string>
+    <string name="make_sure_to_log_out">你确定要退出登录?</string>
+    <string name="click_on_the_avatar_login">登录/注册</string>
+    <string name="hi_im_your_mini_assistant">Hi, 我是你的RupiahSuper助手</string>
+    <string name="feedback">意见反馈</string>
+    <string name="questions_briefly">问题简述</string>
+    <string name="simply_describe_the_problem">请先简单描述一下您遇到的问题，方便我们快速跟进</string>
+    <string name="feedback_the_detailed_content">请对您遇到的问题进行描述，我们将尽快反馈，您可在相信中心-我的消息得到反馈。
+        对于您造成的不便，敬请谅解。感谢您对我们产品提出宝贵的意见和建议。</string>
+    <string name="feedback_umber">(%1$s/200)</string>
+    <string name="upload_problem_screenshot">上传问题截图(%1$d/5)</string>
+    <string name="feedback_contact_information">请留下您的联系方式，若不填我们将默认联系您的注册手机号</string>
+    <string name="submit_feedback">提交反馈</string>
+    <string name="feedback_successfully_submitted">您的意见反馈已经成功提交，反馈将发送至消息中心-消息，请耐心等待客服反馈，谢谢！</string>
+    <string name="feedback_waiting_for_the_contact_of_the_service">等待过程中，客服可能会与您进行联系，请保持您的联系方式畅通。</string>
+    <string name="are_you_sure_you_quit_without_saving">您确定不保存就退出吗？</string>
+    <string name="please_fill_out">请填写</string>
+    <string name="wrong_number_format">电话号码格式错误</string>
+    <string name="exit_system">再按一次退出程序</string>
+    <string name="message_center">消息中心</string>
+    <string name="announcement">公告</string>
+    <string name="message">消息</string>
+    <string name="system_message">系统消息</string>
+    <string name="system_announcement">系统公告</string>
+    <string name="no_message">暂无任何消息</string>
+    <string name="no_announcement">暂无任何公告</string>
+    <string name="mini_rupiah_team">RupiahSuper团队</string>
+    <string name="borrowing_number_s">借款编号&#160;&#160;%1$s</string>
+    <string name="status_under_review">审核失败</string>
+    <string name="status_audit_failure">审核中</string>
+    <string name="status_to_be_repayments">待还款</string>
+    <string name="status_repayment">还款完成</string>
+    <string name="status_cancel">申请取消</string>
+    <string name="status_suspended">缓期中</string>
+    <string name="status_overdue">已逾期</string>
+    <string name="no_loan_information_has_been_submitted">您还未提交任何借款信息</string>
+    <string name="latest_loan_status">最新借款状态</string>
+    <string name="loan_status_updates_at_any_time">借款状态随时更新中...</string>
+    <string name="repayment_deadline">还款日</string>
+    <string name="principal">(包含本金&#160;Rp&#160;%1$s)</string>
+    <string name="interest">利息</string>
+    <string name="penalty">罚息</string>
+    <string name="repayment_bank_name">开户行</string>
+    <string name="repayment_bank_card_number">虚拟卡号</string>
+    <string name="select_province">选择省份</string>
+    <string name="select_city">选择城市</string>
+    <string name="select_area">选择地区</string>
+    <string name="select_street">选择街道</string>
+    <string name="verification_code_error">验证码错误</string>
+    <string name="your_information_is_not_perfect">您的信息未完善，请完善后再提交</string>
+    <string name="share_facebook">分享到\nfacebook</string>
+    <string name="downloading">正在下载</string>
+    <string name="download_is_in_progress">正在下载中...</string>
+    <string name="download_start">开始下载</string>
+
+
+    <string name="borrowing_purposes1">车辆分期付款</string>
+    <string name="borrowing_purposes2">车辆维修</string>
+    <string name="borrowing_purposes3">节日</string>
+    <string name="borrowing_purposes4">装修房子</string>
+    <string name="borrowing_purposes5">支付月租</string>
+    <string name="borrowing_purposes6">婚礼费用</string>
+    <string name="borrowing_purposes7">交通費用</string>
+    <string name="borrowing_purposes8">其他</string>
+    <string name="borrowing_purposes9">医疗</string>
+    <string name="borrowing_purposes10">日用品</string>
+    <string name="permission_sms">短信</string>
+    <string name="permission_call_log">通话记录</string>
+    <string name="permission_phone">电话</string>
+    <string name="borrowing_purposes11">资本业务</string>
+    <string name="borrowing_purposes12">电费</string>
+    <string name="borrowing_purposes13">支付贷款</string>
+    <string name="borrowing_purposes14">电子分期付款</string>
+    <string name="borrowing_purposes15">房贷分期付款</string>
+    <string name="seven_hari">7 Hari</string>
+    <string name="fourteen_hari">14 Hari</string>
+    <string name="sex_man">男</string>
+    <string name="sex_female">女</string>
+    <string name="education1">一年</string>
+    <string name="education2">两年</string>
+    <string name="education3">三年</string>
+    <string name="education4">小学</string>
+    <string name="education5">中学</string>
+    <string name="education6">高中</string>
+    <string name="education7">学士</string>
+    <string name="education8">硕士</string>
+    <string name="education9">博士</string>
+    <string name="unmarried">未婚</string>
+    <string name="married">已婚</string>
+    <string name="cerai">离异</string>
+    <string name="duda">丧偶</string>
+    <string name="occupation1">会计/财务人员</string>
+    <string name="occupation2">客服</string>
+    <string name="occupation3">工程师</string>
+    <string name="occupation4">行政人员</string>
+    <string name="occupation5">一般行政</string>
+    <string name="occupation6">信息技术</string>
+    <string name="occupation7">顾问/分析师</string>
+    <string name="occupation8">营销</string>
+    <string name="occupation9">教师（教师，讲师）</string>
+    <string name="occupation10">军人/士兵</string>
+    <string name="occupation11">学生</string>
+    <string name="occupation12">企业家</string>
+    <string name="occupation13">警察</string>
+    <string name="occupation14">農民</string>
+    <string name="occupation15">渔民</string>
+    <string name="occupation16">饲养员</string>
+    <string name="occupation17">医生</string>
+    <string name="occupation18">医务人员（护士，助产）</string>
+    <string name="occupation19">旅店&#38;餐飲（厨师，调酒师)</string>
+    <string name="occupation20">研究院</string>
+    <string name="occupation21">设计师</string>
+    <string name="occupation22">建筑师</string>
+    <string name="occupation23">艺术工作者（艺术家，音乐家，画家）</string>
+    <string name="occupation24">保安員</string>
+    <string name="occupation25">经纪人</string>
+    <string name="occupation26">经销商</string>
+    <string name="occupation27">航空运输（飞行员，乘务员）</string>
+    <string name="occupation28">海上交通（船長，船員）</string>
+    <string name="occupation29">陸地交通（司機）</string>
+    <string name="occupation30">劳工（制造商，劳工）</string>
+    <string name="occupation31">匠(木，皮，農）</string>
+    <string name="occupation32">家庭主妇</string>
+    <string name="occupation33">国家官员/国家组织者</string>
+    <string name="occupation34">政府雇员/国家机构</string>
+    <string name="occupation35">非正式工作者（家庭助理）</string>
+    <string name="occupation36">信贷公司</string>
+    <string name="occupation37">律师</string>
+    <string name="occupation38">催收</string>
+    <string name="occupation39">专职宗教人士</string>
+    <string name="occupation40">记者</string>
+    <string name="income_level1">2.000.000以下</string>
+    <string name="income_level5">2.000.000~2.500.000</string>
+    <string name="income_level6">2.500.000~3.000.000</string>
+    <string name="income_level7">3.000.000~3.500.000</string>
+    <string name="income_level8">3.500.000~4.000.000</string>
+    <string name="income_level9">4.000.000~4.500.000</string>
+    <string name="income_level10">4.500.000~5.000.000</string>
+    <string name="income_level11">5.000.000~5.500.000</string>
+    <string name="income_level12">5.500.000~6.000.000</string>
+    <string name="income_level13">6.000.000~6.500.000</string>
+    <string name="income_level14">6.500.000~7.000.000</string>
+    <string name="income_level15">7.000.000~7.500.000</string>
+    <string name="income_level16">7.500.000~8.000.000</string>
+    <string name="income_level4">8.000.000以上</string>
+
+
+
+
+
+    <string name="state_owned">国有</string>
+    <string name="foreign_capital">外资</string>
+    <string name="the_private">私营</string>
+    <string name="joint_venture">合资</string>
+    <string name="working_seniority1">1年及以下</string>
+    <string name="working_seniority2">1~3年</string>
+    <string name="working_seniority3">3~5年</string>
+    <string name="working_seniority4">5~10年</string>
+    <string name="working_seniority5">10年以上</string>
+
+    <string name="hunian_ketik1">租整套</string>
+    <string name="hunian_ketik2">租单间</string>
+    <string name="hunian_ketik3">与亲人同住</string>
+    <string name="hunian_ketik4">自有</string>
+    <string name="hunian_ketik5">月租</string>
+    <string name="hunian_ketik6">公司提供的</string>
+
+    <string name="durasi_hunian1">三个月</string>
+    <string name="durasi_hunian2">六个月</string>
+    <string name="durasi_hunian3">一年以下</string>
+    <string name="durasi_hunian4">两年以下</string>
+    <string name="durasi_hunian5">两年以上</string>
+
+    <string name="jumlah_anak1">0个</string>
+    <string name="jumlah_anak2">1个</string>
+    <string name="jumlah_anak3">2个</string>
+    <string name="jumlah_anak4">3个</string>
+    <string name="jumlah_anak5">4个</string>
+    <string name="jumlah_anak6">4个以上</string>
+
+
+    <string name="image_select_opt_done">完成</string>
+    <string name="image_select_opt_preview">预览</string>
+    <string name="select_image">选择图片</string>
+    <string name="all_photos">全部照片</string>
+    <string name="select_numbe">最多只能选择%1$d张照片</string>
+
+    <string name="permissions_contactinfo">请在“设置-应用-RupiahSuper-权限管理”中开启通讯录权限，开通后，你可以将通讯录内的号码选择为你的联系人。</string>
+    <string name="settings">设置</string>
+    <string name="unable_to_save_photos">无法保存照片，请检查SD卡是否挂载</string>
+    <string name="no_store_camera_permissions">没有权限, 你需要去设置中开启相机权限.</string>
+    <string name="need_permission_a">需要获取您的%1$s权限，否则无法正常使用.</string>
+    <string name="need_permission">需要获取您的%1$s权限，否则无法正常使用，是否打开设置.</string>
+    <string name="permission_camera">相机</string>
+    <string name="permission_recording">录音</string>
+    <string name="permission_storage">读写手机存储</string>
+    <string name="permission_contacts">通讯录</string>
+    <string name="permission_location">定位</string>
+
+
+    <string name="error_view_loading">加载中…</string>
+    <string name="error_view_load_error_click_to_refresh">内容加载失败\n点击重新加载</string>
+    <string name="error_view_network_error_click_to_refresh">没有可用的网络</string>
+    <string name="error_view_no_data">暂无内容</string>
+    <string name="network_connection_is_failed">网络连接失败</string>
+    <string name="request_failed">请求失败</string>
+
+    <!-- facebook -->
+    <string name="FACEBOOK_APP_ID">673661206419572</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">6f038ba9af5e0f5f2b50058042ba51e1</string>
+    // if your Facebook App ID is 1234567, you should use ak1234567
+
+
+    <string name="recording_time_is_too_short">录制时间不可小3秒</string>
+    <string name="email_error">Email 格式错误</string>
+    <string name="video_file_is_too_large">视频过大，请重新拍摄.</string>
+    <string name="get_permission_reminder">为保证您顺利完成借款，请务必同意注册过程中所有申请授权弹出框.</string>
+
+    <string name="status_apply_reate">申请已创建</string>
+    <string name="footer_pullup">上拉加载更多</string>
+    <string name="footer_release">释放立即加载</string>
+    <string name="footer_loading">正在加载...</string>
+    <string name="footer_refreshing">正在刷新...</string>
+    <string name="footer_finish">加载完成</string>
+    <string name="footer_failed">加载失败</string>
+    <string name="footer_allloaded">全部加载完成</string>
+
+    <string name="bni_atm_title">BNI-ATM</string>
+    <string name="bni_internet_banking_title">BNI-Internet Banking</string>
+    <string name="bni_mobile_banking_title">BNI-Mobile Banking</string>
+    <string name="bni_others_internet_banking_title">Others Internet Banking</string>
+    <string name="bni_others_mobile_banking_title">Others Mobile Banking</string>
+
+    <string name="permata_atm_title">Permata-ATM</string>
+    <string name="permata_internet_banking_title">Permata-Internet Banking</string>
+    <string name="permata_mobile_banking_title">Permata-Mobile Banking</string>
+    <string name="permata_others_internet_banking_title">Others Internet Banking</string>
+    <string name="permata_others_mobile_banking_title">Others Mobile Banking</string>
+
+    <string name="mandiri_atm_title">Mandiri-ATM</string>
+    <string name="mandiri_internet_banking_title">Mandiri-Internet Banking</string>
+    <string name="mandiri_mobile_banking_title">Mandiri-Mobile Banking</string>
+    <string name="other_bank_atm_title">Others Bank-ATM</string>
+    <string name="alfa_store_title">Alfa_store</string>
+
+    <string name="danamon_atm_title">Danamon-ATM</string>
+
+    <string name="cimb_atm_title">CIMB-ATM</string>
+    <string name="cimb_internet_banking_title">CIMB-Internet Banking</string>
+    <string name="cimb_mobile_banking_title">CIMB-Mobile Banking</string>
+
+
+    <!-- Danamon -本行ATM -->
+    <string name="doku_danamon_atm">1. Masukkan kartu ATM Danamon, lalu masukkan PIN ATM.\n2. Pilih menu "Pembayaran", kemudian menu "Lainnya".\n3. Pilih menu "Virtual Account".\n4. Masukkan Nomor Virtual Account %1$s.\n5. Ketika muncul Konfirmasi Transfer, pilih "Ya" / "Lanjut".\n6. Transaksi selesai. Simpan bukti transaksi.</string>
+    <!-- Danamon -他行ATM -->
+    <string name="doku_danamon_other_bank_atm">1. Masukkan kartu ATM, lalu masukkan PIN ATM.\n2. Pilih menu "Transfer Antar Bank".\n3. Masukan Kode Bank Tujuan : Danamon (Kode Bank : 011) + Nomor Virtual Account %1$s.\n4. Masukan jumlah sesuai tagihan.\n5. Ketika muncul Konfirmasi Transfer, pilih "Ya" / "Lanjut".\n6. Transaksi selesai dan ambil bukti transfer anda</string>
+
+    <!-- CIMB -本行ATM -->
+    <string name="doku_cimb_atm">1. Masukkan kartu ATM CIMB Niaga, lalu masukkan "PIN ATM".\n2. Pilih menu "Transfer".\n3. Pilih menu "Rekening CIMB Niaga".\n4. Masukkan "Jumlah" lalu masukkan "%1$s".\n5. Ketika muncul konfirmasi transfer, pilih "Ya" / "Lanjut".\n6. Transaksi selesai dan simpan bukti transaksi.</string>
+    <!-- CIMB -本行网银 -->
+    <string name="doku_cimb_internet_banking">1. Login ke Internet Banking CIMB Niaga.\n2. Pilih Menu "TRANSFER".\n3. Pilih rekening sumber dana pada bagian "Transfer From", masukkan "Jumlah", lalu pada bagian "Transfer To" pilih "Other Account (CIMB Niaga/Rekening Ponsel)", kemudian pilih "NEXT".\n4. Pilih "BANK CIMB NIAGA", lalu masukkan "%1$s" di kolom "Rekening Penerima", kemudian pilih "NEXT".\n5. Masukkan "mPIN" lalu pilih "Submit".\n6. Transaksi selesai dan simpan bukti transaksi.</string>
+    <!-- CIMB -本行手机银行 -->
+    <string name="doku_cimb_mobile_banking">1. Login Mobile Banking CIMB Niaga.\n2. Pilih menu "Transfer", lalu pilih "Rekening Ponsel/CIMB Niaga".\n3. Pilih "Rekening sumber".\n4. Pilih "Rekening Tujuan": CASA.\n5. Masukkan "%1$s" dan "Jumlah".\n6. Ketika muncul konfirmasi pembayaran, pilih "Ya" / "Lanjut".\n7. Transaksi selesai dan simpan bukti transaksi.</string>
+    <!-- CIMB -他行ATM -->
+    <string name="doku_cimb_other_bank_atm">Melalui ATM Bank Lain\n1. Masukkan kartu ATM, lalu masukkan PIN ATM.\n2. Pilih Menu Transfer Antar Bank.\n3. Masukan Kode Bank Tujuan : CIMB Niaga (Kode Bank : 022) + Nomor Virtual Account %1$s.\n4. Masukan jumlah transfer sesuai Tagihan.\n5. Ketika Muncul konfirmasi pembayaran, pilih "Ya" / "Lanjut".\n6. Transaksi selesai dan ambil bukti transfer anda</string>
+
+    <!-- Permata  -本行ATM -->
+    <string name="doku_permata_atm">1. Masukkan PIN\n2. Pilih "Transfer". Apabila menggunakan ATM Bank Lain, pilih "Transaksi lainnya" lalu "Transfer"\n3. Pilih "Ke Rek Bank Lain"\n4. Masukkan Kode Bank Permata (013) diikuti 16 digit kode bayar %1$s sebagai rekening tujuan, kemudian tekan "Benar"\n5. Masukkan Jumlah pembayaran sesuai dengan yang ditagihkan (Jumlah yang ditransfer harus sama persis, tidak boleh lebih dan kurang). Jumlah nominal yang tidak sesuai dengan tagihan akan menyebabkan transaksi gagal\n6. Muncul Layar Konfirmasi Transfer yang berisi nomor rekening tujuan Bank Permata dan Nama beserta jumlah yang dibayar, jika sudah benar, Tekan "Benar"\n7. Selesai</string>
+    <!-- Permata  -本行网银 -->
+    <string name="doku_permata_internet_banking">Keterangan: Pembayaran tidak bisa dilakukan di Internet Banking BCA (KlikBCA)\n1. Login ke dalam akun Internet Banking\n2. Pilih "Transfer" dan pilih "Bank Lainnya". Pilih Bank Permata (013) sebagai rekening tujuan\n3. Masukkan jumlah pembayaran sesuai dengan yang di tagihkan\n4. Isi nomor rekening tujuan dengan 16 digit kode pembayaran %1$s \n5. Muncul layar konfirmasi Transfer yang berisi nomor rekening tujuan Bank Permata dan Nama beserta jumlah yang dibayar. Jika sudah benar, tekan "Benar"\n6. Selesai</string>
+
+    <!-- BNI-本行ATM -->
+    <string name="bni_atm">1. Masukkan kartu, pilih bahasa kemudian masukkan PIN Anda\n2. Pilih "Menu Lainnya" lalu pilih "Transfer"\n3. Pilih "Tabungan" lalu "Rekening BNI Virtual Account"\n4. Masukkan nomor Virtual Account %1$s dan nominal yang ingin Anda bayar\n5. Periksa kembali data transaksi kemudian tekan "Ya"</string>
+    <!-- BNI-本行网银 -->
+    <string name="bni_internet_banking">1. Login di https://ibank.bni.co.id, masukkan User ID dan Password\n 2. Pilih “TRANSFER” lalu pilih “Tambah Rekening Favorit\n3. Jika Anda menggunakan desktop untuk menambah rekening, pilih “Transaksi” lalu pilih “Atur Rekening Tujuan” kemudian “Tambah Rekening Tujuan”\n4. Masukkan Nama dan nomor Virtual Account %1$s Anda, lalu masukkan Kode Otentikasi Token\n5. Jika Nomor rekening tujuan berhasil ditambahkan, kembali ke menu “TRANSFER”\n6. Pilih “TRANSFER ANTAR REKENING BNI”, kemudian pilih rekening tujuan\n7. Pilih Rekening Debit dan ketik nominal, lalu masukkan kode otentikasi token</string>
+    <!-- BNI-本行手机银行 -->
+    <string name="bni_mobile_banking">1. Login ke BNI Mobile Banking, masukkan User ID dan MPIN\n2. Pilih menu “Transfer”, lalu pilih “Antar Rekening BNI”\n3. Pilih “Input Rekening Baru”\n4. Masukkan “Rekening Debet”, “Rekening Tujuan” %1$s dan “Nominal” kemudian klik “Lanjut”\n5. Periksa kembali data transaksi Anda, masukkan “Password Transaksi” kemudian klik “Lanjut”</string>
+    <!-- BNI-他行ATM -->
+    <string name="bni_other_bank_atm">1. Pilih “Transfer” pada menu\n2. Pilih “Ke Bank Lain” pada menu\n3. Masukan kode bank “009” dan pilih “Benar”\n4. Masukan “Kode Pembayan” %1$s pada tujuan transfer\n5. Masukan nominal yang harus dibayarkan dan pilih “Benar”\n6. Ikuti langkah selanjutnya sampai transaksi berhasil</string>
+    <!-- BNI-他行网银 -->
+    <string name="bni_other_internet_banking">1. Pilih “Transfer” pada menu\n2. Pilih “Ke Bank Lain” pada menu\n	3. Masukan kode bank “Bank BNI (009)”\n4. Masukan “Kode Pembayan” %1$s pada tujuan transfer\n	5. Masukan nominal yang harus dibayarkan dan pilih “OK”\n6. Ikuti langkah selanjutnya sampai transaksi berhasil</string>
+    <!-- BNI-他行手机银行 -->
+    <string name="bni_other_mobile_banking">1. Pilih “Transfer” pada menu\n2. Pilih “Ke Bank Lain” pada menu\n3. Masukan kode bank “Bank BNI (009)”\n4. Masukan “Kode Pembayan” %1$s pada tujuan transfer\n5. Masukan nominal yang harus dibayarkan dan pilih “OK”\n6. Ikuti langkah selanjutnya sampai transaksi berhasil</string>
+
+
+    <!-- permata-本行ATM -->
+    <string name="permata_atm">1 .Masukkan Kartu ATM Permata dan PIN\n2 .Pilih “Transaksi Lainya” > Pilih “Pembayaran” > Pilih “ Lainya” > Pilih “Virtual Account\n3. Masukkan nomor Virtual Account %1$s\n4. Masukkan nominal\n5. Ikuti Instruksi untuk menyelesaikan transaksi</string>
+    <!-- permata-本行网银 -->
+    <string name="permata_internet_banking">1. Kunjungi Internet Banking Permata\n2. Masukkan User Name dan Password\n3. Pilih Pembayaran > Tagihan Pembayaran > Virtual Account\n4. Masukan “Billing Number” dengan mengetikan “kode pembayran” %1$s yang ada\n5. Masukan nominal yang harus di bayar dan pilih “Lanjut”\n6. Ikuti langkah selanjutnya sampai transaksi di nyatakan berhasil. </string>
+    <!-- permata-本行手机银行 -->
+    <string name="permata_mobile_banking">1. Buka Aplikasi Mobile Banking Permata di HP\n2. Masukkan User Name dan Password\n3. Pilih Pembayaran > Virtual Account > Pilih Rekening untuk Pembayaran > Pilih Tagihan Baru > Masukkan Nomor Virtual Account %1$s\n4. Masukkan Nominal\n5. Ikuti langkah selanjutnya sampai transaksi di nyatakan berhasil. </string>
+    <!-- permata-他行ATM -->
+    <string name="permata_other_bank_atm">1. Pilih “Transfer” pada menu\n2. Pilih “Ke Bank Lain” pada menu\n3. Masukan kode bank “013” dan pilih “Benar”\n4. Masukan “Kode Pembayan” %1$s pada tujuan transfer\n	5. Masukan nominal yang harus dibayarkan dan pilih “Benar”\n6. Ikuti langkah selanjutnya sampai transaksi berhasil</string>
+    <!-- permata-他行网银 -->
+    <string name="permata_other_internet_banking">1. Pilih “Transfer” pada menu\n2. Pilih “Ke Bank Lain” pada menu\n3. Masukan kode bank “Bank Permata(013)”\n	4. Masukan “Kode Pembayan” %1$s pada tujuan transfer\n	5. Masukan nominal yang harus dibayarkan dan pilih “OK”\n6. Ikuti langkah selanjutnya sampai transaksi berhasil</string>
+    <!-- permata-他行手机银行 -->
+    <string name="permata_other_mobile_banking">1. Pilih “Transfer” pada menu\n2. Pilih “Ke Bank Lain” pada menu\n3. Masukan kode bank “Bank Permata(013)”\n4. Masukan “Kode Pembayan” %1$s pada tujuan transfer\n5. Masukan nominal yang harus dibayarkan dan pilih “OK”\n6. Ikuti langkah selanjutnya sampai transaksi berhasil</string>
+    <!-- permata-ATM -->
+    <string name="mandiri_atm">1. Pilih menu bayar/beli\n2. Pilih lainnya > lainnya > multi payment\n3. Isi kode perusahaan “7002” dan pilih “Benar”\n4. Isi kode merchant “078” dan pilih “Benar”\n5. Masukkan kode pembayaran dengan 8 digit kode %1$s sisanya dan pilih “Benar”\n6. Ikuti langkah selanjutnya hingga pembayaran selesai.</string>
+    <!-- permata-网银 -->
+    <string name="mandiri_internet_banking">1. Pilih menu bayar/Multi Payment\n2. Pilih lainnya > penyedia layanan > pilih DOKU\n3. Isi kode merchant “078”\n4. Masukkan kode pembayaran %1$s dengan 8 digit kode sisanya dan pilih “lanjut”\n5. Ikuti langkah selanjutnya hingga pembayaran selesai.</string>
+    <!-- permata-手机银行 -->
+    <string name="mandiri_mobile_banking">1. Pilih menu bayar/Multi Payment\n2. Pilih lainnya > penyedia layanan > pilih DOKU\n3. Isi kode merchant “078”\n4. Masukkan kode pembayaran %1$s dengan 8 digit kode sisanya dan pilih “lanjut”\n5. Ikuti langkah selanjutnya hingga pembayaran selesai.</string>
+    <string name="alfa_store">1. Catat kode pembayaran di atas dan datang ke gerai Alfamart, Alfa Midi, Alfa Express, Lawson atau DAN+DAN terdekat\n
+2. Beritahukan ke kasir bahwa anda ingin melakukan pembayaran Nama Merchant ”MALCOLM CAR VIA DOKU”\n
+3. Jika kasir tidak mengetahui mengenai pembayaran Nama Merchant, informasikan ke kasir untuk membuka terminal e-transaction, pilih "no.
+2 menu Pembayaran atau cari pada menu search"\n
+4. Minta kasir untuk menekan “Shift” dan “?” lalu ketik Nama Merchant “MALCOLM CAR VIA DOKU”, setelah itu klik OK\n
+5. Minta kasir untuk pilih "no.1 Nama Merchan - Pembayaran Nama Merchant"\n
+6. Kasir akan menanyakan kode pembayaran. Berikan kode pembayaran anda %1$s. Kasir akan melakukan konfirmasi data
+konsumen berupa Nama Merchant “MALCOLM CAR VIA DOKU”, Nama Konsumen, dan Nominal. Lakukan pembayaran ke kasir sejumlah nominal yang
+disebutkan\n
+7. Terima struk sebagai bukti pembayaran sudah sukses dilakukan. Notifikasi pembayaran akan langsung diterima oleh Merchant\n
+8. Selesai\n</string>
+
+    <string name="rekomendasi">(推荐, 无手续费)</string>
+    <string name="payment_code_is_valid_until">支付码将于%1$s失效，若未能及时还款，请重新生成支付码。</string>
+    <string name="virtual_account_valid_until">虚拟账号将于%1$s失效，若未能及时还款，请重新生成虚拟账号。</string>
+    <string name="payment_code_validity_period">即将生成的支付码将于6小时后失效，请尽快还款。</string>
+    <string name="virtual_number_validity_period">即将生成的虚拟账号将于6小时后失效，请尽快还款。</string>
+    <string name="mandiri_only_support_atm">Mandiri的虚拟账号只能通过Mandiri的ATM进行还款，</string>
+    <string name="virtual_number_validity_period_s">该虚拟账号只能使用%1$s银行账户进行还款!&#160;&#160; </string>
+
+    <string name="repayment_assistance1">请找到附近的%1$s银行的ATM进行还款</string>
+    <string name="repayment_assistance2">%1$s银行还款指引</string>
+    <string name="repayment_assistance3">找不到%1$s银行ATM机？你还可以使用其他银行的ATM进行还款</string>
+    <string name="repayment_assistance4">其他银行还款指引</string>
+    <string name="repayment_assistance5">在使用%1$s银行向%2$s银行虚拟账户进行还款的情况下，你需要按照以下步骤操作</string>
+    <string name="repayment_assistance6">在使用其他银行向%1$s银行虚拟账户进行还款的情况下，你需要按照以下步骤操作</string>
+    <string name="repayment_assistance7">请找到附近的Alfamart进行还款</string>
+    <string name="repayment_assistance8">Alfamart还款指引</string>
+    <string name="repayment_assistance9">我有%1$s手机银行/网银账户</string>
+    <string name="repayment_assistance10">使用%1$s手机银行/网上银行的还款指引</string>
+    <string name="repayment_assistance11">使用其他手机银行/网上银行的还款指引</string>
+    <string name="repayment_assistance12">我要使用ATM机进行还款</string>
+    <string name="repayment_assistance13">我要使用网银/手机银行进行还款</string>
+    <string name="repayment_assistance14">我有其他手机银行/网银账户</string>
+
+    <string name="positive_feedback">小RupiahSuper提示您：借款已经到账了！动动你的小手，给我一个5星好评！祝您生活愉快～</string>
+    <string name="refuse">残忍拒绝</string>
+    <string name="praise">去好评</string>
+    <string name="make_complaints">吐槽</string>
+    <string name="thanks_for_the_support">感谢您的选择与支持，小RupiahSuper 用心聆听您的声音</string>
+    <string name="successfully_copied">复制成功</string>
+    <string name="name_telepon">Telepon</string>
+    <string name="name_email">Email</string>
+    <string name="name_website">Website</string>
+    <string name="name_facebook">Facebook</string>
+    <string name="name_instagram">Instagram</string>
+    <string name="name_twitter">Twitter</string>
+    <string name="service_telepon">xxxx</string>
+    <string name="service_email">xxxx</string>
+    <string name="service_website">http://www.xxxx.id/</string>
+    <string name="service_facebook">RupiahSuper</string>
+    <string name="service_instagram">RupiahSuper</string>
+    <string name="service_twitter">RupiahSuper</string>
+
+    <string name="unable_to_use_BVA_to_repay">由于系统原因，6月8日至6月20日之间，我方无法收到BCA账户进行的还款，烦请使用其他银行账户进行还款。</string>
+
+    <string name="touch_to_focus">触摸屏幕对焦</string>
+    <string name="unclear_documents">证件号码与姓名必须清晰</string>
+
+    <string name="confirm_bank_information">确认银行信息</string>
+    <string name="check_bank_information">请仔细检查您的银行卡信息，这将直接影响是否能将款项及时汇至您的账户上！</string>
+    <string name="make_sure_the_card_information_is_correct">确保银行卡信息正确，以保证款项能到达您的账号上</string>
+    <string name="receiving_bank_card_account">收款银行卡账号:</string>
+    <string name="bank_reserved_mobile_phone_number">银行预留手机号:</string>
+    <string name="sumbit">确认无误</string>
+    <string name="edit">返回修改</string>
+    <string name="safety_warning">安全提示</string>
+    <string name="re_register">您已被登出,请重新登录!</string>
+
+    <string name="is_it_at_the_station">请问您是否在工位上？</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="please_wear_a_badge">请佩戴工牌，坐在工位上拍照，工牌要显示清晰。</string>
+    <string name="station_photo_will_speed_up_the_review">清晰的工牌和工位照片会极大提高审核成功机会，加快放款速度。</string>
+
+    <string name="immediately_lend">立即出借</string>
+    <string name="investment_and_financing">投资理财</string>
+    <string name="already_invested">已投</string>
+    <string name="filled_up">已投满</string>
+    <string name="lending_period">出借期限</string>
+    <string name="lending_period_month">个月</string>
+    <string name="lending_period_month1">%1$d个月</string>
+    <string name="annualized_interest_rate">年化利率</string>
+    <string name="pending_financing">待融金额</string>
+    <string name="total_financing">融资总额</string>
+    <string name="recruitment_time">募集时间</string>
+    <string name="interest_time">计息时间</string>
+    <string name="exit_time">退出时间</string>
+    <string name="the_day_interest">当天计息</string>
+    <string name="condition">加入条件</string>
+    <string name="exit_method">退出方式</string>
+    <string name="interest_payment_method">付息方式</string>
+    <string name="project_introduction">项目介绍</string>
+    <string name="make_money_now">马上赚钱</string>
+    <string name="investment_project">核对投资信息</string>
+    <string name="lending_period1">出借期限：%1$d个月</string>
+    <string name="amount_of_investment">可投金额：Rp&#160;%1$s</string>
+    <string name="borrowing_money1">Rp&#160;%1$s</string>
+    <string name="investment_amount">投资金额</string>
+    <string name="expected_return">预计到期收益：Rp&#160;%1$s</string>
+    <string name="lc_name">姓名</string>
+    <string name="lc_bank_code">银行卡号</string>
+    <string name="lc_mobile">联系电话</string>
+    <string name="lc_email">邮箱地址</string>
+    <string name="please_enter">请输入</string>
+    <string name="apply_immediately">立即申请</string>
+    <string name="lending_agreement">我已阅读并同意《出借人须知》</string>
+    <string name="submitted_successfully">提交成功</string>
+    <string name="submitted_successfully1">提交成功!</string>
+    <string name="contact_later">稍后将有工作人员联系您，请保持电话通畅~</string>
+    <string name="back_to_home">返回首页</string>
+    <string name="lending_record">投资记录</string>
+    <string name="current_income">当前收益：Rp%1$s</string>
+    <string name="investment_amount1">投资金额：Rp%1$s</string>
+    <string name="application">申请中</string>
+    <string name="successful_application">申请成功</string>
+    <string name="locked">锁定中</string>
+    <string name="can_withdraw">可提现</string>
+    <string name="cash_withdrawal">提现中</string>
+    <string name="completed">提现成功</string>
+    <string name="application_failed">申请失败</string>
+    <string name="due_date">还有%1$d天到期</string>
+    <string name="i_financing">我的投资</string>
+    <string name="lending_number">出借编号</string>
+    <string name="item_number1">项目编号</string>
+    <string name="lending_amount">出借金额</string>
+    <string name="investment_contract">投资合同</string>
+    <string name="please_select_remittance_bank">请选择汇款银行</string>
+    <string name="remittance_deadline">请在%1$s完成汇款，否则视为放弃。</string>
+    <string name="apply_withdraw">申请提现</string>
+    <string name="confirmation_of_the_receiving_bank">请确认您的收款银行：</string>
+    <string name="flow_description">流程说明</string>
+
+    <string name="financing_waiting_for_payment">等待汇款中</string>
+    <string name="financing_payment_code_is_valid_until">支付码将于%1$s失效，若未能及时汇款，请重新生成支付码。</string>
+    <string name="financing_virtual_account_valid_until">虚拟账号将于%1$s失效，若未能及时汇款，请重新生成虚拟账号。</string>
+    <string name="financing_payment_code_validity_period">即将生成的支付码将于6小时后失效，请尽快汇款。</string>
+    <string name="financing_virtual_number_validity_period">即将生成的虚拟账号将于6小时后失效，请尽快汇款。</string>
+    <string name="financing_mandiri_only_support_atm">Mandiri的虚拟账号只能通过Mandiri的ATM进行汇款，</string>
+    <string name="financing_repayment_assistance1">请找到附近的%1$s银行的ATM进行汇款</string>
+    <string name="financing_repayment_assistance2">%1$s银行汇款指引</string>
+    <string name="financing_repayment_assistance3">找不到%1$s银行ATM机？你还可以使用其他银行的ATM进行汇款</string>
+    <string name="financing_repayment_assistance4">其他银行汇款指引</string>
+    <string name="financing_repayment_assistance7">请找到附近的Alfamart进行汇款</string>
+    <string name="financing_repayment_assistance8">Alfamart汇款指引</string>
+    <string name="financing_repayment_assistance10">使用%1$s手机银行/网上银行的汇款指引</string>
+    <string name="financing_repayment_assistance11">使用其他手机银行/网上银行的汇款指引</string>
+    <string name="financing_repayment_assistance12">我要使用ATM机进行汇款</string>
+    <string name="financing_repayment_assistance13">我要使用网银/手机银行进行汇款</string>
+    <string name="money_transfer_to_the_following_designated_account">请汇款至以下指定账户</string>
+    <string name="remittance_amount">汇款金额：</string>
+    <string name="album">相册</string>
+    <string name="shooting">拍摄</string>
+    <string name="ok_to_exit_the_conversation">确定退出对话吗？</string>
+    <string name="payment">汇款</string>
+    <string name="withdraw">提现</string>
+    <string name="photo_reminder">请务必在工位上拍照，同时保证工牌清晰可见。</string>
+    <string name="pay_slip_prompt">请上传最近一个月的清晰工资条照片，否则将审核失败！</string>
+
+    <string name="punya_saya">我的</string>
+    <string name="repayment_completed">还款完成</string>
+    <string name="my_offer">我的优惠券</string>
+    <string name="no_coupon">暂时没有可用的优惠券</string>
+
+    <string name="update_message_prompt">请更新以下信息，以确保您的资料被系统认可：</string>
+    <string name="update_information_prompt_credit">(更新信息后将提高您的信用评分，加速放款！)</string>
+    <string name="official_certification_quantity_prompt">认证完成3个，将提高您的信用额度：</string>
+
+
+    <string name="select_all">全选</string>
+    <string name="submit_application">提交申请</string>
+    <string name="remittance_on_time">按时汇款</string>
+    <string name="expiration">到期结息</string>
+    <string name="number_of_people_selected">已选择出借%1$d人</string>
+    <string name="total_amount_of_lending">共计出借金额为：</string>
+    <string name="expected_to_receive_interest_due">预计到期获得利息：</string>
+    <string name="expected_to_receive_interest_due1">预计到期获得利息</string>
+    <string name="interest_calculation_method">年化利率%1$s</string>
+    <string name="fill_in_personal_information">填写个人信息</string>
+    <string name="fill_in_bank_information">填写收款银行信息</string>
+    <string name="go_order_list">前往订单列表</string>
+    <string name="investment_number">投资编号：</string>
+    <string name="investment_number1">投资编号</string>
+    <string name="total_amount">投资金额：</string>
+    <string name="number_of_oans">共出借%1$d笔</string>
+    <string name="expiration_number">已还款%1$d笔</string>
+    <string name="investment_investing">投资中</string>
+    <string name="investment_cash_withdrawal_failure">提现失败</string>
+    <string name="investment_carry_out">已完成</string>
+    <string name="unexpired">未还款</string>
+    <string name="be_expired">已还款</string>
+    <string name="payee_name">收款人姓名</string>
+    <string name="receiving_bank_card_number">收款银行卡号</string>
+    <string name="cash_withdrawal_amount">可提现金额</string>
+    <string name="total_investment">总投资</string>
+    <string name="immediate_withdrawal">立即提现</string>
+    <string name="submitted_successfully_waiting_for_the_account">提现中，您的款项将在24小时内到账，请耐心等待。</string>
+    <string name="lending_user_number">出借人数</string>
+    <string name="transfer_to_bca">1.请您将您需要有投资的金额投资到我们的公司的BCA账户上</string>
+    <string name="bca_bank">Bank：Bank of Central Aisa</string>
+    <string name="bca_bank_acc">Bank Acc：PT.Minitech Finance Indonesia</string>
+    <string name="bca_bank_acc_no">Bank Acct No：082125412036</string>
+    <string name="bca_berita">Berita：Modalin +KTP</string>
+    <string name="transfer_voucher_sent_to_the_mailbox">2.请您将您的转账凭证发送到我们的邮箱里：</string>
+    <string name="certificate_email">Email：blissbirduangbagus@gmail.com</string>
+    <string name="investment_was_robbed">您好，当前用户已被其他投资人选择出借，请刷新后重新选择~</string>
+    <string name="remittance_as_soon_as_possible">请在当天完成BCA汇款，已保证您的订单不会被取消</string>
+
+
+    <string name="complete_material">前去申请</string>
+    <string name="data_review">资料审核中</string>
+    <string name="successful_data_review">资料审核通过，马上投资</string>
+    <string name="data_review_failed">资料审核失败</string>
+    <string name="submit_an_investment_application">提交资料审核</string>
+    <string name="there_are_ongoing_loans">您有正在进行的借款订单，暂时不能提交投资申请！</string>
+    <string name="risk_notice">风险须知</string>
+    <string name="risk_notice_content">1、未及时还款情况，我们会努力帮助您进行催收。\n
+        2、如用户超过90天未还款，我们会严格按照ojk要求，平台将停止催收工作，将未还款用户信息上报给政府相关部门，由此产生的损失需由您本人承担，与modalin无关。\n
+        3、投资前请仔细阅读投资人须知协议。\n4、投资有风险，请谨慎投资。</string>
+    <string name="investment_agreement">投资协议</string>
+    <string name="loan_agreement">借款协议</string>
+    <string name="detailed_address">详细地址</string>
+    <string name="remittance">待汇款</string>
+    <string name="view_agreement">查看</string>
+
+    <string name="disclaimer">Pernyataan tanggung jawab risiko</string>
+    <string name="disclaimer_content">1. Layanan Pinjam Meminjam Berbasis Teknologi Informasi merupakan kesepakatan perdata antara Pemberi Pinjaman dengan Penerima Pinjaman, sehingga segala risiko yang timbul dari kesepakatan tersebut ditanggung sepenuhnya oleh masing-masing pihak.\n
+2. Risiko kredit atau gagal bayar ditanggung sepenuhnya oleh Pemberi Pinjaman. Tidak ada lembaga atau otoritas negara yang bertanggung jawab atas risiko gagal bayar ini.\n
+3. Penyelenggara dengan persetujuan dari masing-masing Pengguna (Pemberi Pinjaman dan/atau Penerima Pinjaman) mengakses, memperoleh, menyimpan, mengelola dan/atau menggunakan data pribadi Pengguna ("Pemanfaatan Data") pada atau di dalam benda, perangkat elektronik (termasuk smartphone atau telepon seluler), perangkat keras (hardware) maupun lunak (software), dokumen elektronik, aplikasi atau system elektronik milik Pengguna atau yang dikuasai Pengguna, dengan memberitahukan tujuan, batasan dan mekanisme Pemanfaatan Data tersebut kepada Pengguna yang bersangkutan sebelum memperoleh persetujuan yang dimaksud.\n
+4. Pemberi Pinjaman yang belum memiliki pengetahuan dan pengalaman pinjam meminjam, disarankan untuk tidak menggunakan layanan ini.\n
+5. Penerima Pinjaman harus mempertimbangkan tingkat bunga pinjaman dan biaya lainnya sesuai dengan kemampuan dalam melunasi pinjaman.\n
+6. Setiap kecurangan tercatat secara digital di dunia maya dan dapat diketahui masyarakat luas di media sosial.\n
+7. Pengguna harus membaca dan memahami informasi ini sebelum membuat keputusan menjadi Pemberi Pinjaman atau Penerima Pinjaman.\n
+8. Pemerintah yaitu dalam hal ini Otoritas Jasa Keuangan, tidak bertanggung jawab atas setiap pelanggaran atau ketidakpatuhan oleh Pengguna, baik Pemberi Pinjaman maupun Penerima Pinjaman (baik karena kesengajaan atau kelalaian Pengguna) terhadap ketentuan peraturan perundang-undangan maupun kesepakatan atau perikatan antara Penyelenggara dengan Pemberi Pinjaman dan/atau Penerima Pinjaman.\n
+9. Setiap transaksi dan kegiatan pinjam meminjam atau pelaksanaan kesepakatan mengenai pinjam meminjam antara atau yang melibatkan Penyelenggara, Pemberi Pinjaman dan/atau Penerima Pinjaman wajib dilakukan melalui escrow account dan virtual account sebagaimana yang diwajibkan berdasarkan Peraturan Otoritas Jasa Keuangan Nomor 77/POJK.01/2016 tentang Layanan Pinjam Meminjam Uang Berbasis Teknologi Informasi dan pelanggaran atau ketidakpatuhan terhadap ketentuan tersebut merupakan bukti telah terjadinya pelanggaran hukum oleh Penyelenggara sehingga Penyelenggara wajib menanggung ganti rugi yang diderita oleh masing masing Pengguna sebagai akibat langsung dari pelanggaran hukum tersebut di atas tanpa mengurangi hak Pengguna yang menderita kerugian menurut Kitab Undang-Undang Hukum Perdata.\n </string>
+    <string name="agree">Setuju</string>
+    <string name="disagree">Tidak setuju</string>
+
+    <string name="repayment_amount_composition">Jumlah Aktual:</string>
+    <string name="interest_rate">日利率</string>
+    <string name="interest_rate1">日利率：</string>
+    <string name="interest_rate2">利息：(%1$s/Hari)</string>
+    <string name="daily_interest_rate_discount">暂无优惠活动，日利率%1$s/天</string>
+    <string name="have_not_paid_the_deposit">您还未缴纳保证金，借款需要缴纳%1$s，我们将直接从您的借款金额内扣除。\n</string>
+    <string name="the_deposit_will_be_refunded_to_you_in_full_after_your_payment">(保证金将会在您还款之后全额退还给您)</string>
+    <string name="you_have_applied_for_a_withdrawal_deposit">您已申请提取保证金，现在借款，系统将直接为您取消提取申请。</string>
+    <string name="direct_borrowing">直接借款</string>
+    <string name="earnest_money">保证金</string>
+    <string name="extract">提取</string>
+    <string name="extract_earnest_money">提取保证金</string>
+    <string name="if_you_submit_a_margin_loan_you_still_have_to_pay">升级会员不仅可以获得更高的额度（最高2jt）与更低的管理费率（最低0.8%），还会有更多免息活动可参与，确定仍要提现吗？</string>
+    <string name="still_have_to_extract">仍要提取</string>
+    <string name="borrowing_immediately1">马上借款</string>
+    <string name="earnest_money_submitted_successfully">提交成功，我们将会在两个工作日内为您退还，请耐心等待！</string>
+    <string name="unable_to_submit_loan_in_margin_withdrawal">您好，您保证金提取申请银行已受理，现正在放款中，为避免您重复提交保证金，请稍后再提交借款申请！</string>
+
+    <string name="rule_description">规则说明</string>
+    <string name="integral">当前积分:&#160;</string>
+    <string name="maximum_amount">最大额度:&#160;</string>
+    <string name="current_interest">当前权益</string>
+    <string name="current_level">当前等级</string>
+    <string name="your_current_membership_level">您当前的会员等级为：</string>
+    <string name="your_will_enjoy_the_following_rights">您将享有以下权益:</string>
+    <string name="upgradeable_level">下一级会员等级为%1$s</string>
+    <string name="upgrade_success">升级成功立即享受以下权益：</string>
+    <string name="apply_for_an_upgrade">申请升级</string>
+    <string name="get_upgrade_opportunities">恭喜您获得升级%1$s的机会</string>
+    <string name="upgrade">升级</string>
+    <string name="upgrade_vip">升级%1$s</string>
+    <string name="become_a_member_to_pay">支付金额</string>
+    <string name="payment_method">支付方式</string>
+    <string name="margin_payment">保证金支付(%1$s)</string>
+    <string name="update_successed">升级成功！</string>
+    <string name="congratulations_on_upgrading_your_membership">恭喜您，您已成为我们的%1$s,您将享有%2$s的所有权益！</string>
+    <string name="sorry_we_cant_upgrade_members">非常抱歉，您暂时还未达升级会员的条件~</string>
+    <string name="how_to_become_a_member">怎么做才能满足升级条件呢？</string>
+    <string name="become_a_member_condition"> 1.如个人信息、工作进行有变更，请及时更新信息，以保证信息真实有效；\n 2.保持良好的还款习惯，积累您的借款信用，将有机会满足升级条件；\n 3.积累会员积分，也将有助于您满足升级会员的条件。</string>
+    <string name="member_service_description">会员服务说明</string>
+    <string name="understand_the_upgrade_conditions">了解升级条件</string>
+
+    <string name="parents_can_only_choose_two">父母只能选择2个</string>
+    <string name="spouse_can_only_choose_one">配偶只能选择1个</string>
+    <string name="select_all_contacts">如全部填写真实有效的联系人，将优先审核，优先放款~</string>
+    <string name="return_to_add">返回添加</string>
+    <string name="contact_one">联系人一 (必填项)</string>
+    <string name="contact_two">联系人二 (必填项)</string>
+    <string name="contact_three">联系人三</string>
+    <string name="contact_four">联系人四</string>
+    <string name="contact_five">联系人五</string>
+    <string name="overdue_reminder">友情提示：为了避免反复的信用评估，以享受RupiahSuper的低息金融服务，建议您保持良好的还款记录，成为RupiahSuper会员，借款会保证在5分钟内全额转入您的银行账户。</string>
+
+    <string name="management_fee">管理费</string>
+    <string name="coupon_used">已使用</string>
+    <string name="coupon_unused">未使用</string>
+    <string name="coupon_expired">已过期</string>
+    <string name="unavailable">不可用</string>
+    <string name="validity_period">有效期：%1$s</string>
+    <string name="instructions_for_use">使用说明</string>
+    <string name="view_offers">查看优惠</string>
+    <string name="select_coupon">选择优惠券</string>
+    <string name="you_dont_have_a_coupon">非常抱歉，您没有可用优惠券哦~</string>
+    <string name="terms_and_conditions">我已阅读并同意条款和条件</string>
+    <string name="recommended_ad">Rekomendasikan untuk Anda</string>
+    <string name="splash">你的紧急情况，我们已经解决了</string>
+    <string name="Telepon">客服电话</string>
+    <string name="Panggil">拨打</string>
+    <string name="callphone">打电话</string>
+
+    <string name="contact_relationship1">父亲/母亲</string>
+    <string name="contact_relationship2">儿子/女儿</string>
+    <string name="contact_relationship3">配偶</string>
+    <string name="contact_relationship4">其他</string>
+    <string name="contact_relationship5">兄弟姐妹</string>
+    <string name="contact_relationship11">父亲</string>
+    <string name="contact_relationship12">母亲</string>
+    <string name="contact_relationship21">儿子</string>
+    <string name="contact_relationship22">女儿</string>
+    <string name="contact_relationship51">哥哥</string>
+    <string name="contact_relationship52">弟弟</string>
+    <string name="contact_relationship53">姐姐</string>
+    <string name="contact_relationship54">妹妹</string>
+    <string name="contact_relationship41">同事</string>
+    <string name="contact_relationship42">好友</string>
+    <string name="fuqin1">父亲只能为一个</string>
+    <string name="muqin1">母亲只能为一个</string>
+    <string name="wodejiekuan">我的貸款金額</string>
+    <string name="linechat">在线客服</string>
+    <string name="telkomsel">Telkomsel(xl、indosat)</string>
+
+    <string name="telphonesms">请完成运营商认证</string>
+    <string name="guanfang">请完成官方认证</string>
+    <string name="yasuozhong">视频压缩中...</string>
+
+    <string name="mother">母亲名字</string>
+    <string name="genjunindezizhi">根据您的资质，给您批复的额度是Rp</string>
+
+    <string name="nshihuankuan">按时还款可申请更高额度</string>
+
+    <string name="xueli">学历</string>
+
+    <string name="xuantian">（选填）</string>
+
+    <string name="zhengjian">个人信息KTP照片不合法</string>
+    <string name="tianxiezhenshi">*填写真实资料提高审核成功率</string>
+    <string name="hometishi">按时付款以打开此限制</string>
+
+
+
+
+    <string name="qingwanshangshen">请完善身份信息</string>
+
+    <string name="qingwanshangger">请完善个人信息</string>
+
+    <string name="qingwanshanglian">请完善联系人信息</string>
+    <string name="qingwanshanggong">请完善工作信息</string>
+
+
+    <string name="zuoyouyao">请左右摇头</string>
+    <string name="zhengyanbiyan">请睁眼闭眼</string>
+
+
+    <string name="huotitong">活体动作通过</string>
+
+    <string name="kejiedianhua">可接审核电话时间</string>
+
+
+    <string name="time1">09:00-11:00</string>
+    <string name="time2">11:00-13:00</string>
+    <string name="time3">12:00-14:00</string>
+    <string name="time4">14:00-16:00</string>
+    <string name="time5">16:00-18:00</string>
 </resources>

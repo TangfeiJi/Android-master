@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <com.classic.common.MultipleStatusView
+        android:id="@+id/custom_multiple_status_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:id="@+id/scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/view_padding"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="@dimen/view_padding"
+                            android:background="@drawable/icon6"
+                            android:orientation="vertical"
+                            android:paddingLeft="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="55dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingRight="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/total_loan_amount"
+                                    android:textColor="@color/auxiliary"
+                                    android:textSize="@dimen/text_size_16" />
+
+                                <TextView
+                                    android:id="@+id/total_loan_amount"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:textColor="@color/character_and_title"
+                                    android:textSize="@dimen/text_size_16" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/split_line" />
+
+                            <LinearLayout
+                                android:id="@+id/llDays"
+                                android:layout_width="match_parent"
+                                android:layout_height="55dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingRight="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/life_of_loan"
+                                    android:textColor="@color/auxiliary"
+                                    android:textSize="@dimen/text_size_16" />
+
+                                <TextView
+                                    android:id="@+id/life_of_loan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="right"
+                                    android:textColor="@color/character_and_title"
+                                    android:textSize="@dimen/text_size_16" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:src="@mipmap/uangssprsso127" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/split_line" />
+
+                            <LinearLayout
+                                android:id="@+id/earnest_money_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="55dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:paddingRight="10dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/earnest_money"
+                                        android:textColor="@color/auxiliary"
+                                        android:textSize="@dimen/text_size_16" />
+
+                                    <TextView
+                                        android:id="@+id/earnest_money"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="right"
+                                        android:textColor="@color/character_and_title"
+                                        android:textSize="@dimen/text_size_16" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/split_line" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="55dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingRight="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/actual_earned_amount"
+                                    android:textColor="@color/auxiliary"
+                                    android:textSize="@dimen/text_size_16" />
+
+
+                                <ImageView
+                                    android:id="@+id/actual_earned_amount_question"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:scaleType="centerInside"
+                                    android:src="@mipmap/lingyi26" />
+
+
+                                <TextView
+                                    android:id="@+id/actual_earned_amount"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:textColor="@color/character_and_title"
+                                    android:textSize="@dimen/text_size_16" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/split_line" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="55dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingRight="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/total_amount_to_be_repaid"
+                                    android:textColor="@color/auxiliary"
+                                    android:textSize="@dimen/text_size_16" />
+
+                                <TextView
+                                    android:id="@+id/repayment_amount"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:textColor="@color/character_and_title"
+                                    android:textSize="@dimen/text_size_16" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/split_line" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="55dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingRight="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/collection_bank_card_number"
+                                    android:textColor="@color/auxiliary"
+                                    android:textSize="@dimen/text_size_16" />
+
+                                <TextView
+                                    android:id="@+id/bank_card_number"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:textColor="@color/character_and_title"
+                                    android:textSize="@dimen/text_size_16" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginRight="20dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <RelativeLayout
+                                android:id="@+id/select_purpose"
+                                android:layout_width="match_parent"
+                                android:layout_height="55dp"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/icon6">
+
+                                <TextView
+                                    android:id="@+id/borrowing_purpose"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:hint="@string/select_borrowing_purpose"
+                                    android:textColor="@color/text333"
+                                    android:textColorHint="@color/text999"
+                                    android:textSize="@dimen/text_size_14" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_toRightOf="@+id/borrowing_purpose"
+                                    android:src="@mipmap/uangssprsso127" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/view_padding"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginRight="@dimen/view_padding"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/img_one"
+                                android:layout_width="25dp"
+                                android:layout_height="20dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/selector_agreement" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_money"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/genjunindezizhi"
+                                    android:textColor="@color/text333"
+                                    android:textSize="13sp" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/view_padding"
+                            android:layout_marginRight="@dimen/view_padding"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/img_two"
+                                android:layout_width="25dp"
+                                android:layout_height="20dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/selector_agreement" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/nshihuankuan"
+                                    android:textColor="@color/text333"
+                                    android:textSize="13sp" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/view_padding"
+                            android:layout_marginRight="@dimen/view_padding"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/agree"
+                                android:layout_width="25dp"
+                                android:layout_height="20dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/selector_agreement" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/agree_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/consent_minirupiah_loan_agreement"
+                                    android:textColor="@color/auxiliary"
+                                    android:textSize="@dimen/text_size_12" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/i_agree"
+                        style="@style/button"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/i_agree" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/view_padding"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/view_padding"
+                        android:layout_marginBottom="15dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/confirm_and_modify_the_countdown"
+                        android:textColor="@color/auxiliary"
+                        android:textSize="@dimen/text_size_12" />
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/llContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#60000000"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/lingyi60"
+                    android:gravity="bottom|center">
+
+                    <ImageView
+                        android:id="@+id/imgDraw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:src="@mipmap/lingyi58" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgClose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/lingyi59" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llNext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.project.movice.widget.behavior.BottomWebView
+                    android:id="@+id/webview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"></com.project.movice.widget.behavior.BottomWebView>
+
+                <Button
+                    android:id="@+id/btNext"
+                    style="@style/button"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/next_step" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+    </com.classic.common.MultipleStatusView>
+</LinearLayout>
+

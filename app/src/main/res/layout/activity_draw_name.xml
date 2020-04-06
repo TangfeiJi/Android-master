@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+  >
+<TextView
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="18dp"
+    android:text="Silahkan tulis nama anda di layar"
+    android:textSize="10sp"
+    android:textColor="@color/text333"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+    <com.project.movice.modules.drawname.views.SignatureView
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/signature_pad"
+        android:background="@mipmap/lingyi25"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/buttons_container"
+        android:layout_weight="1" />
+    <LinearLayout
+        android:id="@+id/buttons_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/clear_button"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:background="@drawable/bt_circle_hui"
+            android:text="membersihkan"
+            android:textColor="#A3A3A3"
+            android:textSize="7sp" />
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:text="konfirmasi"
+            android:background="@drawable/bt_circle_blue"
+            android:textColor="@color/white"
+            android:textSize="7sp" />
+    </LinearLayout>
+</LinearLayout>
+

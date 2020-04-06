@@ -25,9 +25,7 @@ import com.project.movice.core.rx.BaseObserver;
 import com.project.movice.modules.login.bean.LoginData;
 import com.project.movice.modules.login.contract.LoginFragmentContract;
 import com.project.movice.utils.RxUtils;
-
-import org.simple.eventbus.EventBus;
-import org.simple.eventbus.Subscriber;
+import org.greenrobot.eventbus.EventBus;
 
 import javax.inject.Inject;
 
@@ -40,15 +38,7 @@ public class LoginFragmentPresenter extends BasePresenter<LoginFragmentContract.
     LoginFragmentPresenter() {
     }
 
-    @Override
-    public void registerEventBus() {
-        EventBus.getDefault().register(this);
-    }
 
-    @Override
-    public void unregisterEventBus() {
-        EventBus.getDefault().unregister(this);
-    }
 
     @Override
     public void login(String username, String password) {
@@ -56,8 +46,4 @@ public class LoginFragmentPresenter extends BasePresenter<LoginFragmentContract.
 
     }
 
-    @Subscriber()
-    public void RegisterSuccessEvent(RegisterEvent registerEvent) {
-        mView.registerSuccess(registerEvent);
-    }
 }

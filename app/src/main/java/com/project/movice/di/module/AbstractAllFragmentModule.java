@@ -17,11 +17,17 @@
 package com.project.movice.di.module;
 
 import com.project.movice.di.component.BaseFragmentComponent;
+import com.project.movice.modules.area.AreaFragment;
+import com.project.movice.modules.home.ui.BorrowingStatusFragment;
 import com.project.movice.modules.home.ui.HomeFragment;
+import com.project.movice.modules.home.ui.HomeLoanFragment;
+import com.project.movice.modules.home.ui.StatusCancelFragment;
+import com.project.movice.modules.home.ui.StatusFailuerFragment;
+import com.project.movice.modules.home.ui.StatusRepaymentConfirmFragment;
+import com.project.movice.modules.home.ui.StatusRepaymentSelectBankFragment;
+import com.project.movice.modules.home.ui.StatusRepaymentSuccessfulFragment;
 import com.project.movice.modules.loan.ui.LoanFragment;
 
-import com.project.movice.modules.login.ui.LoginFragment;
-import com.project.movice.modules.login.ui.RegisterFragment;
 import com.project.movice.modules.mine.ui.MineFragment;
 
 
@@ -35,16 +41,38 @@ public abstract class AbstractAllFragmentModule {
     @ContributesAndroidInjector(modules = LoanFragmentModule.class)
     abstract LoanFragment contributesLoanFragmentInject();
 
-    @ContributesAndroidInjector(modules = LoginFragmentModule.class)
-    abstract LoginFragment contributesLoginFragmentInject();
-
-    @ContributesAndroidInjector(modules = RegisterFragmentModule.class)
-    abstract RegisterFragment contributesRegisterFragmentInject();
 
     @ContributesAndroidInjector(modules = HomeFragmentModule.class)
     abstract HomeFragment contributesHomeFragmentInject();
 
     @ContributesAndroidInjector(modules = MineFragmentModule.class)
     abstract MineFragment contributesMineFragmentInject();
+
+    @ContributesAndroidInjector(modules = ProductTwoFragmentModule.class)
+    abstract HomeLoanFragment contributesProductTwoFragmentInject();
+
+
+    @ContributesAndroidInjector(modules = StatusCancelFragmentModule.class)
+    abstract StatusCancelFragment StatusCancelFragmentInject();
+    @ContributesAndroidInjector(modules = StatusFailuerFragmentModule.class)
+    abstract StatusFailuerFragment StatusFailuerFragmentInject();
+
+    @ContributesAndroidInjector(modules = StatusRepaymentSelectBankFragmentModule.class)
+    abstract StatusRepaymentSelectBankFragment StatusRepaymentSelectBankFragmentInject();
+
+    @ContributesAndroidInjector(modules = StatusRepaymentSuccessfulFragmentModule.class)
+    abstract StatusRepaymentSuccessfulFragment StatusRepaymentSuccessfulFragmentInject();
+
+
+    @ContributesAndroidInjector(modules = StatusRepaymentConfirmFragmentModule.class)
+    abstract StatusRepaymentConfirmFragment StatusRepaymentConfirmFragmentInject();
+
+    @ContributesAndroidInjector(modules = AreaFragmentModule.class)
+    abstract AreaFragment AreaFragmentInject();
+
+
+
+    @ContributesAndroidInjector(modules = BorrowingStatusFragmentModule.class)
+    abstract BorrowingStatusFragment BorrowingStatusFragmentInject();
 
 }

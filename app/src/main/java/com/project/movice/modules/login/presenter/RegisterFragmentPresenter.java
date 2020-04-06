@@ -24,7 +24,7 @@ import com.project.movice.core.rx.BaseObserver;
 import com.project.movice.modules.login.bean.LoginData;
 import com.project.movice.modules.login.contract.RegisterFragmentContract;
 import com.project.movice.utils.RxUtils;
-import org.simple.eventbus.EventBus;
+import org.greenrobot.eventbus.EventBus;
 
 import javax.inject.Inject;
 

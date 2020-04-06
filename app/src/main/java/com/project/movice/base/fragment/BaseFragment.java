@@ -30,15 +30,21 @@ import com.project.movice.base.presenter.IPresenter;
 import com.project.movice.base.view.IView;
 import com.project.movice.utils.ToastUtils;
 
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
+
 import javax.inject.Inject;
 
 import dagger.android.support.AndroidSupportInjection;
+import io.reactivex.disposables.CompositeDisposable;
+import io.reactivex.disposables.Disposable;
 
 public abstract class BaseFragment<T extends IPresenter> extends AbstractSimpleFragment implements IView {
 
     @Inject
     protected T mPresenter;
-
+    private CompositeDisposable compositeDisposable;
     private MultipleStatusView mMultipleStatusView;
 
     @Override
@@ -50,10 +56,11 @@ public abstract class BaseFragment<T extends IPresenter> extends AbstractSimpleF
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        ViewGroup mNormalView = view.findViewById(R.id.normal_view);
-        if (mNormalView != null) {
-            mNormalView.setVisibility(View.GONE);
-        }
+//        ViewGroup mNormalView = view.findViewById(R.id.normal_view);
+//        if (mNormalView != null) {
+//            mNormalView.setVisibility(View.GONE);
+//        }
+
         mMultipleStatusView = view.findViewById(R.id.custom_multiple_status_view);
         if (mMultipleStatusView != null) {
             mMultipleStatusView.setOnClickListener(v -> mPresenter.reload());
@@ -61,6 +68,8 @@ public abstract class BaseFragment<T extends IPresenter> extends AbstractSimpleF
         if (mPresenter != null) {
             mPresenter.attachView(this);
         }
+
+
     }
 
     @Override
@@ -82,7 +91,7 @@ public abstract class BaseFragment<T extends IPresenter> extends AbstractSimpleF
 
     @Override
     public void showErrorMsg(String errorMsg) {
-        ToastUtils.showToast(_mActivity, errorMsg);
+        ToastUtils.showToast(getActivity(), errorMsg);
     }
 
     @Override
@@ -127,5 +136,10 @@ public abstract class BaseFragment<T extends IPresenter> extends AbstractSimpleF
     @Override
     public void handleLogoutSuccess() {
     }
-
+    protected void addSubscribe(Disposable disposable) {
+        if (compositeDisposable == null) {
+            compositeDisposable = new CompositeDisposable();
+        }
+        compositeDisposable.add(disposable);
+    }
 }

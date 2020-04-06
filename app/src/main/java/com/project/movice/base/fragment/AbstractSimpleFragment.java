@@ -25,6 +25,10 @@ import android.view.ViewGroup;
 import com.project.movice.application.MoviceApp;
 import com.squareup.leakcanary.RefWatcher;
 
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
+
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 import me.yokeyword.fragmentation.SupportFragment;
@@ -36,26 +40,37 @@ public abstract class AbstractSimpleFragment extends SupportFragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        EventBus.getDefault().register(this);
         View view = inflater.inflate(getLayoutId(), container, false);
         unBinder = ButterKnife.bind(this, view);
         initView();
+
         return view;
     }
 
     @Override
     public void onDestroyView() {
         super.onDestroyView();
+        EventBus.getDefault().unregister(this);
         if (unBinder != null && unBinder != Unbinder.EMPTY) {
             unBinder.unbind();
             unBinder = null;
         }
     }
-
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onEvent(String str) {
+        switch (str) {
+            case "EVENT_REFRESH_LANGUAGE":
+                getActivity().recreate();//刷新界面
+                break;
+        }
+    }
     @Override
     public void onDestroy() {
         super.onDestroy();
         RefWatcher refWatcher = MoviceApp.getRefWatcher(_mActivity);
         refWatcher.watch(this);
+        EventBus.getDefault().unregister(this);
     }
 
     @Override
@@ -81,5 +96,6 @@ public abstract class AbstractSimpleFragment extends SupportFragment {
      * 初始化数据
      */
     protected abstract void initEventAndData();
+
 
 }

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "455086459708",
+    "firebase_url": "https://ksprupiahsuper.firebaseio.com",
+    "project_id": "ksprupiahsuper",
+    "storage_bucket": "ksprupiahsuper.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:455086459708:android:11473bfab17234497b6c39",
+        "android_client_info": {
+          "package_name": "com.kspgemilangusahaberdikari.rupiahsuper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "455086459708-5slrbebi089rqsvc4nfeug3h2qiv87e2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kspgemilangusahaberdikari.rupiahsuper",
+            "certificate_hash": "5d3d16da0c22dd5e1ff726225a3eca1b347bc395"
+          }
+        },
+        {
+          "client_id": "455086459708-v5advtrmg3mjuo4gan84lelg65nbacec.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuwyygUQ6qTfZTzjY8da3xOTkaW81MOps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "455086459708-v5advtrmg3mjuo4gan84lelg65nbacec.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

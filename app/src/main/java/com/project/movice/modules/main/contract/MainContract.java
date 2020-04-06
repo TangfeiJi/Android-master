@@ -18,13 +18,21 @@ package com.project.movice.modules.main.contract;
 
 import com.project.movice.base.presenter.IPresenter;
 import com.project.movice.base.view.IView;
+import com.project.movice.modules.main.bean.VersionBean;
+import com.tbruyelle.rxpermissions2.RxPermissions;
 
 public interface MainContract {
     interface View extends IView {
+       void  getVersion(VersionBean versionBean);
 
+
+       void  getPermissionsUsccess();
     }
 
     interface Presenter extends IPresenter<View> {
         void logout();
+        void requestVersion();
+
+        void requestPermissions(RxPermissions rxPermissions);
     }
 }

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+     <integer name="mobile_length">12</integer><!--手机号最大长度9-12位  如果第一位是0，去掉-->
+     <integer name="ktp_length">16</integer><!--ktp最大长度  9-12验证月年（0288）-->
+     <integer name="user_name_length">30</integer><!--姓名长度-->
+     <integer name="bank_card_number">24</integer><!--银行卡长度-->
+     <integer name="company_name_number">50</integer><!--公司名称-->
+     <integer name="address_number">50</integer><!--地址-->
+
+     <integer name="anim_duration">4000</integer><!--蒲公英动画时间-->
+</resources>

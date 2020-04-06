@@ -16,35 +16,69 @@
 
 package com.project.movice.core.http;
 
-import com.project.movice.modules.loan.bean.JokeBean;
 
-import com.project.movice.modules.login.bean.LoginData;
-import com.project.movice.modules.mine.bean.ProjectTreeData;
-
-
-import java.util.List;
+import java.util.Map;
 
 import io.reactivex.Observable;
+import okhttp3.MultipartBody;
+import okhttp3.RequestBody;
+import retrofit2.http.Body;
+import retrofit2.http.Part;
 
 
 public interface HttpHelper {
 
 
-    Observable<BaseResponse<List<JokeBean>>> getData(String pager, String num);
-    Observable<BaseResponse<List<JokeBean>>> requestTicketsData(Object data);
+    Observable<BaseResponse> getVersion(Map<String, String> options);
+
+    Observable<BaseResponse> getHome(Map<String, String> options);
 
 
+    Observable<BaseResponse> get026(Map<String, String> options);
+
+    Observable<BaseResponse> get012(Map<String, String> options);
 
 
+    Observable<BaseResponse> get018(Map<String, String> options);
 
 
+    Observable<BaseResponse> get020(Map<String, String> options);
+
+    Observable<BaseResponse> get019(Map<String, String> options);
 
 
+    Observable<BaseResponse> get006(Map<String, String> options);
+
+    Observable<BaseResponse> get054(Map<String, String> options);
+    Observable<BaseResponse> get055(Map<String, String> options);
+
+    Observable<BaseResponse> get002(Map<String, String> options);
 
 
+    Observable<BaseResponse> get008(Map<String, String> options);
+    Observable<BaseResponse> get014(Map<String, String> options);
 
 
+    Observable<BaseResponse> get007(Map<String, String> options);
 
+    Observable<BaseResponse> get013(Map<String, String> options);
+    Observable<BaseResponse> get030(Map<String, String> options);
 
+    Observable<BaseResponse> get024(Map<String, String> options);
+    Observable<BaseResponse> get025(Map<String, String> options);
+    Observable<BaseResponse> get021(Map<String, String> options);
+    Observable<BaseResponse> get010(Map<String, String> options);
 
+    Observable<BaseResponse> get016(Map<String, String> options);
+
+    Observable<BaseResponse> get049(Map<String, String> options);
+
+    Observable<BaseResponse> get034(Map<String, String> options);
+    Observable<BaseResponse> get0122(Map<String, String> options);
+
+    Observable<BaseResponse> get0277(@Body RequestBody body);
+    Observable<BaseResponse> get031(Map<String, String> options);
+    Observable<BaseResponse> get001(Map<String, String> options);
+
+    Observable<BaseResponse> get053(Map<String, String> options);
 }

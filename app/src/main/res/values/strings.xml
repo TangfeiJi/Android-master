@@ -15,7 +15,8 @@
   -->
 
 <resources>
-    <string name="app_name">框架</string>
+    <string name="app_name">RupiahSuper KSP</string>
+    <string name="platform">RupiahSuper</string>
     <!-- navigation -->
     <string name="my_collect">Collect</string>
     <string name="nav_todo">TODO</string>
@@ -30,13 +31,11 @@
     <string name="useful_sites">Useful Sites</string>
 
     <!-- Login -->
-    <string name="login">Login</string>
-    <string name="register">Register</string>
     <string name="username">UserName</string>
     <string name="password">Password</string>
     <string name="no_account">No account, Register</string>
     <string name="login_success">login success</string>
-    <string name="login_fail">login fail</string>
+    <string name="login_fail">Pemuatan data gagal,klik untuk pemuatan ulang</string>
     <string name="logout_fail">logout fail</string>
     <string name="enter_password_again">enter password again</string>
     <string name="have_account">Have account, Login</string>
@@ -52,9 +51,9 @@
     <string name="login_first">Please login first</string>
 
     <!-- home pager -->
-    <string name="home_pager">Home pager</string>
-    <string name="navigation">Navigation</string>
-    <string name="project">Project</string>
+    <string name="load_pager">借款</string>
+    <string name="home_pager">首页</string>
+    <string name="my_pager">我的</string>
 
     <!-- collect -->
     <string name="collect">Collect</string>
@@ -76,5 +75,894 @@
     <string name="scale_down_show_behavior" translatable="false">com.project.movice.widget.behavior.ScaleDownShowBehavior</string>
 
     <!-- about -->
+
+
+    <!--111111111111111111111111111111111-->
+    <string name="user_name_rules">qwertyuiopasdfghjklzxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM&#160;</string>
+    <string name="digits_mobile">1234567890+</string>
+    <string name="digits_ktp">1234567890</string>
+    <string name="digits_bank_card_number">1234567890</string>
+
+
+    <string name="jiemoney">Pinjaman</string>
+    <string name="touzi">Penanaman</string>
+    <string name="wode">AKUN</string>
+
+
+    <string name="shushou">RupiahSuper Bantuan</string>
+    <string name="login">Login</string>
+    <string name="register">Daftar</string>
+    <string name="back">Kembali</string>
+    <string name="save">Selesai</string>
+    <string name="confirm">Yakin</string>
+    <string name="cancel">Batal</string>
+    <string name="facebook_login">Facebook login akun </string>
+    <string name="facebook_login_erroor">Facebook gagal login </string>
+    <string name="input_phone">Nomor ponsel</string>
+    <string name="input_verification_code">Masukkan kode verifikasi</string>
+    <string name="get_verification_code">Dapatkan kode</string>
+    <string name="please_input_verification_code">Masukkan kode verifikasi dengan 6 angka</string>
+    <string name="once_again_to_get">%1$ds kirim ulang</string>
+    <string name="register_agreement">Dengan mendaftar berarti Anda setujui perjanjian pendaftaran RupiahSuper </string>
+    <string name="select_borrowing_money">Scope kredit yang dapatanda</string>
+    <string name="select_borrowing_purpose">Tujuan pinjaman</string>
+    <string name="please_select_borrowing_purpose">Silahkan pilih tujuan pinjaman!</string>
+    <string name="select_borrowing_term">Silakan pilih waktu peminjaman \n yang rill anda butuhkan</string>
+    <string name="borrowing_money">Rp&#160;%1$s</string>
+    <string name="app_name_title">RupiahSuper</string>
+    <string name="amount_due">Jumlah pembayaran jatuh tempo</string>
+    <string name="borrowing_immediately">Pinjam sekarang</string>
+    <string name="we_will_provide_it_for_you_debt_service">Harap bayar tepat waktu, kami akan memberikan jumlah yang lebih tinggi dan layanan yang cepat dan andal.</string>
+    <string name="warm_prompt">Promt hangat：</string>
+    <string name="brrow_apply">Aplikasi pinjaman</string>
+    <string name="improve_data_tips">Semakin lengkap data, semakin besar tingkat keberhasilan</string>
+    <string name="progress_of_information_improvement">Integritas data</string>
+    <string name="personal_basic_information">Informasi pribadi</string>
+    <string name="loan_contract">Kontrak pinjaman</string>
+    <string name="loan_details">Rincian</string>
+    <string name="confirmation_of_loan_contract">Konfirmasi perjanjian pinjaman</string>
+    <string name="job_information">Informasi perkerjaan</string>
+    <string name="contact_information">Informasi kontak</string>
+    <string name="upload_other_documents">Upload foto (opsional)</string>
+    <string name="bank_card_information">Informasi kartu bank</string>
+    <string name="please_have_a_live_certification">Verifikasi video </string>
+    <string name="confirm_information_real_and_effective"> Saya menjamin informasinya sudah benar</string>
+    <string name="next_step">Selanjutnya</string>
+    <string name="name">Nama lengkap</string>
+    <string name="select_name">Nama lengkap</string>
+    <string name="ktp_number">Nomor KTP</string>
+    <string name="select_ktp_number">Nomor KTP</string>
+    <string name="ktp_inconformity">Format KTP salah</string>
+    <string name="ktp_photo">Foto KTP</string>
+    <string name="select_ktp_photo">Foto KTP</string>
+    <string name="are_recognized_title">Agar diverifikasi dengan cepat dan tepat:</string>
+    <string name="ktp_photos_condition">1.Konfirmasi KTP Anda sudah dikeluarkan dari dompet\n2.Diletakkan di tempat datar\n3.Tembak video di tempat terang</string>
+    <string name="start_taking_photos">Mulai ambil foto</string>
+    <string name="face_recording">Mulai rekaman</string>
+    <string name="please_photograph_your_work_card">Mohon fotokan anda depan meja kerja, mohon foto anda yang sedang pada tempat kerja:</string>
+    <string name="shooting_the_worker_hint_content">Mohon foto dengan pakai ID CARD kerja dan berada di lokasi kerja\n Foto yang jelas akan sangat membantu team verifikasi mensubmitkan pengajuan andan , semakin mempercepat pencairan dana anda.</string>
+    <string name="shooting_the_lohnsteuerkarte_hint_content">1.Konfirmasi Kartu NPWP Anda sudah dikeluarkan dari dompet\n2.Diletakkan di tempat datar\n3.Tembak video di tempat terang</string>
+    <string name="shooting_the_social_security_card_hint_content">1.Konfirmasi Kartu BPJS Anda sudah dikeluarkan dari dompet\n2.Diletakkan di tempat datar\n3.Tembak video di tempat terang</string>
+    <string name="shooting_the_payroll_card_hint_content">1.Silahkan upload slip gaji bulan %1$s atau bulan %2$s\n2.Foto di tempat terang dan diletakkan di tempat datar\n3.Pastikan foto jelas dan tidak buram</string>
+    <string name="face_authentication_title">Selanjutnya kami akan menyelesaikan verifikasi Anda：</string>
+    <string name="face_authentication_content">Dalam memproses ini anda perlu membaca teks yang di prompt</string>
+    <string name="solemn_promise">Tentang Nilai Kredit RupiahSuper</string>
+    <string name="guarantee_payment_on_time">Perhatian: Kelakuan kepatuhan ketentuan akan meningkat kredit Anda, agar menikmati pinjaman yang lebih besar dengan suku bunga yang rendah. Penolakan untuk melunasi akan diajukan ke pusat kredit dan akan menyebabkan Anda tidak dapat menggunakan aplikasi online yang lain.</string>
+    <string name="you_also_have_outstanding_loans">Pinjaman Anda masih belum dilunasi，untuk sementara ini tidak dapat mengajukan permohonan pinjaman lagi。Lunasi pinjaman dengan tepat waktu supaya mendapat pinjaman yang lebih besar！</string>
+    <string name="sex">Jenis kelamin</string>
+    <string name="select_sex">Jenis kelamin</string>
+    <string name="date_of_birth">Tanggal lahir</string>
+    <string name="select_date_of_birth">Tanggal lahir</string>
+    <string name="marital_status">Status pernikahan</string>
+    <string name="select_marital_status">Status pernikahan</string>
+    <string name="home_address">Alamat rumah</string>
+    <string name="home_detailed_address">Alamat rumah yang detail</string>
+    <string name="select_home_address">Alamat rumah</string>
+    <string name="please_enter_your_company_detailed_home_address">Alamat rumah yang detail</string>
+    <string name="please_select">Silahkan Pilih</string>
+    <string name="reselect">Foto ulang</string>
+    <string name="contact_and_your_relationship">Hubungan kontak</string>
+    <string name="please_select_a_direct_relative">Hubungan kontak</string>
+    <string name="please_enter_the_name_of_the_contact">Nama lengkap</string>
+    <string name="please_enter_the_contact_phone_number">Nomor ponsel</string>
+    <string name="phone_number">Nomor ponsel</string>
+    <string name="email">Email</string>
+    <string name="please_enter_email">Email</string>
+    <string name="whatsapp">Akun WhatsApp</string>
+    <string name="please_enter_whatsapp_account">Akun WhatsApp</string>
+    <string name="please_select_a_colleague">Hubungan kontak</string>
+    <string name="job">Pekerjaan</string>
+    <string name="please_choose_your_career">Pekerjaan</string>
+    <string name="working_seniority">Jangka waktu lama bekerja</string>
+    <string name="please_select_working_seniority">Jangka waktu lama bekerja</string>
+    <string name="income_level">Tingkat pendapatan</string>
+    <string name="please_select_your_income_level_range">Tingkat pendapatan</string>
+    <string name="pay_day">Tanggal penggajian</string>
+    <string name="please_select_your_discovery_cycle">Tanggal penggajian</string>
+    <string name="company_name">Nama Perusahaan / Lainnya</string>
+    <string name="please_fill_in_the_full_name_of_your_company">Nama perusahaan</string>
+    <string name="company_tel">Nomor telepon perusahaan</string>
+    <string name="please_fill_in_your_office_telephone_number">Nomor telepon perusahaan</string>
+    <string name="company_address">Alamat perusahaan</string>
+    <string name="please_select_the_area_of_your_company">Alamat perusahaan</string>
+    <string name="full_address_of_company">Alamat perusahaan yang detail</string>
+    <string name="please_enter_your_company_detailed_office_address">Alamat perusahaan yang detail</string>
+    <string name="job_card">ID Card pekerjaan/poto pekerjaan</string>
+    <string name="please_take_a_picture_of_your_work_card">ID Card pekerjaan/poto pekerjaan</string>
+    <string name="please_shoot">Ambil foto</string>
+
+
+    <string name="electronic_account_name">Nama penerima pinjaman</string>
+    <string name="name_of_payee">Nama pemilik rekening bank</string>
+    <string name="ensure_the_same_name_as_ktp">Nama penerima pinjaman</string>
+    <string name="bank_card_phone">No telpon yang daftar di Bank</string>
+    <string name="due_bank">Bank penerima</string>
+    <string name="please_select_your_collection_bank">Bank penerima</string>
+    <string name="your_collection_bank_card_number">No. Rekening Bank Penerima</string>
+    <string name="please_enter_your_credit_card_number">No. Rekening Bank Penerima</string>
+
+    <string name="steuerkarte_card_number">Nomor NPWP</string>
+    <string name="fill_in_your_tax_card_number">Nomor NPWP</string>
+    <string name="upload_tax_credit">Foto kartu NPWP</string>
+    <string name="please_take_a_picture_of_your_tax_card">Foto kartu NPWP</string>
+    <string name="salary_sheet">Foto Slip gaji</string>
+    <string name="please_take_a_picture_of_your_salary">Foto Slip gaji</string>
+    <string name="credit_card">Foto Kartu credit</string>
+    <string name="Please_take_a_picture_of_your_credit_card">Foto Kartu credit</string>
+    <string name="social_security_cards">Foto Kartu BPJS</string>
+    <string name="please_take_a_picture_of_your_social_security_card">Foto Kartu BPJS</string>
+    <string name="normal_repayment_of_other_loans">Rincian bank pengembalian pinjaman lain</string>
+    <string name="please_take_a_picture_of_your_repayment_bank">Rincian bank pengembalian pinjaman lain</string>
+
+    <string name="total_loan_amount">Jumlah pinjaman</string>
+    <string name="life_of_loan">Periode pinjaman</string>
+    <string name="actual_earned_amount">Jumlah Aktual</string>
+    <string name="total_amount_to_be_repaid">Jumlah pembayaran</string>
+    <string name="collection_bank_card_number">Nomor akun</string>
+    <string name="consent_minirupiah_loan_agreement">Saya menyetujui Perjanjian pinjaman RupiahSuper</string>
+    <string name="i_agree">Saya setuju</string>
+    <string name="confirm_and_modify_the_countdown">Setelah konfirmasi, masih ada 2 menit untuk membetulkan informasi</string>
+    <string name="repayment_successful">Pelunasan pinjaman berhasil</string>
+    <string name="like_the_repayment_was_successful">Selamat, Anda sudah berhasil malakukan pembayaran dan bisa mengajukan lagi permohonan pinjaman dengan lebih cepat.</string>
+    <string name="maintaining_repayment_habits">Mohon melanjutkan kebiasaan pelunasan pinjaman dengan baik baik, agar nilai kredit Anda dapat ditambah terus dan bisa menikmati pinjaman lebih besar dengan  bunga yg lebih kecil.</string>
+
+    <string name="borrowing_number">Nomor pinjaman</string>
+    <string name="application_date">Waktu aplikasi</string>
+    <string name="borrowing_cycle">Tenor Pinjaman</string>
+    <string name="borrowing_balance">Jumlah pinjaman</string>
+    <string name="repayment_amount">Jumlah pembayaran</string>
+    <string name="pending_application">Sedang menunggu aplikasi</string>
+    <string name="count_down">Hitung mundur</string>
+    <string name="waiting">Menunggu</string>
+    <string name="submit_audit">Verifikasi</string>
+    <string name="apply_for_cancellation">Batal permohonan</string>
+    <string name="cant_cancel">Permohonan sudah diajukan\ntidak dapat dibatalkan</string>
+    <string name="loan_audit">Verifikasi</string>
+    <string name="loan_audit1">Sedang di verifikasi</string>
+    <string name="review_success">Lolos verifikasi</string>
+    <string name="borrowing_to_account">Sudah cair</string>
+    <string name="wait_for_a_loan">Tunggu dana dicair</string>
+    <string name="arrival_time">1~2&#160;&#160;Hari kerja</string>
+    <string name="account_expected_date">1&#160;&#160;Hari kerja</string>
+    <string name="auditing_feedback">Umpan balik verifikasi</string>
+    <string name="please_select_the_repayment_bank">Bank untuk pengembalian pinjaman</string>
+    <string name="the_information_is_not_approved">Maaf，data permohonan Anda\ntidak dapat lolos verifikasi</string>
+    <string name="i_see">Baik，saya mengerti</string>
+    <string name="see">Saya mengerti</string>
+    <string name="lending_failure_believes_content">Gagal pencairan, Mohon mengecek terlebih dahulu data rekening bank anda, dan melakukan pengajuan kembali.</string>
+    <string name="video_recording_title">Membaca teks dibawah ini sambil rekam video:(Tekan lama untuk merekam video)</string>
+    <string name="video_recording_content">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Nama saya xxx dan saya secara sukarela meminjam uang dari RupiahSuper. Jika saya tidak membayar, saya bersedia diadili secara hukum dan dimasukan pada daftar hitam OJK</string>
+    <string name="live_authentication_submission_failed">Pengajuan verifikasi hidup gagal </string>
+    <string name="improve_basic_personal_information">Lengkapi informasi pribadi</string>
+    <string name="cooperation_account_binding_title">Verifikasi resmi</string>
+    <string name="authentication_of_multiple_official_accounts_prompt">Perlu mengenal data data lain, akan lebih membantu kami untuk melakukan penilaian atas pengajuan anda. serta dapat meningkatkan nilai kredit dan tingkat kelulusan aplikasi Anda.</string>
+    <string name="authentication_failed_please_try_again">Verifikasi gagal, mohon dicoba ulang.</string>
+    <string name="retry">Diulangi</string>
+    <string name="gojek">Gojek</string>
+    <string name="suika">NPWP</string>
+    <string name="bpjs">BPJS</string>
+    <string name="lazada">Lazada</string>
+    <string name="tokopedia">Tokopedia</string>
+    <string name="facebook">Facebook</string>
+    <string name="instagram">Instagram</string>
+    <string name="basic_information_certification">Informasi basis</string>
+    <string name="travel_certification">Transportasi</string>
+    <string name="e_commerce_certification">E-pembelanjaan</string>
+    <string name="social_certification">Sosial aplikasi</string>
+    <string name="operator_certification">Operator ponsel</string>
+    <string name="unauthenticated_confirm_exit">Anda belum berhasil menyelesaikan verifikasi, yakin mau kembali ke halaman lalu？</string>
+
+    <string name="telphonesms">Silakan lengkapi sertifikasi operator</string>
+    <string name="waiting_for_payment">Menunggu pembayaran</string>
+    <string name="repayment_to_the_following_designated_account">Transfer ke</string>
+    <string name="dynamic_virtual_card_number">Virtual account</string>
+    <string name="repayment_amount1">Jumlah pembayaran：</string>
+    <string name="the_amount_is_in_doubt">Ada pertanyaan?</string>
+    <string name="reimbursement_deadline">Menyelesaikan pembayaran di tanggal %1$s</string>
+    <string name="refund_guidelines">Panduan pembayaran</string>
+    <string name="i_borrow">Record Pinjaman</string>
+    <string name="friends_share">Sharing dengan teman</string>
+    <string name="google_play_evaluate">Menilai kami ke Google Play</string>
+    <string name="security_center">Pusat keamanan</string>
+    <string name="out_login">Logout</string>
+    <string name="make_sure_to_log_out">Apakah Anda yakin mau logout?</string>
+    <string name="click_on_the_avatar_login">Login/daftar</string>
+    <string name="hi_im_your_mini_assistant">Hi, ini pembantu RupiahSuper Anda</string>
+    <string name="feedback">Umpan balik</string>
+    <string name="questions_briefly">Deskripsi masalah</string>
+    <string name="simply_describe_the_problem">Deskripsi masalah yang Anda terhadap，agar kami dapat cepat selesaikan</string>
+    <string name="feedback_the_detailed_content">Deskripsi masalah yang Anda terhadap，kami akan cepat informasikan Anda，Anda dapat terima informasi di "pesan saya"。
+        Mohon maaf atas ketidaknyamanan untuk Anda。Terima kasih atas pendapat dan saran Anda untuk RupiahSuper。</string>
+    <string name="feedback_umber">(%1$s/200)</string>
+    <string name="upload_problem_screenshot">Screenshot masalah upload(%1$d/5)</string>
+    <string name="feedback_contact_information">Catat cara untuk hubungi Anda，jika tidak kami akan hubungi Anda melalui nomor ponsel waktu pendaftaran</string>
+    <string name="submit_feedback">Mengajukan umpan balik</string>
+    <string name="feedback_successfully_submitted">Umpan balik Anda sudah sukses diajukan，Anda dapat terima informasi di "pesan saya"，mohon menunggu informasi dari customer service，terima kasih！</string>
+    <string name="feedback_waiting_for_the_contact_of_the_service">Sambil menunggu，customer service mungkin akan hubungi Anda，mohon konfirmasi cara hubungi Anda tetap aktif。</string>
+    <string name="are_you_sure_you_quit_without_saving">Apakah Anda yakin mau keluar tanpa simpan？</string>
+    <string name="please_fill_out">Mengisi</string>
+    <string name="wrong_number_format">Format nomor ponsel salah</string>
+    <string name="exit_system">Tekan sekali lagi untuk keluar dari aplikasi</string>
+    <string name="message_center">Pusat pesan</string>
+    <string name="announcement">Pemberitahuan</string>
+    <string name="message">Pesan</string>
+    <string name="system_message">Pesan sistem</string>
+    <string name="system_announcement">Pemberitahuan sistem</string>
+    <string name="no_message">Belum ada pesan apapun</string>
+    <string name="no_announcement">Belum ada pemberitahuan apapun</string>
+    <string name="mini_rupiah_team">Tim RupiahSuper</string>
+    <string name="borrowing_number_s">Nomor pinjaman&#160;&#160;%1$s</string>
+    <string name="status_under_review">Verifikasi gagal</string>
+    <string name="status_audit_failure">Sedang diverifikasi</string>
+    <string name="status_to_be_repayments">Tunggu pengembalian pinjaman</string>
+    <string name="status_repayment">Pengembalian pinjaman sukses</string>
+    <string name="status_cancel">Batalkan permohonan</string>
+    <string name="status_suspended">Status tangguh</string>
+    <string name="status_overdue">Status terlambat</string>
+    <string name="no_loan_information_has_been_submitted">Anda belum mengajukan informasi untuk permohonan pinjaman</string>
+    <string name="latest_loan_status">Status pinjaman terbaru</string>
+    <string name="loan_status_updates_at_any_time">Situasi diperbarui</string>
+    <string name="repayment_deadline">Tanggal pengembalian</string>
+    <string name="principal">(Termasuk pokok pinjaman&#160;Rp&#160;%1$s)</string>
+    <string name="interest">Bunga</string>
+    <string name="penalty">Penalti</string>
+    <string name="repayment_bank_name">Bank rekening</string>
+    <string name="repayment_bank_card_number">Nomor akun virtual</string>
+    <string name="select_province">Propinsi</string>
+    <string name="select_city">Kota/kabupaten</string>
+    <string name="select_area">Kecamatan</string>
+    <string name="select_street">Kelurahan</string>
+    <string name="verification_code_error">Kode verifikasi salah</string>
+    <string name="your_information_is_not_perfect">Informasi Anda belum lengkap，silahkan mengajukan permohonan setelah melengkapi informasi Anda</string>
+    <string name="share_facebook">Sharing ke\nfacebook</string>
+    <string name="downloading">Sedang download</string>
+    <string name="download_is_in_progress">Sedang download...</string>
+    <string name="download_start">Mulai download</string>
+
+
+    <string name="borrowing_purposes1">Cicilan kendaraan</string>
+    <string name="borrowing_purposes2">Perbaikan kendaraan</string>
+    <string name="borrowing_purposes3">Liburan</string>
+    <string name="borrowing_purposes4">Renovasi rumah</string>
+    <string name="borrowing_purposes5">Biaya kos-kosan</string>
+    <string name="borrowing_purposes6">Biaya pernikahan</string>
+    <string name="borrowing_purposes7">Biaya transportasi</string>
+    <string name="borrowing_purposes8">Lain-lain</string>
+    <string name="borrowing_purposes9">Biaya medis</string>
+    <string name="borrowing_purposes10">Keperluan sehari-hari</string>
+    <string name="borrowing_purposes11">Modal bisnis</string>
+    <string name="borrowing_purposes12">Tagihan listrik</string>
+    <string name="borrowing_purposes13">Pembayaran pinjaman</string>
+    <string name="borrowing_purposes14">Cicilan elektronik</string>
+    <string name="borrowing_purposes15">Cicilan rumah</string>
+    <string name="seven_hari">7 Hari</string>
+    <string name="fourteen_hari">14 Hari</string>
+    <string name="sex_man">Laki-laki</string>
+    <string name="sex_female">Perempuan</string>
+    <string name="education1">Diploma 1</string>
+    <string name="education2">Diploma 2</string>
+    <string name="education3">Diploma 3</string>
+    <string name="education4">SD</string>
+    <string name="education5">SLTP</string>
+    <string name="education6">SLTA</string>
+    <string name="education7">S1</string>
+    <string name="education8">S2</string>
+    <string name="education9">S3</string>
+    <string name="unmarried">Single</string>
+    <string name="married">Telah menikah</string>
+    <string name="cerai">Cerai</string>
+    <string name="duda">Duda/janda</string>
+    <string name="occupation1">Accounting/finance officer</string>
+    <string name="occupation2">Customer service</string>
+    <string name="occupation3">Engineer</string>
+    <string name="occupation4">Executive</string>
+    <string name="occupation5">Administrasi</string>
+    <string name="occupation6">Teknologi informasi</string>
+    <string name="occupation7">Konsultan/analis</string>
+    <string name="occupation8">Marketing</string>
+    <string name="occupation9">Pengajar(guru,dosen)</string>
+    <string name="occupation10">Militer</string>
+    <string name="occupation11">Pelajar/mahasiswa</string>
+    <string name="occupation12">Pengusaha</string>
+    <string name="occupation13">Polisi</string>
+    <string name="occupation14">Petani</string>
+    <string name="occupation15">Nelayan</string>
+    <string name="occupation16">Peternak</string>
+    <string name="occupation17">Dokter</string>
+    <string name="occupation18">Tenaga medis (perawat, bidan)</string>
+    <string name="occupation19">Perhotelan&#38;restoran(koki,bartender)</string>
+    <string name="occupation20">Peneliti</string>
+    <string name="occupation21">Desainer</string>
+    <string name="occupation22">Arsitek</string>
+    <string name="occupation23">Pekerja seni（artis,musisi,pelukis）</string>
+    <string name="occupation24">Pengaman/security</string>
+    <string name="occupation25">Pialang/broker</string>
+    <string name="occupation26">Distributor</string>
+    <string name="occupation27">Transportasi udara(pilot,awak kabin)</string>
+    <string name="occupation28">Transportasi laut(kapten,ABK)</string>
+    <string name="occupation29">Transportasi darat(supir)</string>
+    <string name="occupation30">Buruh(buruh pabrik,buruh bangunan)</string>
+    <string name="occupation31">Pertukangan(tukang kayu, tukang kulit)</string>
+    <string name="occupation32">Ibu rumah tangga</string>
+    <string name="occupation33">Pejabat negara/penyelenggara negara</string>
+    <string name="occupation34">Pegawai pemerintah/lembaga negara</string>
+    <string name="occupation35">Pekerja tidak tetap（pembantu）</string>
+    <string name="occupation36">Perusahaan kredit</string>
+    <string name="occupation37">Pengacara</string>
+    <string name="occupation38">Koleksi</string>
+    <string name="occupation39">Orang religius penuh waktu</string>
+    <string name="occupation40">Reporter</string>
+    <string name="income_level1">2.000.000 Ke bawah</string>
+    <string name="income_level5">2.000.000~2.500.000</string>
+    <string name="income_level6">2.500.000~3.000.000</string>
+    <string name="income_level7">3.000.000~3.500.000</string>
+    <string name="income_level8">3.500.000~4.000.000</string>
+    <string name="income_level9">4.000.000~4.500.000</string>
+    <string name="income_level10">4.500.000~5.000.000</string>
+    <string name="income_level11">5.000.000~5.500.000</string>
+    <string name="income_level12">5.500.000~6.000.000</string>
+    <string name="income_level13">6.000.000~6.500.000</string>
+    <string name="income_level14">6.500.000~7.000.000</string>
+    <string name="income_level15">7.000.000~7.500.000</string>
+    <string name="income_level16">7.500.000~8.000.000</string>
+    <string name="income_level4">8.000.000 Ke atas</string>
+
+    <string name="state_owned">Milik negara</string>
+    <string name="foreign_capital">PMA</string>
+    <string name="the_private">Swasta</string>
+    <string name="joint_venture">Corporate</string>
+    <string name="working_seniority1">1 Tahun dan 1 tahun ke bawah</string>
+    <string name="working_seniority2">1~3 Tahun</string>
+    <string name="working_seniority3">3~5 Tahun</string>
+    <string name="working_seniority4">5~10 Tahun</string>
+    <string name="working_seniority5">10 Ke atas</string>
+
+    <string name="hunian_ketik1">RUMAH KONTRAKAN</string>
+    <string name="hunian_ketik2">SEWA RUMAH</string>
+    <string name="hunian_ketik3">TINGGAL DENGAN ORANGTUA/SAUDARA</string>
+    <string name="hunian_ketik4">RUMAH SENDIRI</string>
+    <string name="hunian_ketik5">KOS</string>
+    <string name="hunian_ketik6">RUMAH DINAS</string>
+
+    <string name="durasi_hunian1">TIGA_BULAN</string>
+    <string name="durasi_hunian2">ENAM_BULAN</string>
+    <string name="durasi_hunian3">SATU_TAHUN</string>
+    <string name="durasi_hunian4">DUA_TAHUN</string>
+    <string name="durasi_hunian5">DI_ATAS_DUA_TAHUN</string>
+
+    <string name="jumlah_anak1">NIHIL</string>
+    <string name="jumlah_anak2">SATU</string>
+    <string name="jumlah_anak3">DUA</string>
+    <string name="jumlah_anak4">TIGA</string>
+    <string name="jumlah_anak5">EMPAT</string>
+    <string name="jumlah_anak6">DIATASEMPAT</string>
+
+
+    <string name="image_select_opt_done">Selesai</string>
+    <string name="image_select_opt_preview">Pratinjau</string>
+    <string name="select_image">Gambar</string>
+    <string name="all_photos">Semua foto</string>
+    <string name="select_numbe">Paling banyak dapat pilih %1$d foto</string>
+
+    <string name="permissions_contactinfo">Silahkan izinkan RupiahSuper untuk mengakses buku kontak Anda secara membuka “ pengaturan-aplikasi-RupiahSuper-pengelola hak”. Kemudian Anda bisa langsung pilih nomor kontak person dari buku kontak ponsel.</string>
+    <string name="settings">Pengaturan</string>
+    <string name="unable_to_save_photos">Foto tidak dapat tersimpan，silahkan periksa memori ponsel Anda</string>
+    <string name="no_store_camera_permissions">Maad, Anda harus sesuaikan pengaturan ponsel supaya kami diizinkan kamera ponsel Anda.</string>
+    <string name="need_permission_a">Perlu diizinkan oleh %1$s.</string>
+    <string name="need_permission">Perlu diizinkan oleh %1$s，jika tidak kami tidak dapat melanjutkan，silahkan periksa pengaturan ponsel sudah sesuai atau belum.</string>
+    <string name="permission_camera">Kamera</string>
+    <string name="permission_recording">Rekaman</string>
+    <string name="permission_storage">Memori ponsel</string>
+    <string name="permission_contacts">Buku kontak</string>
+    <string name="permission_location">Posisi</string>
+
+
+    <string name="error_view_loading">Pemuatan…</string>
+    <string name="error_view_load_error_click_to_refresh">Pemuatan data gagal\nklik untuk pemuatan ulang</string>
+    <string name="error_view_network_error_click_to_refresh">Tidak ada jaringan internet</string>
+    <string name="error_view_no_data">Belum ada isi</string>
+    <string name="network_connection_is_failed">Penyambungan internet gagal</string>
+    <string name="request_failed">Permohonan gagal</string>
+
+    <!-- facebook -->
+    <string name="FACEBOOK_APP_ID">673661206419572</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">6f038ba9af5e0f5f2b50058042ba51e1</string>
+    // if your Facebook App ID is 1234567, you should use ak1234567
+
+
+    <string name="recording_time_is_too_short">Waktu perekaman tidak boleh kurang dari 3 detik</string>
+    <string name="email_error">Format email salah</string>
+    <string name="video_file_is_too_large">Video terlalu panjang, silahkan tembak ulang.</string>
+    <string name="get_permission_reminder">Agar Anda dapat mengajukan permohonan sukses, mohon izinkan semua item yang mucul saat mendaftar.</string>
+
+    <string name="status_apply_reate">Pengajuan berhasil</string>
+    <string name="footer_pullup">Loading dengan penarikan keatas</string>
+    <string name="footer_release">Mulai loading dengan lepas penarikan</string>
+    <string name="footer_loading">Loading...</string>
+    <string name="footer_refreshing">Refreshing...</string>
+    <string name="footer_finish">Loading berhasil</string>
+    <string name="footer_failed">Loading gagal</string>
+    <string name="footer_allloaded">Berhasil loading semua</string>
+
+    <string name="bni_atm_title">BNI-ATM</string>
+    <string name="bni_internet_banking_title">BNI-Internet Banking</string>
+    <string name="bni_mobile_banking_title">BNI-Mobile Banking</string>
+    <string name="bni_others_internet_banking_title">Others Internet Banking</string>
+    <string name="bni_others_mobile_banking_title">Others Mobile Banking</string>
+
+    <string name="permata_atm_title">Permata-ATM</string>
+    <string name="permata_internet_banking_title">Permata-Internet Banking</string>
+    <string name="permata_mobile_banking_title">Permata-Mobile Banking</string>
+    <string name="permata_others_internet_banking_title">Others Internet Banking</string>
+    <string name="permata_others_mobile_banking_title">Others Mobile Banking</string>
+
+    <string name="mandiri_atm_title">Mandiri-ATM</string>
+    <string name="mandiri_internet_banking_title">Mandiri-Internet Banking</string>
+    <string name="mandiri_mobile_banking_title">Mandiri-Mobile Banking</string>
+    <string name="other_bank_atm_title">Others Bank-ATM</string>
+    <string name="alfa_store_title">Alfa_store</string>
+
+    <string name="danamon_atm_title">Danamon-ATM</string>
+
+    <string name="cimb_atm_title">CIMB-ATM</string>
+    <string name="cimb_internet_banking_title">CIMB-Internet Banking</string>
+    <string name="cimb_mobile_banking_title">CIMB-Mobile Banking</string>
+
+
+    <!-- Danamon -本行ATM -->
+    <string name="doku_danamon_atm">1. Masukkan kartu ATM Danamon, lalu masukkan PIN ATM.\n2. Pilih menu "Pembayaran", kemudian menu "Lainnya".\n3. Pilih menu "Virtual Account".\n4. Masukkan Nomor Virtual Account %1$s.\n5. Ketika muncul Konfirmasi Transfer, pilih "Ya" / "Lanjut".\n6. Transaksi selesai. Simpan bukti transaksi.</string>
+    <!-- Danamon -他行ATM -->
+    <string name="doku_danamon_other_bank_atm">1. Masukkan kartu ATM, lalu masukkan PIN ATM.\n2. Pilih menu "Transfer Antar Bank".\n3. Masukan Kode Bank Tujuan : Danamon (Kode Bank : 011) + Nomor Virtual Account %1$s.\n4. Masukan jumlah sesuai tagihan.\n5. Ketika muncul Konfirmasi Transfer, pilih "Ya" / "Lanjut".\n6. Transaksi selesai dan ambil bukti transfer anda</string>
+
+    <!-- CIMB -本行ATM -->
+    <string name="doku_cimb_atm">1. Masukkan kartu ATM CIMB Niaga, lalu masukkan "PIN ATM".\n2. Pilih menu "Transfer".\n3. Pilih menu "Rekening CIMB Niaga".\n4. Masukkan "Jumlah" lalu masukkan "%1$s".\n5. Ketika muncul konfirmasi transfer, pilih "Ya" / "Lanjut".\n6. Transaksi selesai dan simpan bukti transaksi.</string>
+    <!-- CIMB -本行网银 -->
+    <string name="doku_cimb_internet_banking">1. Login ke Internet Banking CIMB Niaga.\n2. Pilih Menu "TRANSFER".\n3. Pilih rekening sumber dana pada bagian "Transfer From", masukkan "Jumlah", lalu pada bagian "Transfer To" pilih "Other Account (CIMB Niaga/Rekening Ponsel)", kemudian pilih "NEXT".\n4. Pilih "BANK CIMB NIAGA", lalu masukkan "%1$s" di kolom "Rekening Penerima", kemudian pilih "NEXT".\n5. Masukkan "mPIN" lalu pilih "Submit".\n6. Transaksi selesai dan simpan bukti transaksi.</string>
+    <!-- CIMB -本行手机银行 -->
+    <string name="doku_cimb_mobile_banking">1. Login Mobile Banking CIMB Niaga.\n2. Pilih menu "Transfer", lalu pilih "Rekening Ponsel/CIMB Niaga".\n3. Pilih "Rekening sumber".\n4. Pilih "Rekening Tujuan": CASA.\n5. Masukkan "%1$s" dan "Jumlah".\n6. Ketika muncul konfirmasi pembayaran, pilih "Ya" / "Lanjut".\n7. Transaksi selesai dan simpan bukti transaksi.</string>
+    <!-- CIMB -他行ATM -->
+    <string name="doku_cimb_other_bank_atm">Melalui ATM Bank Lain\n1. Masukkan kartu ATM, lalu masukkan PIN ATM.\n2. Pilih Menu Transfer Antar Bank.\n3. Masukan Kode Bank Tujuan : CIMB Niaga (Kode Bank : 022) + Nomor Virtual Account %1$s.\n4. Masukan jumlah transfer sesuai Tagihan.\n5. Ketika Muncul konfirmasi pembayaran, pilih "Ya" / "Lanjut".\n6. Transaksi selesai dan ambil bukti transfer anda</string>
+
+    <!-- Permata  -本行ATM -->
+    <string name="doku_permata_atm">1. Masukkan PIN\n2. Pilih "Transfer". Apabila menggunakan ATM Bank Lain, pilih "Transaksi lainnya" lalu "Transfer"\n3. Pilih "Ke Rek Bank Lain"\n4. Masukkan Kode Bank Permata (013) diikuti 16 digit kode bayar %1$s sebagai rekening tujuan, kemudian tekan "Benar"\n5. Masukkan Jumlah pembayaran sesuai dengan yang ditagihkan (Jumlah yang ditransfer harus sama persis, tidak boleh lebih dan kurang). Jumlah nominal yang tidak sesuai dengan tagihan akan menyebabkan transaksi gagal\n6. Muncul Layar Konfirmasi Transfer yang berisi nomor rekening tujuan Bank Permata dan Nama beserta jumlah yang dibayar, jika sudah benar, Tekan "Benar"\n7. Selesai</string>
+    <!-- Permata  -本行网银 -->
+    <string name="doku_permata_internet_banking">Keterangan: Pembayaran tidak bisa dilakukan di Internet Banking BCA (KlikBCA)\n1. Login ke dalam akun Internet Banking\n2. Pilih "Transfer" dan pilih "Bank Lainnya". Pilih Bank Permata (013) sebagai rekening tujuan\n3. Masukkan jumlah pembayaran sesuai dengan yang di tagihkan\n4. Isi nomor rekening tujuan dengan 16 digit kode pembayaran %1$s \n5. Muncul layar konfirmasi Transfer yang berisi nomor rekening tujuan Bank Permata dan Nama beserta jumlah yang dibayar. Jika sudah benar, tekan "Benar"\n6. Selesai</string>
+
+    <!-- BNI-本行ATM -->
+    <string name="bni_atm">1. Masukkan kartu, pilih bahasa kemudian masukkan PIN Anda\n2. Pilih "Menu Lainnya" lalu pilih "Transfer"\n3. Pilih "Tabungan" lalu "Rekening BNI Virtual Account"\n4. Masukkan nomor Virtual Account %1$s dan nominal yang ingin Anda bayar\n5. Periksa kembali data transaksi kemudian tekan "Ya"</string>
+    <!-- BNI-本行网银 -->
+    <string name="bni_internet_banking">1. Login di https://ibank.bni.co.id, masukkan User ID dan Password\n 2. Pilih “TRANSFER” lalu pilih “Tambah Rekening Favorit\n3. Jika Anda menggunakan desktop untuk menambah rekening, pilih “Transaksi” lalu pilih “Atur Rekening Tujuan” kemudian “Tambah Rekening Tujuan”\n4. Masukkan Nama dan nomor Virtual Account %1$s Anda, lalu masukkan Kode Otentikasi Token\n5. Jika Nomor rekening tujuan berhasil ditambahkan, kembali ke menu “TRANSFER”\n6. Pilih “TRANSFER ANTAR REKENING BNI”, kemudian pilih rekening tujuan\n7. Pilih Rekening Debit dan ketik nominal, lalu masukkan kode otentikasi token</string>
+    <!-- BNI-本行手机银行 -->
+    <string name="bni_mobile_banking">1. Login ke BNI Mobile Banking, masukkan User ID dan MPIN\n2. Pilih menu “Transfer”, lalu pilih “Antar Rekening BNI”\n3. Pilih “Input Rekening Baru”\n4. Masukkan “Rekening Debet”, “Rekening Tujuan” %1$s dan “Nominal” kemudian klik “Lanjut”\n5. Periksa kembali data transaksi Anda, masukkan “Password Transaksi” kemudian klik “Lanjut”</string>
+    <!-- BNI-他行ATM -->
+    <string name="bni_other_bank_atm">1. Pilih “Transfer” pada menu\n2. Pilih “Ke Bank Lain” pada menu\n3. Masukan kode bank “009” dan pilih “Benar”\n4. Masukan “Kode Pembayan” %1$s pada tujuan transfer\n5. Masukan nominal yang harus dibayarkan dan pilih “Benar”\n6. Ikuti langkah selanjutnya sampai transaksi berhasil</string>
+    <!-- BNI-他行网银 -->
+    <string name="bni_other_internet_banking">1. Pilih “Transfer” pada menu\n2. Pilih “Ke Bank Lain” pada menu\n	3. Masukan kode bank “Bank BNI (009)”\n4. Masukan “Kode Pembayan” %1$s pada tujuan transfer\n	5. Masukan nominal yang harus dibayarkan dan pilih “OK”\n6. Ikuti langkah selanjutnya sampai transaksi berhasil</string>
+    <!-- BNI-他行手机银行 -->
+    <string name="bni_other_mobile_banking">1. Pilih “Transfer” pada menu\n2. Pilih “Ke Bank Lain” pada menu\n3. Masukan kode bank “Bank BNI (009)”\n4. Masukan “Kode Pembayan” %1$s pada tujuan transfer\n5. Masukan nominal yang harus dibayarkan dan pilih “OK”\n6. Ikuti langkah selanjutnya sampai transaksi berhasil</string>
+
+
+    <!-- permata-本行ATM -->
+    <string name="permata_atm">1 .Masukkan Kartu ATM Permata dan PIN\n2 .Pilih “Transaksi Lainya” > Pilih “Pembayaran” > Pilih “ Lainya” > Pilih “Virtual Account\n3. Masukkan nomor Virtual Account %1$s\n4. Masukkan nominal\n5. Ikuti Instruksi untuk menyelesaikan transaksi</string>
+    <!-- permata-本行网银 -->
+    <string name="permata_internet_banking">1. Kunjungi Internet Banking Permata\n2. Masukkan User Name dan Password\n3. Pilih Pembayaran > Tagihan Pembayaran > Virtual Account\n4. Masukan “Billing Number” dengan mengetikan “kode pembayran” %1$s yang ada\n5. Masukan nominal yang harus di bayar dan pilih “Lanjut”\n6. Ikuti langkah selanjutnya sampai transaksi di nyatakan berhasil. </string>
+    <!-- permata-本行手机银行 -->
+    <string name="permata_mobile_banking">1. Buka Aplikasi Mobile Banking Permata di HP\n2. Masukkan User Name dan Password\n3. Pilih Pembayaran > Virtual Account > Pilih Rekening untuk Pembayaran > Pilih Tagihan Baru > Masukkan Nomor Virtual Account %1$s\n4. Masukkan Nominal\n5. Ikuti langkah selanjutnya sampai transaksi di nyatakan berhasil. </string>
+    <!-- permata-他行ATM -->
+    <string name="permata_other_bank_atm">1. Pilih “Transfer” pada menu\n2. Pilih “Ke Bank Lain” pada menu\n3. Masukan kode bank “013” dan pilih “Benar”\n4. Masukan “Kode Pembayan” %1$s pada tujuan transfer\n	5. Masukan nominal yang harus dibayarkan dan pilih “Benar”\n6. Ikuti langkah selanjutnya sampai transaksi berhasil</string>
+    <!-- permata-他行网银 -->
+    <string name="permata_other_internet_banking">1. Pilih “Transfer” pada menu\n2. Pilih “Ke Bank Lain” pada menu\n3. Masukan kode bank “Bank Permata(013)”\n	4. Masukan “Kode Pembayan” %1$s pada tujuan transfer\n	5. Masukan nominal yang harus dibayarkan dan pilih “OK”\n6. Ikuti langkah selanjutnya sampai transaksi berhasil</string>
+    <!-- permata-他行手机银行 -->
+    <string name="permata_other_mobile_banking">1. Pilih “Transfer” pada menu\n2. Pilih “Ke Bank Lain” pada menu\n3. Masukan kode bank “Bank Permata(013)”\n4. Masukan “Kode Pembayan” %1$s pada tujuan transfer\n5. Masukan nominal yang harus dibayarkan dan pilih “OK”\n6. Ikuti langkah selanjutnya sampai transaksi berhasil</string>
+    <!-- permata-ATM -->
+    <string name="mandiri_atm">1. Pilih menu bayar/beli\n2. Pilih lainnya > lainnya > multi payment\n3. Isi kode perusahaan “7002” dan pilih “Benar”\n4. Isi kode merchant “078” dan pilih “Benar”\n5. Masukkan kode pembayaran dengan 8 digit kode %1$s sisanya dan pilih “Benar”\n6. Ikuti langkah selanjutnya hingga pembayaran selesai.</string>
+    <!-- permata-网银 -->
+    <string name="mandiri_internet_banking">1. Pilih menu bayar/Multi Payment\n2. Pilih lainnya > penyedia layanan > pilih DOKU\n3. Isi kode merchant “078”\n4. Masukkan kode pembayaran %1$s dengan 8 digit kode sisanya dan pilih “lanjut”\n5. Ikuti langkah selanjutnya hingga pembayaran selesai.</string>
+    <!-- permata-手机银行 -->
+    <string name="mandiri_mobile_banking">1. Pilih menu bayar/Multi Payment\n2. Pilih lainnya > penyedia layanan > pilih DOKU\n3. Isi kode merchant “078”\n4. Masukkan kode pembayaran %1$s dengan 8 digit kode sisanya dan pilih “lanjut”\n5. Ikuti langkah selanjutnya hingga pembayaran selesai.</string>
+    <string name="alfa_store">1. Catat kode pembayaran di atas dan datang ke gerai Alfamart, Alfa Midi, Alfa Express, Lawson atau DAN+DAN terdekat\n
+2. Beritahukan ke kasir bahwa anda ingin melakukan pembayaran Nama Merchant ”MALCOLM CAR VIA DOKU”\n
+3. Jika kasir tidak mengetahui mengenai pembayaran Nama Merchant, informasikan ke kasir untuk membuka terminal e-transaction, pilih "no.
+2 menu Pembayaran atau cari pada menu search"\n
+4. Minta kasir untuk menekan “Shift” dan “?” lalu ketik Nama Merchant “MALCOLM CAR VIA DOKU”, setelah itu klik OK\n
+5. Minta kasir untuk pilih "no.1 Nama Merchan - Pembayaran Nama Merchant"\n
+6. Kasir akan menanyakan kode pembayaran. Berikan kode pembayaran anda %1$s. Kasir akan melakukan konfirmasi data
+konsumen berupa Nama Merchant “MALCOLM CAR VIA DOKU”, Nama Konsumen, dan Nominal. Lakukan pembayaran ke kasir sejumlah nominal yang
+disebutkan\n
+7. Terima struk sebagai bukti pembayaran sudah sukses dilakukan. Notifikasi pembayaran akan langsung diterima oleh Merchant\n
+8. Selesai\n</string>
+
+    <string name="rekomendasi">(Rekomendasi, tanpa biaya transfer)</string>
+    <string name="payment_code_is_valid_until">Kode pembayaran akan nonaktif pada %1$s, jika tidak dapat melakukan pelunasan sebelum waktu tersebut, silahkan meminta kode pembayaran yang baru.</string>
+    <string name="virtual_account_valid_until">Akun virtual akan nonaktif pada %1$s, jika tidak dapat melakukan pelunasan sebelum waktu tersebut, silahkan meminta akun virtual yang baru.</string>
+    <string name="payment_code_validity_period">Kode pembayaran yang akan muncul hanya berlaku untuk 6 jam, mohon melakukan pelunasan dengan secepatnya.</string>
+    <string name="virtual_number_validity_period">Akun virtual yang akan muncul hanya berlaku untuk 6 jam, mohon melakukan pelunasan dengan secepatnya.</string>
+    <string name="mandiri_only_support_atm">Virtual account bank Mandiri hanya dapat ditransfer melalui mesin ATM Mandiri.&#160; </string>
+    <string name="virtual_number_validity_period_s">Akun virtual ini hanya untuk pelunasan pinjaman dengan rekening %1$s!&#160;&#160; </string>
+
+    <string name="repayment_assistance1">Mohon melakukan pembayaran pinjaman ke ATM bank %1$s yg terdekat.</string>
+    <string name="repayment_assistance2">Instruksi pembayaran melalui bank %1$s.</string>
+    <string name="repayment_assistance3">Tidak bisa menemukan ATM %1$s？Bisa juga Anda melakukan pembayaran melalui ATM bank yg lain.</string>
+    <string name="repayment_assistance4">Instruksi pembayaran melalui bank yg lain.</string>
+    <string name="repayment_assistance5">Jika ingin transfer dari %1$s ke virtual account bank %2$s, Anda perlu ikuti tahap berikut：</string>
+    <string name="repayment_assistance6">Jika ingin transfer dari bank lain ke virtual account bank %1$s, Anda perlu ikuti tahap berikut：</string>
+    <string name="repayment_assistance7">Mohon melakukan pembayaran di Alfamart yang terdekat dari Anda.</string>
+    <string name="repayment_assistance8">Instruksi pembayaran melalui Alfamart</string>
+    <string name="repayment_assistance9">Saya punya E-banking/ Mobile banking %1$s</string>
+    <string name="repayment_assistance10">Panduan pembayaran melalui E-banking/ Mobile banking %1$s.</string>
+    <string name="repayment_assistance11">Panduan pembayaran melalui E-banking/ Mobile banking bank yang lain.</string>
+    <string name="repayment_assistance12">Saya ingin melakukan pembayaran melalui ATM</string>
+    <string name="repayment_assistance13">Saya ingin melakukan pembayaran melalui E-banking/ Mobile banking</string>
+    <string name="repayment_assistance14">Saya punya E-banking/ Mobile banking bank lain</string>
+
+    <string name="positive_feedback">Perhatian sahabat RupiahSuper: Dana pinjaman Anda telah dicairkan! Mohon gerakkan tanganmu dan berikan kami rating bintang 5! Semoga kehidupan Anda dengan nyaman ~</string>
+    <string name="refuse">Tolak dengan kejam</string>
+    <string name="praise">Segera pergi menilai</string>
+    <string name="make_complaints">Keluhan</string>
+    <string name="thanks_for_the_support">Terima kasih atas pilihan dan dukungan Anda. Sahabat RupiahSuper akan selalu mendengar suara Anda dengan saksama.</string>
+    <string name="successfully_copied">Salin berhasil</string>
+    <string name="name_telepon">Telepon</string>
+    <string name="name_email">Email</string>
+    <string name="name_website">Website</string>
+    <string name="name_facebook">Facebook</string>
+    <string name="name_instagram">Instagram</string>
+    <string name="name_twitter">Twitter</string>
+    <string name="service_telepon">xxxx</string>
+    <string name="service_email">xxxx</string>
+    <string name="service_website">http://www.xxxx.id/</string>
+    <string name="service_facebook">RupiahSuper</string>
+    <string name="service_instagram">RupiahSuper</string>
+    <string name="service_twitter">RupiahSuper</string>
+
+    <string name="unable_to_use_BVA_to_repay">Perhatian： disebabkan sistem bank upgrade, kami tidak bisa terima pembayaran yg dari rek.BCA Anda selama tgl 08 Juni s.d 20 Juni. Silahkan lakukan pembayaran pakai kartu ATM.bank lain. Mohon maaf atas ketidaknyamannya.</string>
+
+    <string name="touch_to_focus">Sentuh layar untuk fokus</string>
+    <string name="unclear_documents">NO KTP dan NAMA USER harus JELAS</string>
+
+    <string name="confirm_bank_information">KONFIRMASI DATA BANK</string>
+    <string name="check_bank_information">Silahkan periksa informasi bank anda dengan seksama, ini akan mempengaruhi waktu pencairan ke rekening bank anda</string>
+    <string name="make_sure_the_card_information_is_correct">Memastikan data bank yang diinput adalah benar untuk Dana dapat cair ke tujuan rekening anda</string>
+    <string name="receiving_bank_card_account">No Rekening Bank:</string>
+    <string name="bank_reserved_mobile_phone_number">No telpon yang daftar di Bank:</string>
+    <string name="sumbit">SUBMIT</string>
+    <string name="edit">EDIT</string>
+    <string name="safety_warning">Peringatan</string>
+    <string name="re_register">Akun anda sudah log out, silakan log in kembali !</string>
+
+    <string name="is_it_at_the_station">Apakah Anda sedang di kantor ?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="please_wear_a_badge">Mohon ambil foto yg jelas dengan ID Card pekerjaan di tempat kerja.</string>
+    <string name="station_photo_will_speed_up_the_review">Foto ID Card dan tempat kerja yg jelas akan membantu lolos verifikasi dan cepat pencairan dana.</string>
+
+    <string name="immediately_lend">Segera Pinjamkan</string>
+    <string name="investment_and_financing">Pendanaan&#38; kelolaan dana</string>
+    <string name="already_invested">Sudah invest</string>
+    <string name="filled_up">Sudah maksimal invest</string>
+    <string name="lending_period">periode pendanaan</string>
+    <string name="lending_period_month">bulan</string>
+    <string name="lending_period_month1">%1$d&#160;bulan</string>
+    <string name="annualized_interest_rate">Kinerja tahunan</string>
+    <string name="pending_financing">Dana maksimal pendanaan</string>
+    <string name="total_financing">Total dana pendanaan</string>
+    <string name="recruitment_time">Join</string>
+    <string name="interest_time">Perhitungan bunga</string>
+    <string name="exit_time">Log out</string>
+    <string name="the_day_interest">Bunga dihitung pada \nhari berjalan</string>
+    <string name="condition">Syarat Join</string>
+    <string name="exit_method">Cara keluar</string>
+    <string name="interest_payment_method">Cara pembayaran bunga</string>
+    <string name="project_introduction">Pengenalan produk</string>
+    <string name="make_money_now">UNTUNG langsung</string>
+    <string name="investment_project">Verifikasi data pendanaan</string>
+    <string name="lending_period1">tenor：%1$d&#160;bulan</string>
+    <string name="amount_of_investment">Dana maksimal pendanaan：Rp&#160;%1$s</string>
+    <string name="borrowing_money1">Rp&#160;%1$s</string>
+    <string name="investment_amount">Jumlah Pendanaan</string>
+    <string name="expected_return">Keuntungan Jatuh Tempo：Rp&#160;%1$s</string>
+    <string name="lc_name">Nama pendana</string>
+    <string name="lc_bank_code">No.rek bank</string>
+    <string name="lc_mobile">Nomor telpon</string>
+    <string name="lc_email">Alamat email</string>
+    <string name="please_enter">Silahkan ketik</string>
+    <string name="apply_immediately">Segera Pendanaan</string>
+    <string name="lending_agreement">Saya telah membaca dan setuju (perjanjian pendanaan)</string>
+    <string name="submitted_successfully">Pengajuan berhasil</string>
+    <string name="submitted_successfully1">Pengajuan berhasil!</string>
+    <string name="contact_later">Team operational kamu akan segera menghubungi anda, silakan pastikan nomor telpon yang tercatat selalu aktif.</string>
+    <string name="back_to_home">Kembali ke halaman pertama</string>
+    <string name="lending_record">Riwayat Memberi Pinjaman</string>
+    <string name="current_income">Penghasilan saat ini：Rp&#160;%1$s</string>
+    <string name="investment_amount1">Jumlah Pendanaan：Rp&#160;%1$s</string>
+    <string name="application">Sedang Pengajuan</string>
+    <string name="successful_application">Pengajuan Berhasil</string>
+    <string name="locked">dalam masa invest</string>
+    <string name="can_withdraw">Dapat Menarik Uang</string>
+    <string name="cash_withdrawal">Sedang Menarik Uang</string>
+    <string name="completed">Berhasil Menarik Uang</string>
+    <string name="application_failed">pengajuan gagal</string>
+    <string name="due_date">Masih ada %1$d hari jatuh tempo </string>
+    <string name="i_financing">Pendanaan saya</string>
+    <string name="lending_number">Kode Pendanaan</string>
+    <string name="item_number1">Kode produk</string>
+    <string name="lending_amount">Jumlah pendanaan</string>
+    <string name="investment_contract">Kontrak pendanaan</string>
+    <string name="please_select_remittance_bank">Pilih metode pembayaran</string>
+    <string name="remittance_deadline">Transfer dana sebelum %1$s, jika tidak akan </string>
+    <string name="apply_withdraw">Mengajukan permohonan tarik tunai</string>
+    <string name="confirmation_of_the_receiving_bank">Mohon konfirmasi bank Anda yg terima dana：</string>
+    <string name="flow_description">Kejelasan prosedur</string>
+
+    <string name="financing_waiting_for_payment">Menunggu dana ditransfer</string>
+    <string name="financing_payment_code_is_valid_until">Kode pembayaran akan nonaktif pada %1$s, jika tidak dapat melakukan pelunasan sebelum waktu tersebut, silahkan meminta kode pembayaran yang baru.</string>
+    <string name="financing_virtual_account_valid_until">Virtual account akan nonaktif pada %1$s, jika tidak dapat melakukan pelunasan sebelum waktu tersebut, silahkan meminta virtual account yang baru.</string>
+    <string name="financing_payment_code_validity_period">Kode pembayaran yang akan muncul hanya berlaku untuk 6 jam, mohon melakukan pelunasan dengan secepatnya.</string>
+    <string name="financing_virtual_number_validity_period">Virtual account yang akan muncul hanya berlaku untuk 6 jam, mohon melakukan pelunasan dengan secepatnya.</string>
+    <string name="financing_mandiri_only_support_atm">Virtual account bank Mandiri hanya dapat ditransfer melalui mesin ATM Mandiri.&#160; </string>
+    <string name="financing_repayment_assistance1">Mohon melakukan pembayaran ke ATM Bank dan %1$s terdekat.</string>
+    <string name="financing_repayment_assistance2">Instruksi pentransferan melalui bank %1$s.</string>
+    <string name="financing_repayment_assistance3">Tidak bisa menemukan ATM %1$s？Bisa juga Anda melakukan pentransferan melalui ATM bank yg lain.</string>
+    <string name="financing_repayment_assistance4">Instruksi pentransferan melalui bank yg lain.</string>
+    <string name="financing_repayment_assistance7">Mohon melakukan pentransferan di Alfamart yang terdekat dari Anda.</string>
+    <string name="financing_repayment_assistance8">Instruksi pentransferan melalui Alfamart</string>
+    <string name="financing_repayment_assistance10">Panduan pentransferan melalui E-banking/ Mobile banking %1$s.</string>
+    <string name="financing_repayment_assistance11">Panduan pentransferan melalui E-banking/ Mobile banking bank yang lain.</string>
+    <string name="financing_repayment_assistance12">Saya ingin melakukan pentransferan melalui ATM</string>
+    <string name="financing_repayment_assistance13">Saya ingin melakukan pentransferan melalui E-banking/ Mobile banking</string>
+    <string name="money_transfer_to_the_following_designated_account">Transfer ke</string>
+    <string name="remittance_amount">Total ditransfer：</string>
+    <string name="album">Gallery</string>
+    <string name="shooting">Photo</string>
+    <string name="ok_to_exit_the_conversation">Keluar dari percakapan ini?</string>
+    <string name="payment">Transfer</string>
+    <string name="withdraw">Menarik Uang</string>
+    <string name="photo_reminder">Mohon pastikan berfoto di tempat kerja serta menjamin keliahatn ID card kerja yang jelas. </string>
+    <string name="pay_slip_prompt">Mohon upload foto slip gaji 1 bulan terakhir, agar lulus analisa. </string>
+
+    <string name="punya_saya">Punya saya</string>
+    <string name="repayment_completed">Record Pengembalian dana</string>
+    <string name="my_offer">Kupon saya</string>
+    <string name="no_coupon">Sementara belum ada voucher potongan yang bisa digunakan</string>
+
+    <string name="update_message_prompt">Silahkan perbarui informasi, untuk memastikan data anda diterima oleh sistem.</string>
+    <string name="update_information_prompt_credit">(Setelah perbarui informasi akan meningkatkan kredit skor anda dan pencairan lebih cepat!)</string>
+    <string name="official_certification_quantity_prompt">Autentikasi3, Akan meningkatkan batas kredit Anda</string>
+
+    <string name="select_all">Pilih semua</string>
+    <string name="submit_application">Pengajuan</string>
+    <string name="remittance_on_time">Transfer tepat waktu</string>
+    <string name="expiration">Bunga jatuh tempo</string>
+    <string name="number_of_people_selected">Peminjam yang dipilih %1$d orang</string>
+    <string name="total_amount_of_lending">Total yang dipinjamkan：</string>
+    <string name="expected_to_receive_interest_due">Perkiraan Total bunga：</string>
+    <string name="expected_to_receive_interest_due1">Perkiraan Total bunga</string>
+    <string name="interest_calculation_method">Bunga Tahunan%1$s</string>
+    <string name="fill_in_personal_information">Informasi Pribadi</string>
+    <string name="fill_in_bank_information">Masukkan Informasi Rekening</string>
+    <string name="go_order_list">Melihat Daftar Pengajuan</string>
+    <string name="investment_number">Kode Memberi Pinjaman：</string>
+    <string name="investment_number1">Kode Memberi\n Pinjaman</string>
+    <string name="total_amount">Jumlah Pendanaan：</string>
+    <string name="number_of_oans">Sudah Melunaskan %1$d Pinjaman</string>
+    <string name="expiration_number">Jatuh tempo %1$d pnjmn</string>
+    <string name="investment_investing">Sedang Memberi Pinjaman</string>
+    <string name="investment_cash_withdrawal_failure">Gagal Menarik Uang</string>
+    <string name="investment_carry_out">Selesai</string>
+    <string name="unexpired">Belum lunas</string>
+    <string name="be_expired">Sudah Lunas</string>
+    <string name="payee_name">Nama Penerima</string>
+    <string name="receiving_bank_card_number">No Bank Penerima</string>
+    <string name="cash_withdrawal_amount">Nominal Penarikan</string>
+    <string name="total_investment">Jumlah Pendanaan</string>
+    <string name="immediate_withdrawal">Segera Tarik Dana</string>
+    <string name="submitted_successfully_waiting_for_the_account">Pembayaran Anda Akan Diterima Dalam 24 Jam. Mohon Bersabar.</string>
+    <string name="lending_user_number">Jumlah Peminjam</string>
+    <string name="transfer_to_bca">1.Silakan Berinvestasi Jumlah Yang Anda Butuhkan Untuk Berinvestasi Di Akun BCA Perusahaan Kami.</string>
+    <string name="bca_bank">Bank：Bank of Central Aisa</string>
+    <string name="bca_bank_acc">Bank Acc：PT.Minitech Finance Indonesia</string>
+    <string name="bca_bank_acc_no">Bank Acct No：082125412036</string>
+    <string name="bca_berita">Berita：Modalin +KTP</string>
+    <string name="transfer_voucher_sent_to_the_mailbox">2.Silakan Kirim Bukti Transfer Anda Ke Alamat Email Kami：</string>
+    <string name="certificate_email">Email：blissbirduangbagus@gmail.com</string>
+    <string name="investment_was_robbed">Saat ini peminjam sudah dipilih oleh investor lain, silahkan refresh untuk pilih ulang~</string>
+    <string name="remittance_as_soon_as_possible">Selesaikan pengiriman uang BCA pada hari yang sama dan pesanan Anda tidak akan dibatalkan.</string>
+
+
+    <string name="complete_material">Menuju Pengajuan</string>
+    <string name="data_review">Data Sedang di Review</string>
+    <string name="successful_data_review"> Lolos Pengajuan, Segera Memberi Pinjaman </string>
+    <string name="data_review_failed">Verifikasi data gagal</string>
+    <string name="submit_an_investment_application">Pengajuan data review</string>
+    <string name="there_are_ongoing_loans">Anda sedang melakukan pinjaman, saat ini tidak bisa mengajukan pendanaan!</string>
+    <string name="risk_notice">Pemberitahuan Resiko</string>
+    <string name="risk_notice_content">1. Kami telah menyaring peminjam dengan pembayaran yang baik, tetapi kami juga akan menemukan pembayaran yang belum dibayar, dan kami akan mencoba sebaik mungkin untuk membantu Anda mengambilnya.\n
+        2. Jika peminjam tidak membayar lebih dari 90 hari, kita akan sesuai dengan persyaratan OJK, platform kami akan menghentikan penagihan uang, peminjam yang tidak membayar, informasinya akan kita laporkan kepada departemen pemerintah terkait(OJK). yang mengakibatkan kerugian yang harus ditanggung sama pemberi pinjaman sendiri, tidak ada hubungannya dengan RupiahSuper.\n
+        3. Harap baca perjanjian pemberi pinjaman dengan seksama sebelum memberikam pinjaman.\n
+        4. memberi pinjaman berisiko, harap memberi pinjaman dengan hati-hati.
+    </string>
+    <string name="investment_agreement">Pemberi Pinjaman harus tahu</string>
+    <string name="loan_agreement">Perjanjian pinjaman</string>
+    <string name="detailed_address">Yang detail</string>
+    <string name="remittance">Menunggu Transfer</string>
+    <string name="view_agreement">Lihat</string>
+
+    <string name="disclaimer">Pernyataan tanggung jawab risiko</string>
+    <string name="disclaimer_content">1. Layanan Pinjam Meminjam Berbasis Teknologi Informasi merupakan kesepakatan perdata antara Pemberi Pinjaman dengan Penerima Pinjaman, sehingga segala risiko yang timbul dari kesepakatan tersebut ditanggung sepenuhnya oleh masing-masing pihak.\n\n
+2. Risiko kredit atau gagal bayar ditanggung sepenuhnya oleh Pemberi Pinjaman. Tidak ada lembaga atau otoritas negara yang bertanggung jawab atas risiko gagal bayar ini.\n\n
+3. Penyelenggara dengan persetujuan dari masing-masing Pengguna (Pemberi Pinjaman dan/atau Penerima Pinjaman) mengakses, memperoleh, menyimpan, mengelola dan/atau menggunakan data pribadi Pengguna ("Pemanfaatan Data") pada atau di dalam benda, perangkat elektronik (termasuk smartphone atau telepon seluler), perangkat keras (hardware) maupun lunak (software), dokumen elektronik, aplikasi atau system elektronik milik Pengguna atau yang dikuasai Pengguna, dengan memberitahukan tujuan, batasan dan mekanisme Pemanfaatan Data tersebut kepada Pengguna yang bersangkutan sebelum memperoleh persetujuan yang dimaksud.\n\n
+4. Pemberi Pinjaman yang belum memiliki pengetahuan dan pengalaman pinjam meminjam, disarankan untuk tidak menggunakan layanan ini.\n\n
+5. Penerima Pinjaman harus mempertimbangkan tingkat bunga pinjaman dan biaya lainnya sesuai dengan kemampuan dalam melunasi pinjaman.\n\n
+6. Setiap kecurangan tercatat secara digital di dunia maya dan dapat diketahui masyarakat luas di media sosial.\n\n
+7. Pengguna harus membaca dan memahami informasi ini sebelum membuat keputusan menjadi Pemberi Pinjaman atau Penerima Pinjaman.\n\n
+8. Pemerintah yaitu dalam hal ini Otoritas Jasa Keuangan, tidak bertanggung jawab atas setiap pelanggaran atau ketidakpatuhan oleh Pengguna, baik Pemberi Pinjaman maupun Penerima Pinjaman (baik karena kesengajaan atau kelalaian Pengguna) terhadap ketentuan peraturan perundang-undangan maupun kesepakatan atau perikatan antara Penyelenggara dengan Pemberi Pinjaman dan/atau Penerima Pinjaman.\n\n
+9. Setiap transaksi dan kegiatan pinjam meminjam atau pelaksanaan kesepakatan mengenai pinjam meminjam antara atau yang melibatkan Penyelenggara, Pemberi Pinjaman dan/atau Penerima Pinjaman wajib dilakukan melalui escrow account dan virtual account sebagaimana yang diwajibkan berdasarkan Peraturan Otoritas Jasa Keuangan Nomor 77/POJK.01/2016 tentang Layanan Pinjam Meminjam Uang Berbasis Teknologi Informasi dan pelanggaran atau ketidakpatuhan terhadap ketentuan tersebut merupakan bukti telah terjadinya pelanggaran hukum oleh Penyelenggara sehingga Penyelenggara wajib menanggung ganti rugi yang diderita oleh masing masing Pengguna sebagai akibat langsung dari pelanggaran hukum tersebut di atas tanpa mengurangi hak Pengguna yang menderita kerugian menurut Kitab Undang-Undang Hukum Perdata.\n </string>
+    <string name="agree">Setuju</string>
+    <string name="disagree">Tidak setuju</string>
+
+    <string name="repayment_amount_composition">Jumlah Aktual:</string>
+    <string name="interest_rate">Bunga harian</string>
+    <string name="interest_rate1">Bunga harian：</string>
+    <string name="interest_rate2">Bunga(%1$s/Hari)</string>
+    <string name="daily_interest_rate_discount">Saat ini tidak ada event promosi, bunga harian %1$s/hari</string>
+    <string name="have_not_paid_the_deposit">Kamu belum bayar uang jaminan, pinjaman dikenakan biaya %1$s, kami akan langsung potong dari nominal pinjaman anda.\n</string>
+    <string name="the_deposit_will_be_refunded_to_you_in_full_after_your_payment">(Uang jaminan akan dikembalikan setelah anda melakukan pelunasan)</string>
+    <string name="you_have_applied_for_a_withdrawal_deposit">Kamu sudah mengajukan penarikan uang jaminan, jika sekarang meminjam, sistem akan langsung membatalkan pengajuan penarikan. </string>
+    <string name="direct_borrowing">Langsung Pinjam</string>
+    <string name="earnest_money">Uang jaminan</string>
+    <string name="extract">Tarik</string>
+    <string name="extract_earnest_money">Tarik Uang jaminan</string>
+    <string name="if_you_submit_a_margin_loan_you_still_have_to_pay">Upgrade member bukan hanya bisa mendapatkan limit tertinggi (2 juta) dan juga biaya admin terendah (terendah 0.8%), tetapi juga ada banyak event bebas bunga yang bisa diikuti, masih ingin menarik uang jaminan? </string>
+    <string name="still_have_to_extract">Tetap Tarik</string>
+    <string name="borrowing_immediately1">Segera Pinjam</string>
+    <string name="earnest_money_submitted_successfully">Pengajuan berhasil, kamu akan mengembalikan dalam 2 hari kerja kedepan, mohon sabar menunggu!</string>
+    <string name="unable_to_submit_loan_in_margin_withdrawal">Hai, Bank pengajuan penarikan uang jaminan anda sudah diterima, sekarang sedang pencairan, untuk menghindari pengulangan bayar uang jaminan, Mohon tunggu sebentar baru mengajukan pinjaman!</string>
+
+    <string name="rule_description">Penjelasan</string>
+    <string name="integral">Poin saat ini:&#160;</string>
+    <string name="maximum_amount">Limit maksimal:&#160;</string>
+    <string name="current_interest">Keuntungan saat ini</string>
+    <string name="current_level">Level saat ini</string>
+    <string name="your_current_membership_level">Level member kamu saat ini：</string>
+    <string name="your_will_enjoy_the_following_rights">Keuntungan yang bisa kamu dapat:</string>
+    <string name="upgradeable_level">Level member selanjutnya:%1$s</string>
+    <string name="upgrade_success">Upgrade berhasil segera nikmati keuntungan berikut:</string>
+    <string name="apply_for_an_upgrade">Pengajuan upgrade</string>
+    <string name="get_upgrade_opportunities">Selamat, anda telah mendapat kesempatan upgrade %1$s</string>
+    <string name="upgrade">Upgrade </string>
+    <string name="upgrade_vip">Upgrade %1$s</string>
+    <string name="become_a_member_to_pay">Jumlah pembayaran</string>
+    <string name="payment_method">Metode pembayaran</string>
+    <string name="margin_payment">Pembayaran Uang Jaminan\n(%1$s)</string>
+    <string name="update_successed">Sukses Upgrade!</string>
+    <string name="congratulations_on_upgrading_your_membership">Selamat, Anda telah menjadi anggota %1$s kami, Anda akan menikmati semua keuntungan %2$s.</string>
+    <string name="sorry_we_cant_upgrade_members">Mohon maaf, untuk saat ini anda belum memenuhi kualifikasi upgrade menjadi member</string>
+    <string name="how_to_become_a_member">Apa syarat kualifikasi upgrade member?</string>
+    <string name="become_a_member_condition">1.Jika ada perubahan pada informasi pribadi atau pekerjaan anda , silahkan update informasi tersebut, untuk menjamin informasi anda valid;\n2.Pertahankan riwayat pelunasan yang bagus untuk akumulasi kredit pinjaman anda, maka akan  memenuhi kualifikasi syarat upgrade;\n3.Akumulasi poin member, juga akan membantu memenuhi kualifikasi upgrade member.</string>
+    <string name="member_service_description">Penjelasan Member</string>
+    <string name="understand_the_upgrade_conditions">Syarat Upgrade</string>
+    <string name="select_coupon">Pilih kupon diskon</string>
+    <string name="you_dont_have_a_coupon">Mohon maaf, saat ini anda tidak ada kupon promosi yang bisa dipakai~</string>
+    <string name="terms_and_conditions">Saya telah membaca dan menyetujui Syarat &amp; Ketentuan </string>
+    <string name="recommended_ad">Rekomendasikan untuk Anda</string>
+    <string name="splash">kebutuhan mendesak anda , kami yang selesaikan</string>
+    <string name="Telepon">Telepon layanan pelanggan</string>
+    <string name="Panggil">Panggil</string>
+    <string name="callphone">Panggil</string>
+    <string name="parents_can_only_choose_two">Anda sudah memilih orang tua sebagai emergency contact</string>
+    <string name="spouse_can_only_choose_one">Anda sudah memilih pasangan sebagai emergency contact</string>
+    <string name="select_all_contacts">Jika informasi kontak yang di isi valid, maka akan didahulukan verifikasi, di prioritaskan pencairan~</string>
+    <string name="return_to_add">Kembali dan tambah</string>
+    <string name="contact_one">Emergency contact 1 (Harus diisi)</string>
+    <string name="contact_two">Emergency contact 2 (Harus diisi)</string>
+    <string name="contact_three">Emergency contact 3</string>
+    <string name="contact_four">Emergency contact 4</string>
+    <string name="contact_five">Emergency contact 5</string>
+    <string name="overdue_reminder">Untuk menikmati layanan bunga rendah dari RupiahSuper, disarankan untuk mempertahankan riwayat pelunasan yang bagus, menjadi member RupiahSuper, maka pinjaman akan dijamin dalam 5 menit cair ke rekening anda</string>
+
+    <string name="management_fee">Biaya admin</string>
+    <string name="coupon_used">Sudah Pakai</string>
+    <string name="coupon_unused">Belum Pakai</string>
+    <string name="coupon_expired">kadarluasa</string>
+    <string name="unavailable">Tidak bisa dipakai</string>
+    <string name="validity_period">Masa berlaku：%1$s</string>
+    <string name="instructions_for_use">Instruksi pemakaian</string>
+    <string name="view_offers">Lihat promosi</string>
+
+
+    <string name="contact_relationship1">Ayah / ibu</string>
+    <string name="contact_relationship2">Putra / putri</string>
+    <string name="contact_relationship3">Pasangan</string>
+    <string name="contact_relationship4">Lainnya</string>
+    <string name="contact_relationship5">Saudara kandung</string>
+    <string name="contact_relationship11">Ayah</string>
+    <string name="contact_relationship12">Ibu</string>
+    <string name="contact_relationship21">Anak laki-laki</string>
+    <string name="contact_relationship22">Anak perempuan</string>
+    <string name="contact_relationship51">Kakak laki-laki</string>
+    <string name="contact_relationship52">Adik laki-laki</string>
+    <string name="contact_relationship53">Kakak perempuan</string>
+    <string name="contact_relationship54">Adik perempuan</string>
+    <string name="contact_relationship41">Rekan kerja</string>
+    <string name="contact_relationship42">Teman</string>
+
+    <string name="fuqin1">Ayah hanya bisa menjadi satu</string>
+    <string name="muqin1">Ibu hanya bisa satu</string>
+
+    <string name="wodejiekuan">Jumlah pinjaman saya</string>
+
+    <string name="linechat">Layanan pelanggan online</string>
+    <string name="telkomsel">Telkomsel(xl、indosat)</string>
+
+
+    <string name="guanfang">Silakan lengkapi sertifikasi resmi</string>
+
+
+    <string name="yasuozhong">Kompresi video ...</string>
+    <string name="genjunindezizhi">Menurut kualifikasi Anda, jumlah yang diberikan kepada Anda adalahRp</string>
+
+    <string name="nshihuankuan">Membayar tepat waktu untuk mengajukan jumlah yang lebih tinggi</string>
+    <string name="xuantian">（Opsional）</string>
+
+
+    <string name="zhengjian">Informasi pribadi Foto KTP adalah ilegal</string>
+
+
+    <string name="tianxiezhenshi">*silahkan isi data dengan benar untuk meningkatkan tingkat keberhasilan verifikasi</string>
+
+    <string name="hometishi">Bayar tepat waktu untuk buka limit ini</string>
+
+    <string name="serti">Sertifikasi</string>
+
+    <string name="select_educt_status">Silakan pilih status akademik Anda</string>
+    <string name="xueli">Pendidikan</string>
+    <string name="mother">Nama ibu</string>
+    <string name="select_mothername">Silakan masukkan nama ibumu</string>
+
+    <string name="qingwanshangshen">Harap tingkatkan informasi identitas Anda</string>
+
+    <string name="qingwanshangger">Harap tingkatkan informasi pribadi Anda</string>
+
+    <string name="qingwanshanglian">Silakan lengkapi informasi kontak</string>
+    <string name="permission_call_log">Riwayat panggilan</string>
+    <string name="permission_phone">Telepon</string>
+    <string name="qingwanshanggong">Harap tingkatkan informasi pekerjaan</string>
+    <string name="permission_sms">Pesan</string>
+
+    <string name="zuoyouyao">Silakan menggelengkan kepala Anda ke kiri dan ke kanan</string>
+    <string name="zhengyanbiyan">Tolong tutup mata Anda</string>
+
+    <string name="huotitong">Aksi hidup</string>
+
+    <string name="permissions_contac">Harap aktifkan izin buku alamat di "Pengaturan - Aplikasi - DompetTomat - Manajemen Hak" untuk mengajukan pinjaman.</string>
+
+    <string name="kejiedianhua">Waktu panggilan yang tersedia</string>
+    <string name="select_phone_status">Silakan pilih waktu panggilan audit yang tersedia</string>
+
+    <string name="time1">09:00-11:00</string>
+    <string name="time2">11:00-13:00</string>
+    <string name="time3">12:00-14:00</string>
+    <string name="time4">14:00-16:00</string>
+    <string name="time5">16:00-18:00</string>
+
 
 </resources>

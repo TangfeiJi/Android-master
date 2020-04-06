@@ -16,12 +16,12 @@
   -->
 
 <resources>
-    <color name="colorPrimary">#00ACC1</color>
-    <color name="colorPrimaryDark">#00ACC1</color>
-    <color name="colorAccent">#00ACC1</color>
+    <color name="colorPrimary">#35ae69</color>
+    <color name="colorPrimaryDark">#35ae69</color>
+    <color name="colorAccent">#35ae69</color>
     <color name="view_bg">@color/Grey100</color>
     <color name="line_divider">@color/Grey300</color>
-    <color name="bottom_nav_checked">#00ACC1</color>
+    <color name="bottom_nav_checked">#35ae69</color>
     <color name="bottom_nav_not_checked">#cccccc</color>
     <color name="nav_item_color_ic">#616161</color>
     <color name="nav_item_color_tv">#19191B</color>
@@ -45,4 +45,64 @@
     <color name="Grey600">#757575</color>
     <color name="Grey800">#3D3D3D</color>
     <color name="Grey900">#212121</color>
+
+
+    <!--11111111-->
+    <!--特别强调和突出的文字，按钮（如引导性的按钮等）-->
+    <color name="emphasize">#474c5d</color>
+    <color name="blue">#51c3f6</color>
+    <!--内容页文字颜色，标题信息（如导航名称，标题，内容页主要文字等）-->
+    <color name="character_and_title">#2a3542</color>
+    <!--用于次要提示文字，一些共用按钮（如提示性文字，下拉按钮等）-->
+    <color name="hint">#888c96</color>
+    <!--辅助性文字(如未填写状态的提示文字信息)-->
+    <color name="auxiliary">#afb0b3</color>
+    <!--分割线，标签描边-->
+    <color name="split_line">#e1e2e6</color>
+    <!--错误分割线，标签描边-->
+    <color name="red_split_line">#fe4040</color>
+    <!--内容区域背景-->
+    <color name="background">#f0f2f5</color>
+    <!--用于内容区域少量提示性文字-->
+    <color name="content_prompt_text">#fe4040</color>
+    <color name="content_blue">#3cb371</color>
+    <color name="content_orange">#f9af2f</color>
+
+    <color name="content_blue1">#474747</color>
+    <!--按钮不可点状态-->
+    <color name="bt_unabled">#ced1dc</color>
+    <!--按钮默认状态-->
+    <color name="bt_normal">#315382</color>
+    <!--按钮触摸状态-->
+    <color name="bt_pressed">#315382</color>
+
+    <color name="black">#000000</color>
+
+
+    <!--首页蓝色字-->
+    <color name="home_blue">#474747</color>
+
+    <!--半透明，用于浮层-->
+    <color name="view_translucent">#30000000</color>
+
+
+    <color name="seebkar_background_data">#366aee</color>
+
+    <color name="vip1">#225e99</color>
+    <color name="vip2">#237c4d</color>
+    <color name="vip3">#976f28</color>
+    <color name="vip4">#ffffff</color>
+
+
+    <!-- 图片加载 -->
+
+    <color name="main_green">#24cf5f</color>
+
+
+    <color name="preview_mock">#9a000000</color>
+
+    <color name="text333">#333</color>
+
+    <color name="text999">#999</color>
+    <color name="textf1f2">#f1f2f3</color>
 </resources>

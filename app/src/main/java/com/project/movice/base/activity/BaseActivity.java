@@ -29,6 +29,10 @@ import com.project.movice.base.view.IView;
 import com.project.movice.utils.CommonUtils;
 import com.project.movice.utils.ToastUtils;
 
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
+
 import javax.inject.Inject;
 
 import dagger.android.AndroidInjection;
@@ -52,13 +56,26 @@ public abstract class BaseActivity<T extends IPresenter> extends AbstractSimpleA
         AndroidInjection.inject(this);
         super.onCreate(savedInstanceState);
     }
+    /**
+     * 解决点击事件双击
+     *
+     * @return
+     */
 
+    private long lastClick;
+    public boolean canClick() {
+        if (System.currentTimeMillis() - lastClick <= 1000 && (System.currentTimeMillis() - lastClick) > 0) {
+            return false;
+        }
+        lastClick = System.currentTimeMillis();
+        return true;
+    }
     @Override
     protected void onViewCreated() {
-        ViewGroup mNormalView = findViewById(R.id.normal_view);
-        if (mNormalView != null) {
-            mNormalView.setVisibility(View.GONE);
-        }
+//        ViewGroup mNormalView = findViewById(R.id.normal_view);
+//        if (mNormalView != null) {
+//            mNormalView.setVisibility(View.GONE);
+//        }
         mMultipleStatusView = findViewById(R.id.custom_multiple_status_view);
         if (mMultipleStatusView != null) {
             mMultipleStatusView.setOnClickListener(v -> mPresenter.reload());
@@ -76,13 +93,21 @@ public abstract class BaseActivity<T extends IPresenter> extends AbstractSimpleA
         }
         hideLoading();
         super.onDestroy();
+        EventBus.getDefault().unregister(this);
     }
 
     @Override
     public AndroidInjector<Fragment> supportFragmentInjector() {
         return mFragmentDispatchingAndroidInjector;
     }
-
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onEvent(String str) {
+        switch (str) {
+            case "EVENT_REFRESH_LANGUAGE":
+                recreate();//刷新界面
+                break;
+        }
+    }
     @Override
     public void onBackPressedSupport() {
         CommonUtils.hideKeyBoard(this, this.getWindow().getDecorView().getRootView());

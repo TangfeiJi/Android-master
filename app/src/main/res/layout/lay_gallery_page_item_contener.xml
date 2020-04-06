@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/lingyi33"
+    android:orientation="vertical">
+
+   <!-- <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
+        android:id="@+id/iv_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView>-->
+
+
+
+    <com.project.movice.widget.behavior.ImagePreviewView
+        android:id="@+id/iv_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+
+    <ImageView
+        android:id="@+id/iv_default"
+        android:layout_width="@dimen/size_72"
+        android:layout_height="@dimen/size_72"
+        android:layout_gravity="center"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_preview_split_graph"
+        android:visibility="gone" />
+</FrameLayout>

@@ -29,8 +29,7 @@ import android.widget.TextView;
 import com.project.movice.R;
 import com.project.movice.application.MoviceApp;
 import com.project.movice.core.constant.Constants;
-import com.project.movice.modules.main.ui.activity.ArticleDetailActivity;
-import com.project.movice.modules.login.ui.LoginActivity;
+import com.project.movice.modules.login.ui.FaceBookLoginActivity;
 
 import java.util.Objects;
 
@@ -44,27 +43,7 @@ public class CommonUtils {
     }
 
 
-    public static void startLoginActivity(Context context) {
-        Intent intent = new Intent(context, LoginActivity.class);
-        context.startActivity(intent);
-    }
 
-
-    public static void startArticleDetailActivity(Context context, int articleId, String articleTitle,
-                                                  String articleLink, boolean isCollected,
-                                                  boolean isShowCollectIcon, int articleItemPosition,
-                                                  String eventBusTag) {
-        Intent intent = new Intent(context, ArticleDetailActivity.class);
-        intent.putExtra(Constants.ARTICLE_ID, articleId);
-        intent.putExtra(Constants.ARTICLE_TITLE, articleTitle);
-        intent.putExtra(Constants.ARTICLE_LINK, articleLink);
-        intent.putExtra(Constants.IS_COLLECTED, isCollected);
-        intent.putExtra(Constants.IS_SHOW_COLLECT_ICON, isShowCollectIcon);
-        intent.putExtra(Constants.ARTICLE_ITEM_POSITION, articleItemPosition);
-        intent.putExtra(Constants.EVENT_BUS_TAG, eventBusTag);
-        context.startActivity(intent);
-
-    }
 
     public static AlertDialog getLoadingDialog(Context context, String message) {
         View view = LayoutInflater.from(context).inflate(R.layout.loading_progressbar, null, false);
@@ -82,5 +61,9 @@ public class CommonUtils {
             inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
         }
     }
+
+
+
+
 
 }

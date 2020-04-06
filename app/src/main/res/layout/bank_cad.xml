@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <com.classic.common.MultipleStatusView
+        android:id="@+id/custom_multiple_status_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/view_padding">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/personal_information_height"
+                        android:layout_marginRight="@dimen/view_padding"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/electronic_account_name"
+                                android:textColor="@color/emphasize"
+                                android:textSize="@dimen/text_size_14" />
+
+                            <TextView
+                                android:id="@+id/name_error"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="@string/please_fill_out"
+                                android:textColor="@color/content_prompt_text"
+                                android:textSize="@dimen/text_size_14"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/name_of_payee"
+                            style="@style/editText"
+                            android:layout_marginTop="5dp"
+                            android:digits="@string/user_name_rules"
+                            android:focusable="false"
+                            android:hint="@string/ensure_the_same_name_as_ktp"
+                            android:maxLength="@integer/user_name_length"
+                            android:textColor="@color/auxiliary" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/split_line" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/personal_information_height"
+                        android:layout_marginRight="@dimen/view_padding"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/name_of_payee"
+                                android:textColor="@color/emphasize"
+                                android:textSize="@dimen/text_size_14" />
+
+                            <TextView
+                                android:id="@+id/electronic_account_error"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="@string/please_fill_out"
+                                android:textColor="@color/content_prompt_text"
+                                android:textSize="@dimen/text_size_14"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/electronic_account_name"
+                            style="@style/editText"
+                            android:layout_marginTop="5dp"
+                            android:hint="@string/please_enter"
+                            android:maxLength="@integer/user_name_length" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/split_line"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/personal_information_height"
+                        android:layout_marginRight="@dimen/view_padding"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/bank_card_phone"
+                                android:textColor="@color/emphasize"
+                                android:textSize="@dimen/text_size_14" />
+
+                            <TextView
+                                android:id="@+id/bank_card_phone_error"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="@string/please_fill_out"
+                                android:textColor="@color/content_prompt_text"
+                                android:textSize="@dimen/text_size_14"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/bank_card_phone"
+                            style="@style/editText"
+                            android:layout_marginTop="5dp"
+                            android:digits="@string/digits_mobile"
+                            android:hint="@string/please_enter"
+                            android:inputType="number"
+                            android:maxLength="@integer/mobile_length" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/split_line" />
+
+                    <RelativeLayout
+                        android:id="@+id/due_bank_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/personal_information_height"
+                        android:paddingRight="@dimen/view_padding">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/due_bank"
+                                android:textColor="@color/emphasize"
+                                android:textSize="@dimen/text_size_14" />
+
+                            <TextView
+                                android:id="@+id/due_bank"
+                                style="@style/textView"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="5dp"
+                                android:hint="@string/please_select"
+                                android:maxLines="2"
+                                android:singleLine="false" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/icon1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/lingyi7" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/split_line" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/personal_information_height"
+                        android:layout_marginRight="@dimen/view_padding"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/your_collection_bank_card_number"
+                                android:textColor="@color/emphasize"
+                                android:textSize="@dimen/text_size_14" />
+
+                            <TextView
+                                android:id="@+id/card_number_error"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="@string/please_fill_out"
+                                android:textColor="@color/content_prompt_text"
+                                android:textSize="@dimen/text_size_14"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <com.project.movice.widget.behavior.HPEditText
+                            android:id="@+id/bank_card_number"
+                            style="@style/editText"
+                            android:layout_marginTop="5dp"
+                            android:digits="@string/digits_bank_card_number"
+                            android:hint="@string/please_enter"
+                            android:inputType="number"
+                            android:maxLength="@integer/bank_card_number" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/split_line" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/view_padding"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/check_bank_information"
+                        android:textColor="@color/content_prompt_text"
+                        android:textSize="@dimen/text_size_14" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/next_step"
+                    style="@style/button"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/next_step" />
+            </LinearLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+    </com.classic.common.MultipleStatusView>
+</LinearLayout>

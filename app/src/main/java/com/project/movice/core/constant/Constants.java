@@ -32,9 +32,9 @@ public class Constants {
     /**
      * Tag fragment classify
      */
-    public static final int TYPE_NAVIGATION = 2;
-    public static final int TYPE_PROJECT = 4;
-    public static final int TYPE_JOKEPAGER = 0;
+    public static final int TYPE_LOADPAGER = 1;
+    public static final int TYPE_MYPAGER = 2;
+    public static final int TYPE_HOMEPAGER = 0;
 
 
 

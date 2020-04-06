@@ -9,11 +9,11 @@ import java.util.List;
 public interface HomeContract {
     interface View extends IView {
 
-
+        void getHome(int type);
     }
 
     interface Presenter extends IPresenter<HomeContract.View> {
 
-
+        void requestHome();
     }
 }

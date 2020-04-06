@@ -1,12 +1,12 @@
 ext {
 
     android = [
-            compileSdkVersion       : 28,
+            compileSdkVersion       : 29,
             buildToolsVersion       : "28.0.0",
-            minSdkVersion           : 21,
+            minSdkVersion           : 15,
             targetSdkVersion        : 28,
-            versionCode             : 10101,
-            versionName             : "1.1.1",
+            versionCode             : 10105,
+            versionName             : "1.1.4",
             renderscriptTargetApi   : 21
     ]
 
@@ -89,7 +89,6 @@ ext {
             "BaseRecyclerViewAdapterHelper"     : "com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.46",
             "fragmentation"                     : "me.yokeyword:fragmentation:${version["fragmentationVersion"]}",
             "fragmentation-swipeback"           : "me.yokeyword:fragmentation-swipeback:${version["fragmentationVersion"]}",
-            "crashreport_upgrade"               : "com.tencent.bugly:crashreport_upgrade:latest.release",
             "logger"                            : "com.orhanobut:logger:2.1.1",
             "ByeBurger"                         : "com.github.githubwing:ByeBurger:1.2.3",
 //            "stetho"                            : "com.facebook.stetho:stetho:1.5.0",//用来测试接口的

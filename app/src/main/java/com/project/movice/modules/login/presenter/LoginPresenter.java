@@ -16,8 +16,31 @@
 
 package com.project.movice.modules.login.presenter;
 
+import android.Manifest;
+import android.content.Context;
+
+import com.project.movice.R;
+import com.project.movice.application.MoviceApp;
 import com.project.movice.base.presenter.BasePresenter;
+import com.project.movice.core.rx.BaseObserver;
+import com.project.movice.modules.home.bean.HomeBean;
+import com.project.movice.modules.loan.bean.BeanPersonalInformation;
+import com.project.movice.modules.login.bean.BeanSms;
 import com.project.movice.modules.login.contract.LoginContract;
+import com.project.movice.modules.main.bean.BeanUser;
+import com.project.movice.modules.main.ui.activity.MainActivity;
+import com.project.movice.modules.mycalendar.MyCalenderUtils;
+import com.project.movice.utils.DataUtils;
+import com.project.movice.utils.FastJsonTools;
+import com.project.movice.utils.GsonUtil;
+import com.project.movice.utils.RequestBeanUtils;
+import com.project.movice.utils.RxUtils;
+import com.project.movice.utils.StringUtils;
+import com.sobot.chat.utils.ToastUtil;
+import com.tbruyelle.rxpermissions2.RxPermissions;
+
+import java.util.HashMap;
+import java.util.Map;
 
 import javax.inject.Inject;
 
@@ -29,4 +52,52 @@ public class LoginPresenter extends BasePresenter<LoginContract.View> implements
     @Inject
     LoginPresenter() {
     }
+
+    @Override
+    public void request002(Map<String, String> hm) {
+        addSubscribe(mDataManager.get002(RequestBeanUtils.getRequestBean(hm))
+                .compose(RxUtils.SchedulerTransformer())
+                .filter(data -> mView != null)
+                .subscribeWith(new BaseObserver(mView,
+                        MoviceApp.getContext().getString(R.string.login_fail),
+                        true) {
+                    @Override
+                    public void onSuccess(String data) {
+                        BeanUser bean = FastJsonTools.parseObject(data, BeanUser.class);
+//                        BeanUser Bean = GsonUtil.GsonToBean(data, BeanUser.class);
+
+                        mView.get002(bean);
+                    }
+                }));
+    }
+
+    @Override
+    public void request001(Map<String, String> hm) {
+        addSubscribe(mDataManager.get001(RequestBeanUtils.getRequestBean(hm))
+                .compose(RxUtils.SchedulerTransformer())
+                .filter(data -> mView != null)
+                .subscribeWith(new BaseObserver(mView,
+                        MoviceApp.getContext().getString(R.string.login_fail),
+                        true) {
+                    @Override
+                    public void onSuccess(String data) {
+                        BeanSms bean = FastJsonTools.parseObject(data, BeanSms.class);
+                        mView.get001(bean);
+                    }
+                }));
+    }
+
+    @Override
+    public void requestPermissions(RxPermissions rxPermissions, Context context) {
+        addSubscribe(rxPermissions
+                .request(Manifest.permission.READ_CALENDAR,Manifest.permission.WRITE_CALENDAR )
+                .subscribe(granted -> {
+                    if (granted) {
+                        MyCalenderUtils.registNotify(context);
+                    } else {
+                    }
+                }));
+    }
+
+
 }

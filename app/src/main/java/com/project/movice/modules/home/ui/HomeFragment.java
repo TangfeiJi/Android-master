@@ -16,30 +16,36 @@
 
 package com.project.movice.modules.home.ui;
 
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.widget.FrameLayout;
 
 import com.project.movice.R;
+import com.project.movice.application.MoviceApp;
 import com.project.movice.base.fragment.BaseFragment;
+import com.project.movice.modules.home.base.BeanLoan;
 import com.project.movice.modules.home.contract.HomeContract;
 import com.project.movice.modules.home.presenter.HomePresenter;
+import com.project.movice.utils.EventBusType;
+import com.project.movice.utils.MessageEvent;
+
+
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
+
+import java.util.ArrayList;
 
 import butterknife.BindView;
-import q.rorbin.verticaltablayout.VerticalTabLayout;
-import q.rorbin.verticaltablayout.widget.TabView;
+
 
 public class HomeFragment extends BaseFragment<HomePresenter> implements HomeContract.View {
+    //1.一个产品固定金额 2.一个产品可选金额 3.两个产品固定金额 4.两个产品可选金额 5.双产品，可选固定两个金额 6.单产品，可选固定两个金额
+    public static final int PRODUCT_TWO = 2;
 
-    private static final String TAG = "HomeFragment";
+    @BindView(R.id.flContent)
+    FrameLayout flContent;
 
-    @BindView(R.id.navigation_tab_layout)
-    VerticalTabLayout mTabLayout;
-    @BindView(R.id.navigation_rv)
-    RecyclerView mRecyclerView;
-    private LinearLayoutManager mLinearLayoutManager;
-    private boolean needScroll;
-    private int index;
-    private boolean isClickTab;
+    Fragment fragment = null;
 
     public static HomeFragment newInstance() {
         return new HomeFragment();
@@ -47,7 +53,8 @@ public class HomeFragment extends BaseFragment<HomePresenter> implements HomeCon
 
     @Override
     protected void initView() {
-        initRecyclerView();
+
+
     }
 
     @Override
@@ -57,122 +64,56 @@ public class HomeFragment extends BaseFragment<HomePresenter> implements HomeCon
 
     @Override
     protected void initEventAndData() {
-
-    }
-
-    private void initRecyclerView() {
-
-        mLinearLayoutManager = new LinearLayoutManager(_mActivity);
-        mRecyclerView.setLayoutManager(mLinearLayoutManager);
-        mRecyclerView.setHasFixedSize(true);
+        mPresenter.requestHome();
     }
 
 
-    /**
-     * Left tabLayout and right recyclerView linkage
-     */
-    private void leftRightLinkage() {
-        mRecyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
-            @Override
-            public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
-                super.onScrollStateChanged(recyclerView, newState);
-                if (needScroll && (newState == RecyclerView.SCROLL_STATE_IDLE)) {
-                    scrollRecyclerView();
-                }
-                rightLinkageLeft(newState);
-            }
-
-            @Override
-            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
-                super.onScrolled(recyclerView, dx, dy);
-                if (needScroll) {
-                    scrollRecyclerView();
-                }
-            }
-        });
-
-        mTabLayout.addOnTabSelectedListener(new VerticalTabLayout.OnTabSelectedListener() {
-            @Override
-            public void onTabSelected(TabView tabView, int i) {
-                isClickTab = true;
-                selectTag(i);
-            }
-
-            @Override
-            public void onTabReselected(TabView tabView, int i) {
-            }
-        });
-    }
-
-    private void scrollRecyclerView() {
-        needScroll = false;
-        int indexDistance = index - mLinearLayoutManager.findFirstVisibleItemPosition();
-        if (indexDistance >= 0 && indexDistance < mRecyclerView.getChildCount()) {
-            int top = mRecyclerView.getChildAt(indexDistance).getTop();
-            mRecyclerView.smoothScrollBy(0, top);
+    @Override
+    public void getHome(int type) {
+        if (null != fragment) {
+            getActivity().getSupportFragmentManager()
+                    .beginTransaction()
+                    .remove(fragment)
+                    .commitNowAllowingStateLoss();
         }
-    }
-
-    /**
-     * Right recyclerView linkage left tabLayout
-     * SCROLL_STATE_IDLE just call once
-     *
-     * @param newState RecyclerView new scroll state
-     */
-    private void rightLinkageLeft(int newState) {
-        if (newState == RecyclerView.SCROLL_STATE_IDLE) {
-            if (isClickTab) {
-                isClickTab = false;
-                return;
+        if (type == EventBusType.BORROWINGONGOING) {//借款中
+            fragment = new BorrowingStatusFragment();
+            Bundle bundle = new Bundle();
+            bundle.putSerializable("data", mPresenter.getLoanProgress());
+            bundle.putString("ewqddweq43", mPresenter.getLoanProgress().getMsg() + "");
+            fragment.setArguments(bundle);
+            MoviceApp.loanClick = false;
+        } else if (type == EventBusType.BORROWING) {//去借款
+            MoviceApp.loanClick = true;
+            int productType = mPresenter.getLoanProgress().getProduct().getProductType();
+            ArrayList<BeanLoan> loan = mPresenter.getLoanProgress().getProduct().getLoan();
+            if (productType == PRODUCT_TWO) {
+                fragment = new HomeLoanFragment();//一个产品可选金额
+            } else {
+                fragment = new HomeLoanFragment();//一个产品可选金额
             }
-            int firstPosition = mLinearLayoutManager.findFirstVisibleItemPosition();
-            if (index != firstPosition) {
-                index = firstPosition;
-                setChecked(index);
-            }
+
+            Bundle bundle = new Bundle();
+            bundle.putParcelableArrayList("data", loan);
+            fragment.setArguments(bundle);
+
         }
+
+        getActivity().getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.flContent, fragment)
+                .commitNowAllowingStateLoss();
     }
 
-    private void selectTag(int i) {
-        index = i;
-        mRecyclerView.stopScroll();
-        smoothScrollToPosition(i);
-    }
 
-    /**
-     * Smooth right to select the position of the left tab
-     *
-     * @param position checked position
-     */
-    private void setChecked(int position) {
-        if (isClickTab) {
-            isClickTab = false;
-        } else {
-            if (mTabLayout == null) {
-                return;
-            }
-            mTabLayout.setTabSelected(index);
-        }
-        index = position;
-    }
-
-    private void smoothScrollToPosition(int currentPosition) {
-        int firstPosition = mLinearLayoutManager.findFirstVisibleItemPosition();
-        int lastPosition = mLinearLayoutManager.findLastVisibleItemPosition();
-        if (currentPosition <= firstPosition) {
-            mRecyclerView.smoothScrollToPosition(currentPosition);
-        } else if (currentPosition <= lastPosition) {
-            int top = mRecyclerView.getChildAt(currentPosition - firstPosition).getTop();
-            mRecyclerView.smoothScrollBy(0, top);
-        } else {
-            mRecyclerView.smoothScrollToPosition(currentPosition);
-            needScroll = true;
-        }
-    }
-
-    public void jumpToTheTop() {
-        if (mTabLayout != null) {
-            mTabLayout.setTabSelected(0);
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onEvent(MessageEvent messageEvent) {
+        if (messageEvent.getMessage() == EventBusType.UPDATELOAN) {//更新数据
+            mPresenter.requestHome();
+        } else if (messageEvent.getMessage() == EventBusType.BORROWING) {
+            getHome(EventBusType.BORROWING);
+        } else if (messageEvent.getMessage() == EventBusType.REFRESH) {
+            getHome(EventBusType.BORROWINGONGOING);
         }
     }
 }

@@ -21,22 +21,22 @@
     <item
         android:id="@+id/tab_main_pager"
         android:enabled="true"
-        android:icon="@drawable/ic_home_pager"
-        android:title="@string/home_pager"
+        android:icon="@mipmap/lingyi35"
+        android:title="@string/jiemoney"
         app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/tab_navigation"
         android:enabled="true"
-        android:icon="@mipmap/ic_launcher"
-        android:title="@string/navigation"
+        android:icon="@mipmap/uangpro112"
+        android:title="@string/serti"
         app:showAsAction="ifRoom" />
 
 
     <item
         android:id="@+id/tab_project"
         android:enabled="true"
-        android:icon="@mipmap/dot_unselected"
-        android:title="@string/project"
+        android:icon="@mipmap/saya"
+        android:title="@string/wode"
         app:showAsAction="ifRoom" />
 </menu>

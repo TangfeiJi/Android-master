@@ -35,7 +35,7 @@ public class GlideImageLoader {
     public static void load(Context context, String url, ImageView iv) {
         GlideApp.with(context)
                 .load(url)
-                .placeholder(R.drawable.bg_placeholder)
+                .placeholder(R.mipmap.lingyi32)
                 .transition(DrawableTransitionOptions.withCrossFade())
                 .diskCacheStrategy(DiskCacheStrategy.DATA)
                 .into(iv);

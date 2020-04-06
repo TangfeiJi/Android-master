@@ -1,1 +1,1 @@
-include ':app', ':scviewpager'
+include ':app', ':sobotsdk'

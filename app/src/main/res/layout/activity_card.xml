@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <com.classic.common.MultipleStatusView
+        android:id="@+id/custom_multiple_status_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Upload Foto KTP Anda"
+                                android:textColor="@color/text333"
+                                android:textSize="14sp" />
+
+                            <ImageView
+                                android:id="@+id/img_img"
+                                android:layout_width="match_parent"
+                                android:layout_height="180dp"
+                                android:layout_marginTop="10dp"
+                                android:scaleType="centerCrop" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:lineSpacingExtra="4dp"
+                                android:text="Foto yang Anda upload sesuai dengan KTP Anda. KTP Anda harus tampak valid dan jelas"
+                                android:textColor="@color/text999"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/split_line" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="15dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="@dimen/view_padding"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/name"
+                                        android:textColor="@color/emphasize"
+                                        android:textSize="@dimen/text_size_14" />
+
+                                    <TextView
+                                        android:id="@+id/username_error"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="right"
+                                        android:text="@string/please_fill_out"
+                                        android:textColor="@color/content_prompt_text"
+                                        android:textSize="@dimen/text_size_14"
+                                        android:visibility="gone" />
+                                </LinearLayout>
+
+
+                                <EditText
+                                    android:id="@+id/username"
+                                    style="@style/editText"
+                                    android:layout_marginTop="8dp"
+                                    android:hint="@string/please_enter"
+                                    android:maxLength="@integer/user_name_length" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@color/textf1f2" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="@dimen/view_padding"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/ktp_number"
+                                        android:textColor="@color/emphasize"
+                                        android:textSize="@dimen/text_size_14" />
+
+                                    <TextView
+                                        android:id="@+id/ktp_error"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:digits="@string/digits_ktp"
+                                        android:gravity="right"
+                                        android:text="@string/ktp_inconformity"
+                                        android:textColor="@color/content_prompt_text"
+                                        android:textSize="@dimen/text_size_14"
+                                        android:visibility="gone" />
+                                </LinearLayout>
+
+                                <EditText
+                                    android:id="@+id/select_ktp_number"
+                                    style="@style/editText"
+                                    android:layout_marginTop="8dp"
+                                    android:digits="@string/digits_ktp"
+                                    android:hint="@string/please_enter"
+                                    android:inputType="number"
+                                    android:maxLength="@integer/ktp_length" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@color/textf1f2" />
+
+                            <RelativeLayout
+                                android:id="@+id/select_sex"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/personal_information_height"
+                                android:paddingRight="@dimen/view_padding">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/sex"
+                                        android:textColor="@color/emphasize"
+                                        android:textSize="@dimen/text_size_14" />
+
+                                    <TextView
+                                        android:id="@+id/sex"
+                                        style="@style/textView"
+                                        android:layout_marginTop="5dp"
+                                        android:hint="@string/please_select" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/select_sex_status"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="12dp"
+                                    android:layout_toLeftOf="@+id/icon2"
+                                    android:text="@string/please_select"
+                                    android:textColor="@color/content_prompt_text"
+                                    android:textSize="@dimen/text_size_14" />
+
+                                <ImageView
+                                    android:id="@+id/icon2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@mipmap/lingyi7" />
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/next_step"
+                            style="@style/button"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginBottom="15dp"
+                            android:text="@string/next_step" />
+                    </LinearLayout>
+
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#60000000"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/lingyi49"
+                    android:gravity="bottom|center">
+
+                    <ImageView
+                        android:id="@+id/imgDraw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:src="@mipmap/lingyi47" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgClose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/lingyi48" />
+
+            </LinearLayout>
+</RelativeLayout>
+    </com.classic.common.MultipleStatusView>
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <com.classic.common.MultipleStatusView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/custom_multiple_status_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/llClose"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:background="@mipmap/imagbggg"
+            android:orientation="vertical">
+            <ScrollView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    tools:ignore="WebViewLayout">
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/imgButton"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="@mipmap/imgoneeeee" />-->
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:text="Kebijakan hak privasi"
+                        android:textSize="17sp"
+                        android:gravity="center"
+                        android:textColor="#000"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <WebView
+                         android:id="@+id/webview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                </LinearLayout>
+            </ScrollView>
+
+            <ImageView
+                android:layout_marginBottom="50dp"
+                android:id="@+id/imgClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:src="@mipmap/imgbuttong" />
+        </LinearLayout>
+
+</LinearLayout>
+
+    </com.classic.common.MultipleStatusView>
